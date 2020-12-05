@@ -1,0 +1,596 @@
+﻿
+:root {
+    --primary-color: #0000CD;
+    --secondary-color: #7FFFD4;
+    --coral: #FF7F50;
+    --sky-one: #88C5CC;
+    --sky-two: #638F94;
+    --sky-three: #3E5A5D;
+    --sky-four: #192425;
+    --sky-five: #AAF6FF;
+    --light-one: #F5F5F5;
+    --light-two: #FFEB3B8F;
+    --light-three: #FFEB3BCC;
+    --light-four: #FFEB3B;
+    --light-five: #F5F5F55E;
+    --border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    --border-radius: 3px;
+    --cursor-pointer: pointer;
+    --display-block: block;
+    --display-flex: flex;
+    --display-grid: grid;
+    --display-inline: inline;
+    --display-inline-block: inline-block;
+    --flex: 0 1 200px;
+    --font-family: 'Castoro', sans-serif;
+    --font-size: 16px;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --grid-gap: 20px;
+    --grid-template-columns: 1fr 1fr;
+    --height-150: 150px;
+    --height-750: 750px;
+    --justify-content-center: center;
+    --line-height: 1.6;
+    --margin-grid: 15px 140px 20px 140px;
+    --margin-25: 25px;
+    --margin-left-15: 15px;
+    --margin-left-20: 20px;
+    --margin-left-25: 25px;
+    --margin-top-30: 30px;
+    --max-width-100: 100%;
+    --standard-opacity: 0.8;
+    --padding-10: 10px;
+    --text-align-center: center;
+    --no-text-decoration: none;
+    --width-25: 25%;
+    --width-100: 100%;
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size);
+    /*Sets the font size to 16px*/
+    line-height: var(--line-height);
+    /* Sets the line-height to 1.6 */
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: var(--font-weight-700);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: var(--font-weight-700);
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: var(--font-weight-700);
+}
+
+.cv {
+    margin-left: var(--margin-left-25);
+}
+
+a {
+    color: var(--secondary-color);
+}
+
+    a:visited {
+        /* visited link */
+        color: var(--secondary-color);
+        opacity: var(--standard-opacity);
+    }
+
+    a:hover, a:focus {
+        /* No underlining when hovering over a link*/
+        font-weight: bold;
+    }
+
+    a:active {
+        /* selected link*/
+        color: var(--secondary-color);
+    }
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
+    background-color: var(--coral);
+    color: var(--primary-color);
+    margin-left: 100px;
+    text-decoration: var(--no-text-decoration);
+    /*adds spacing to the button*/
+    padding: var(--padding-10);
+    border-radius: var(--border-radius);
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
+    border-bottom: var(--border-bottom);
+}
+
+    button:hover, button:focus {
+        /* lets the mouse appear as a hand when hovering over the button */
+        cursor: var(--cursor-pointer);
+        /* reduces the opacity of the button to 80% */
+        opacity: var(--standard-opacity);
+    }
+
+.button__secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+main {
+    margin-top: 150px;
+    display: var(--display-flex);
+    justify-content: var(--justify-content-center);
+}
+
+.main-about {
+    margin-top: 40px;
+}
+
+.profile {
+    max-width: 700px;
+    display: var(--display-block);
+    justify-content: var(--justify-content-center);
+}
+
+.profile__portrait img {
+    height: 250px;
+    width: 40%;
+    margin: auto;
+    border-radius: 50%;
+    display: var(--display-block);
+    align-items: center;
+}
+
+
+
+
+.profile__welcome {
+    display: var(--display-block);
+    text-align: var(--text-align-center);
+}
+
+.enterprise_logo {
+    margin: var(--margin-25);
+    display: var(--display-inline-block);
+    height: var(--height-150);
+}
+
+.navigation-list {
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+    .navigation-list li {
+        display: var(--display-inline-block);
+        margin-left: var(--margin-left-15);
+    }
+
+
+
+.top-menu {
+    display: var(--display-inline);
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: var(--text-align-center);
+    margin-bottom: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.page-header {
+    display: var(--display-flex);
+    width: var(--width-100)
+}
+
+.page-header__item {
+    flex: var(--flex);
+    width: var(--width-25);
+    height: var(--height-150);
+    margin: var(--margin-25);
+}
+
+.about__face {
+    flex: var(--flex);
+    width: var(--width-25);
+    height: 300px;
+    margin: var(--margin-25);
+}
+
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.main-contact, .main-work {
+    margin: 50px auto;
+    display: var(--display-block);
+    text-align: var(--text-align-center);
+    width: var(--width-100);
+}
+
+.grid {
+    display: var(--display-grid);
+    margin: var(--margin-grid);
+    grid-template-columns: 750px 750px;
+    grid-template-rows: 325px 325px;
+    grid-gap: var(--grid-gap);
+    max-width: var(--max-width-100);
+}
+
+.grid__item {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 25px;
+    display: var(--display-inline-block);
+    width: var(--width-100);
+    justify-content: var(--justify-content-center);
+}
+
+
+.contact__grid {
+    display: var(--display-grid);
+    margin: var(--margin-grid);
+    grid-template-columns: 1500px 1500px;
+    grid-template-rows: 1500px;
+    grid-gap: var(--grid-gap);
+    text-align: left;
+    max-width: var(--max-width-100);
+    display: var(--display-block);
+}
+
+.contact__item {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: var(--display-inline-block);
+    width: var(--width-100);
+    padding-left: 20px;
+    height: var(--height-750);
+}
+
+#fullname, #contact-email {
+    width: 30%;
+}
+
+#my-input {
+    width: 275px;
+}
+
+#aboutyou, #need, #message {
+    width: 90%;
+    height: var(--height-150);
+}
+
+#contact__button {
+    margin-left: 250px;
+    background-color: var(--coral);
+    color: var(--primary-color);
+}
+
+.contact__item a {
+    color: var(--primary-color);
+}
+
+.main-work h1 {
+    text-align: var(--text-align-center);
+}
+
+
+.links {
+    display: var(--display-block);
+    text-align: var(--text-align-center);
+    margin-top: var(--margin-top-30);
+}
+
+.work__link {
+    margin-top: 60px;
+    text-align: var(--text-align-center);
+}
+
+.social-media {
+    text-align: var(--text-align-center);
+}
+
+    .social-media p {
+        text-align: var(--text-align-center);
+    }
+
+.icon-container {
+    text-align: var(--text-align-center);
+}
+
+.social-media__icon {
+    margin-right: 10px;
+}
+
+.profile_about {
+    margin-left: var(--margin-left-25);
+}
+
+.github__button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
+    background-color: var(--primary-color);
+    color: var(--coral);
+    text-decoration: var(--no-text-decoration);
+    /*adds spacing to the button*/
+    padding: 20px;
+    border-radius: var(--border-radius);
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
+    border-bottom: var(--border-bottom);
+    margin-top: 25px;
+    margin-right: 100px;
+}
+
+button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: var(--cursor-pointer);
+    /* reduces the opacity of the button to 80% */
+    opacity: var(--standard-opacity);
+}
+
+
+
+
+.button, button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: var(--display-inline-block);
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: var(--coral);
+    color: var(--primary-color);
+    text-decoration: var(--no-text-decoration);
+    padding: var(--padding-10);
+    border-radius: var(--border-radius);
+    /* width of the border, type, color */
+    border-bottom: var(--border-bottom);
+    /* [transition-property] [transition-duration] [transition-timing-function] [transition-delay] */
+    transition: 0.2s opacity;
+}
+
+    button:hover,
+    button, focus,
+    .button:hover,
+    .button:focus {
+        /* lets the mouse appear as a hand when hovering over the button */
+        cursor: var(--cursor-pointer);
+        /* reduces the opacity of the button to 80% */
+        opacity: var(--standard-opacity);
+    }
+
+svg {
+    max-width: 50%;
+    margin-top: 25px;
+    margin-left: var(--margin-left-20);
+}
+
+
+#contact__item-one {
+    height: 700px;
+}
+
+#contact__item-two {
+    height: 450px;
+}
+
+#contact__item-three {
+    height: var(--height-150);
+}
+
+#contact__item-four {
+    height: 275px;
+}
+
+@media all and (max-width: 640px) {
+    body {
+        font-size: 0.5em;
+    }
+
+    .grid, .contact__grid {
+        grid-template-columns: 1fr;
+    }
+
+    #contact__item-one {
+        height: 700px;
+    }
+
+    #contact__item-two {
+        height: 425px;
+    }
+
+
+    #contact__item-three {
+        height: 150px;
+    }
+
+    #contact__item-four {
+        height: 275px;
+    }
+
+    svg {
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+}
+
+
+
+
+@media all and (min-width: 640px) and (max-width: 1007px) {
+    body {
+        font-size: 0.75em;
+    }
+
+
+    .grid {
+        grid-template-columns: var(--grid-template-columns);
+        display: var(--display-grid);
+        margin: 15px 100px 20px 100px;
+        grid-gap: var(--grid-gap);
+    }
+
+
+    .contact__grid {
+        grid-template-columns: var(--grid-template-columns);
+        display: var(--display-grid);
+        margin: 15px 100px 20px 100px;
+        grid-template-columns: 100px 200px;
+        grid-template-rows: 200px 200px;
+        grid-gap: var(--grid-gap);
+        max-width: var(--max-width-100);
+    }
+
+    #contact__item-one {
+        height: 700px;
+    }
+
+    #contact__item-two {
+        height: 400px;
+    }
+
+    #contact__item-three {
+        height: var(--height-150);
+    }
+
+    #contact__item-four {
+        height: 200px;
+    }
+
+    svg {
+        margin-top: 23px;
+        margin-left: var(--margin-left-15);
+    }
+}
+
+
+
+@media all and (min-width: 1007px) {
+    body {
+        font-size: 1em;
+    }
+
+    .grid, .contact__grid {
+        grid-template-columns: var(--grid-template-columns);
+    }
+
+    svg {
+        margin-top: var(--margin-top-30);
+        margin-left: var(--margin-left-20);
+    }
+
+    .contact__item {
+        height: var(--height-750);
+    }
+}
+
+
+
+
+
+
+@keyframes sky-color-change {
+    0% {
+        fill: var(--sky-one);
+    }
+
+    25% {
+        fill: var(--sky-two);
+    }
+
+    50% {
+        fill: var(--sky-three);
+    }
+
+    75% {
+        fill: var(--sky-four);
+    }
+
+    100% {
+        fill: var(--sky-five);
+    }
+}
+
+@keyframes light-color-change {
+    0% {
+        fill: var(--light-one);
+    }
+
+    25% {
+        fill: var(--light-two);
+    }
+
+    50% {
+        fill: var(--light-three);
+    }
+
+    75% {
+        fill: var(--light-four);
+    }
+
+    100% {
+        fill: var(--light-five);
+    }
+}
+
+
+
+circle {
+    animation: 20s sky-color-change infinite alternate linear;
+}
+
+#left_light, #right_light, #light {
+    animation: 20s light-color-change infinite alternate linear;
+}
+
+@keyframes wave-move {
+    0% {
+        transform: translate(20px, 20px)
+    }
+
+    25% {
+        transform: translate(30px, 30px)
+    }
+
+    50% {
+        transform: translate(40px, 40px)
+    }
+
+    75% {
+        transform: translate(50px, 50px)
+    }
+
+    100% {
+        transform: translate(10px, 10px)
+    }
+}
+
+#back__waves, #middle__waves, #front__waves {
+    animation: 20s wave-move infinite alternate linear;
+}

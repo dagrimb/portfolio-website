@@ -1,0 +1,480 @@
+﻿
+/*
+    Possible colors to use:
+        Blue
+            CornflowerBlue: #6495ED
+            Dark Turquoise: #00CED1 
+            DeepSkyBlue: #00BFFF   
+            DodgerBlue: #1E90FF 
+            LightSkyBlue: #87CEFA    
+            MediumBlue: #0000CD 
+            MediumTurquoise: #48D1CC    
+            RoyalBlue: #4169E1  
+            SteelBlue: #4682B4  
+        Green
+            Aquamarine: #7FFFD4 
+            CadetBlue: #5F9EA0 
+            DarkCyan: #008B8B   
+            DarkGreen: #006400  
+            DarkSeaGreen: #8FBC8F   
+            ForestGreen: #228B22    
+            Green: #008000  
+            LightGreen: #90EE90 
+            LightSeaGreen: #20B2AA  
+            MediumAquaMarine: #66CDAA   
+            MediumSeaGreen: #3CB371 
+            MediumSpringGreen: #00FA9A  
+            SeaGreen: #2E8B57   
+            Teal: #008080   
+        Gold
+            GoldenRod: #DAA520
+            Tan: #D2B48C
+        Orange
+            Coral: #FF7F50
+            DarkOrange: #FF8C00
+        Red
+            Crimson: #DC143C
+            FireBrick: #B22222
+            Red: #FF0000
+
+    Possible Combinations:
+        CornflowerBlue/MediumBlue (3.75)
+        Dark Turquoise/MediumBlue (5.71)
+        DeepSkyBlue/MediumBlue (5.25)
+        DodgerBlue/MediumBlue (3.44)
+        LightSkyBlue/MediumBlue (6.5)
+        MediumBlue/MediumTurquoise (5.98)
+
+        Dark Turquoise/Dark Green (3.8)
+        DeepSkyBlue/Dark Green (3.5)
+        LightSkyBlue/Dark Green (4.33)
+        MediumTurquoise/Dark Green (3.99)
+        MediumBlue/MediumSpringGreen (8.04)- #2
+        MediumBlue/MediumSeaGreen (4.18)
+        MediumBlue/MediumAquaMarine (5.78)
+        MediumBlue/LightSeaGreen (4.25)
+        MediumBlue/LightGreen (7.87)- #3
+        MediumBlue/DarkSeaGreen (5.18)
+        MediumBlue/CadetBlue (3.65)
+        MediumBlue/Aquamarine (9.11)- #1
+        RoyalBlue/MediumSpringGreen (3.49)
+        RoyalBlue/LightGreen (3.42)
+        RoyalBlue/Aquamarine (3.95)
+        SteelBlue/Aquamarine (3.35)
+
+        MediumBlue/Coral (4.46)
+
+        Aquamarine/Crimson (4.07)
+        LightGreen/Crimson (3.52)
+        MediumSpringGreen/Crimson (3.59)
+
+        MediumBlue/DarkOrange (4.78)
+        DarkGreen/DarkOrange (3.18)
+
+        Dark Turquoise/FireBrick (3.41)
+        DeepSkyBlue/FireBrick (3.14)
+        LightSkyBlue/FireBrick (3.89)
+        MediumTorquoise/FireBrick (3.58)
+        Aquamarine/FireBrick (5.45)
+        DarkSeaGreen/FireBrick (3.1)
+        LightGreen/FireBrick (4.71)
+        MediumAquamarine/FireBrick (3.45)
+        MediumSpringGreen/FireBrick (4.81)
+        Tan/FireBrick (3.38)
+
+        MediumBlue/GoldenRod (4.98)
+        DarkGreen/GoldenRod (3.32)
+
+        Aquamarine/Red (3.26)
+
+        MediumBlue/Tan (5.65)
+        DarkGreen/Tan (3.77)
+
+
+
+    /*
+    Colors used
+
+    Text Color (Aquamarine): #7FFFD4; 
+    Primary Color (MediumBlue): #0000CD;
+    Secondary Color (Coral): #FF7F50
+
+   */
+
+body {
+    font-family: 'Castoro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    /*Sets the font size to 16px*/
+    line-height: 1.6;
+    /* Sets the line-height to 1.6 */
+    background-color: #0000CD;
+    color: #7FFFD4;
+}
+
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cv {
+    margin-left: 25px;
+}
+
+a {
+    color: #7FFFD4;
+}
+
+    a:visited {
+        /* visited link */
+        color: #7FFFD4;
+        opacity: 0.8;
+    }
+
+a:hover, a:focus {
+    /* No underlining when hovering over a link*/
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+ a:active {
+        /* selected link*/
+        color: #7FFFD4;
+    }
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
+    background-color: #FF7F50;
+    color: #0000CD;
+    margin-left: 100px; 
+    text-decoration: none;
+    /*adds spacing to the button*/
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+.button__secondary {
+    background-color: #e0b354;
+    color: #2b2b2b;
+}
+
+main {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-about {
+    margin-top: 40px;
+}
+
+.profile {
+    max-width: 700px;
+    display: block;
+    justify-content: center;
+}
+
+.profile__portrait img {
+    height: 250px;
+    width: 40%;
+    margin: auto;
+    border-radius: 50%;
+    display: block;
+    align-items: center;
+}
+
+
+
+
+.profile__welcome {
+    display: block;
+    text-align: center;
+}
+
+.enterprise_logo {
+    margin: 25px;
+    display: inline-block;
+    height: 150px;
+}
+
+.navigation-list {
+    list-style-type: none;
+    margin-right: 25px;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+ }
+
+.navigation-list_item {
+}
+
+.top-menu {
+    display: inline;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.page-header {
+    display: flex;
+    width: 100%;
+}
+
+.page-header__item {
+    flex: 0 1 200px;
+    width: 25%;
+    height: 150px;
+    margin: 25px;
+}
+
+.about__face {
+    flex: 0 1 200px;
+    width: 25%;
+    height: 300px;
+    margin: 25px;
+}
+
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.main-contact, .main-work {
+    margin: 50px auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    margin: 15px 140px 20px 140px;
+    grid-template-columns: 750px 750px;
+    grid-template-rows: 325px 325px;
+    grid-gap: 20px;
+    align-content: center;
+    max-width: 100%;
+}
+
+.grid__item {
+    background-color: #7FFFD4;
+    color: #0000CD;
+    padding: 25px;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.contact__grid {
+    display: grid;
+    margin: 15px 140px 20px 140px;
+    grid-template-columns: 750px 750px;
+    grid-template-rows: 325px 325px;
+    grid-gap: 20px;
+    text-align: left;
+    max-width: 100%;
+    display: block;
+}
+
+.contact__item {
+    background-color: #7FFFD4;
+    color: #0000CD;
+    display: inline-block;
+    width: 100%;
+    padding-left: 20px;
+}
+
+#fullname, #contact-email {
+    width: 600px;
+}
+
+#my-input {
+    width: 275px;
+}
+
+#aboutyou, #need, #message {
+    width: 1400px;
+    height: 150px;
+}
+
+#contact__button {
+    margin-left: 250px;
+    background-color: #FF7F50;
+    color: #0000CD;
+}
+
+.contact__item a {
+    color: #0000CD;
+}
+
+.main-work h1 {
+    text-align: center;
+}
+
+
+.links {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.work__link {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media p{
+    text-align: center;
+}
+
+.icon-container {
+    text-align: center;
+}
+
+.social-media__icon {
+    margin-right: 10px;
+}
+
+.profile_about {
+    margin-left: 25px;
+}
+
+.github__button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
+    background-color: #0000CD;
+    color: #FF7F50;
+    text-decoration: none;
+    /*adds spacing to the button*/
+    padding: 20px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    margin-top: 25px;
+}
+
+button:hover, button:focus {
+        /* lets the mouse appear as a hand when hovering over the button */
+        cursor: pointer;
+        /* reduces the opacity of the button to 80% */
+        opacity: 0.8;
+    }
+
+@media all and (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    }
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
+
+.button, button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: #FF7F50;
+    color: #0000CD;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    /* [transition-property] [transition-duration] [transition-timing-function] [transition-delay] */
+    transition: 0.2s opacity;
+}
+
+button:hover,
+button,focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+.svg {
+    width: 500px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #F5F5F5;
+    }
+    50% {
+        fill: #FFD700;
+    }
+    100% {
+        fill: #FFFF00;
+    }
+}
+
+#vector {
+    margin-left: 20px;
+}

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>DoGreat Enterprises</title>
+    <link rel="shortcut icon" href="./img/life-2048978_1920.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+    <header class="page-header">
+        <img src="img/dogreat.jpg" class="page-header__item" alt="DoGreat Enterprises logo">
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list_item navigation-list__item--active">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list_item">About Me</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contact">
+        <h1>Choose from the following options to contact me:</h1> <br>
+        <div class="contact__grid">
+            <div class="contact__item" id="contact__item-one">
+                <h2>Option 1: Fill out a little information about yourself below and I'll get back to you in a jiffy!</h2>
+                <p><em>*All fields required</em></p><br>
+                <form>
+                    <label class="standard-label" for="fullname">Please enter your full name:</label>   <br>
+                    <input type="text" id="fullname" name="fullname" value"" required>   <br><br>
+                    <label for="aboutyou">Please tell me a little about yourself (240 characters max!):</label><br>
+                    <input type="text" id="aboutyou" name="aboutyou" maxlength="240" value"" required>
+                    <br><br>
+                    <label for="need">
+                        Please tell me how I can help you! (240 characters max!):
+                    </label>
+                    <br>
+                    <input type="text" id="need" name="need" maxlength="240" value"" required>
+                    <br><br>
+
+                    <button type="submit" id="contact__button">Hit me up!</button><br><br>
+                </form>
+            </div>
+        </div>
+        <div class="contact__grid">
+            <div class="contact__item" id="contact__item-two">
+                <h2>Option 2: Fill out this information here...</h2>
+                <form action="" method="post">
+                    <label class="standard-label" for="contact-email">E-mail:*      </label>
+                    <input type="email" id="contact-email" required><br><br>
+                    <label for="my-input">Telephone:   </label>
+                    <input id="my-input"><br><br>
+                    <label for="message">Message (240 characters max!):*     </label>
+                    <input id="message" maxlength="240" required>
+                    <p>*Required field</p>
+                    <input type="submit" value="Send message" id="contact__button">
+                </form><br>
+            </div>
+        </div>
+        <div class="contact__grid">
+            <div class="contact__item" id="contact__item-three">
+                <h2>
+                    Option 3: Contact me with
+                    <a href="mailto:dg98211@gmail.com?subject=Request%20for%20Services&body=I%20have%20seen%20a%20sample%20of%20your%20work%20and%20am%20very%20interested%20in%20recruiting%20your%20services%20for%20a%20project%20I%20have%20set%20out%20to%20complete!"> this template email!</a>
+                </h2><br>
+            </div>
+        </div>
+        <div class="contact__grid">
+            <div class="contact__item" id="contact__item-four">
+                <h2>Or, use the following info to contact me at your discretion!</h2>
+                <p>
+                    David Grimberg<br>
+                    P.O. Box 6 <br>
+                    Naselle, WA 98638 <br>
+                    United States <br>
+                    <br>
+                    Telphone # <a href="tel:206-496-4427">+1 206-496-4427</a><br>
+                    Skype <a href="skype:live:dg982_2">live:dg982_2</a><br>
+                        <a href="mailto:dg98211@gmail.com?subject=Request%20for%20Services&body=I%20have%20seen%20a%20sample%20of%20your%20work%20and%20am%20very%20interested%20in%20recruiting%20your%20services%20for%20a%20project%20I%20have%20set%20out%20to%20complete!">dg98211@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="social-media">
+            <p>Find me on</p>
+            <img src="img/github_icon.svg" alt="Github" target="_blank">
+            <img src="img/twitter_icon.svg" alt="Twitter" target="_blank">
+            <img src="img/linkedin_icon.svg" alt="LinkedIn" target="_blank">
+        </div>
+    </footer>
+
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
