@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1">
 </head>
 
 
@@ -40,16 +41,16 @@
                 <h2>Option 1: Fill out a little information about yourself below and I'll get back to you in a jiffy!</h2>
                 <p><em>*All fields required</em></p><br>
                 <form>
-                    <label class="standard-label" id="fullname">Please enter your full name:</label>   <br>
-                    <input> type="text" id="fullname" name="fullname" value"" required <input/><br><br>
+                    <label class="standard-label" for="fullname">Please enter your full name:</label>   <br>
+                    <input type="text" id="fullname" name="fullname" value"" required>   <br><br>
                     <label for="aboutyou">Please tell me a little about yourself (240 characters max!):</label><br>
-                    <input> type="text" id="aboutyou" name="aboutyou" maxlength="240" value"" required <input/>
+                    <input type="text" id="aboutyou" name="aboutyou" maxlength="240" value"" required>
                     <br><br>
                     <label for="need">
                         Please tell me how I can help you! (240 characters max!):
                     </label>
                     <br>
-                    <input> type="text" id="need" name="need" maxlength="240" value"" required <input/>
+                    <input type="text" id="need" name="need" maxlength="240" value"" required>
                     <br><br>
 
                     <button type="submit" id="contact__button">Hit me up!</button><br><br>
@@ -59,7 +60,7 @@
         <div class="contact__grid">
             <div class="contact__item" id="contact__item-two">
                 <h2>Option 2: Fill out this information here...</h2>
-                <form method="post">
+                <form action="" method="post">
                     <label class="standard-label" for="contact-email">E-mail:*      </label>
                     <input type="email" id="contact-email" required><br><br>
                     <label for="my-input">Telephone:   </label>
@@ -67,7 +68,7 @@
                     <label for="message">Message (240 characters max!):*     </label>
                     <input id="message" maxlength="240" required>
                     <p>*Required field</p>
-                    <input> type="submit" value="Send message" id="contact__button" <input/>
+                    <input type="submit" value="Send message" id="contact__button">
                 </form><br>
             </div>
         </div>
@@ -98,9 +99,9 @@
     <footer class="page-footer">
         <div class="social-media">
             <p>Find me on</p>
-            <img src="img/github_icon.svg" alt="Github">
-            <img src="img/twitter_icon.svg" alt="Twitter">
-            <img src="img/linkedin_icon.svg" alt="LinkedIn">
+            <img src="img/github_icon.svg" alt="Github" target="_blank">
+            <img src="img/twitter_icon.svg" alt="Twitter" target="_blank">
+            <img src="img/linkedin_icon.svg" alt="LinkedIn" target="_blank">
         </div>
     </footer>
 
