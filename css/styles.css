@@ -327,6 +327,8 @@ main {
 
 .profile_about {
     margin-left: var(--margin-left-25);
+    text-align: var(--text-align-center);
+
 }
 
 .github__button {
