@@ -139,6 +139,7 @@ main {
 
 .main-about {
     margin-top: 40px;
+    --text-align-center: center;
 }
 
 .profile {
