@@ -139,7 +139,7 @@ main {
 
 .main-about {
     margin-top: 40px;
-    --text-align-center: center;
+    text-align: var(--text-align-center);
 }
 
 .profile {
