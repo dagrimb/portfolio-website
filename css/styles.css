@@ -139,7 +139,7 @@ main {
 
 .main-about {
     margin-top: 40px;
-    text-align: var(--text-align-center);
+    text-align: center;
 }
 
 .profile {
@@ -327,9 +327,8 @@ main {
 }
 
 .profile_about {
-    margin-left: var(--margin-left-25);
-    text-align: var(--text-align-center);
-
+    margin-left: var(--margin-25);
+    text-align: center;
 }
 
 .github__button {
