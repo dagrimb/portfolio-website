@@ -86,6 +86,7 @@ h3 {
 
 .cv {
     margin-left: var(--margin-left-25);
+    margin-top: var(--margin-top-50);
 }
 
 a {
