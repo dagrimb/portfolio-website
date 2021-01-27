@@ -32,14 +32,18 @@
     --height-750: 750px;
     --justify-content-center: center;
     --line-height: 1.6;
+    --margin-auto: auto;
     --margin-grid: 15px 140px 20px 140px;
     --margin-25: 25px;
     --margin-left-15: 15px;
     --margin-left-20: 20px;
     --margin-left-25: 25px;
+    --margin-left-150: 150px;
+    --margin-right-150: 150px;
     --margin-top-30: 30px;
-    --margin-top-40: 40px;
+    --margin-top-50: 50px;
     --max-width-100: 100%;
+    --no-bullet-points: none;
     --standard-opacity: 0.8;
     --padding-10: 10px;
     --text-align-center: center;
@@ -72,7 +76,7 @@ h1 {
 h2 {
     font-size: 24px;
     font-weight: var(--font-weight-700);
-    margin-top: var(--margin-top-40);
+    margin-top: var(--margin-top-50);
 }
 
 h3 {
@@ -102,6 +106,10 @@ a {
     a:active {
         /* selected link*/
         color: var(--secondary-color);
+    }
+
+    li {
+        list-style-type: none;
     }
 
 button {
@@ -141,7 +149,7 @@ main {
 
 .main-about {
     margin-top: 40px;
-    text-align: center;
+    text-align: var(--text-align-center);
 }
 
 .profile {
@@ -329,8 +337,14 @@ main {
 }
 
 .profile_about {
-    margin-left: var(--margin-25);
-    text-align: center;
+    margin-left: var(--margin-left-150);
+    margin-right: var(--margin-right-150);
+    text-align: var(--text-align-center);
+}
+
+.center {
+    margin-left: var(--margin-auto);
+    margin-right: var(--margin-auto);
 }
 
 .github__button {
