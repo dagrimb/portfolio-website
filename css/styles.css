@@ -193,6 +193,7 @@ main {
     .navigation-list li {
         display: var(--display-inline-block);
         margin-left: var(--margin-left-15);
+        font-size: 25px;
     }
 
 
@@ -231,6 +232,8 @@ main {
     width: 300px;
     height: 400px;
     margin: var(--margin-25);
+    margin-top: var(--margin-top-50);
+    margin-left: 50px;
 }
 
 
