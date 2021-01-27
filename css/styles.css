@@ -161,17 +161,18 @@ main {
     justify-content: var(--justify-content-center);
 }
 
+.profile__portrait {
+    text-align: var(--text-align-center);
+}
+
 .profile__portrait img {
-    height: 250px;
-    width: 40%;
+    height: 300px;
+    width: 225px;
     margin: auto;
     border-radius: 50%;
     display: var(--display-block);
     align-items: center;
 }
-
-
-
 
 .profile__welcome {
     display: var(--display-block);
@@ -227,8 +228,8 @@ main {
 
 .about__face {
     flex: var(--flex);
-    width: var(--width-25);
-    height: 300px;
+    width: 300px;
+    height: 400px;
     margin: var(--margin-25);
 }
 
