@@ -1,5 +1,4 @@
-﻿
-:root {
+﻿:root {
     --primary-color: #0000CD;
     --secondary-color: #7FFFD4;
     --coral: #F1ab85;
@@ -720,3 +719,8 @@ circle {
 #back__waves, #middle__waves, #front__waves {
     animation: 20s wave-move infinite alternate linear;
 }
+<<<<<<< Updated upstream
+}
+=======
+}
+>>>>>>> Stashed changes
