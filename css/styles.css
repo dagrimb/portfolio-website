@@ -2,7 +2,7 @@
 :root {
     --primary-color: #0000CD;
     --secondary-color: #7FFFD4;
-    --coral: #FF7F50;
+    --coral: #F1ab85;
     --sky-one: #88C5CC;
     --sky-two: #638F94;
     --sky-three: #3E5A5D;
@@ -41,7 +41,9 @@
     --margin-left-20: 20px;
     --margin-left-25: 25px;
     --margin-left-150: 150px;
+    --mr-10: 10px;
     --margin-right-150: 150px;
+    --mt-25: 25px;
     --margin-top-30: 30px;
     --margin-top-50: 50px;
     --max-width-100: 100%;
@@ -340,7 +342,7 @@ main {
 }
 
 .social-media__icon {
-    margin-right: 10px;
+    margin-right: var(--mr-10);
 }
 
 .profile_about {
@@ -368,7 +370,7 @@ main {
     border-radius: var(--border-radius);
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
     border-bottom: var(--border-bottom);
-    margin-top: 25px;
+    margin-top: var(--mt-25);
     margin-right: 100px;
 }
 
@@ -412,7 +414,7 @@ button:hover, button:focus {
 
 svg {
     max-width: 25%;
-    margin-top: 25px;
+    margin-top: var(--mt-25);
     margin-left: var(--ml-auto);
     margin-right: var(--mr-auto);
     display: var(--blockdisplay);
@@ -438,10 +440,34 @@ svg {
 @media all and (max-width: 640px) {
     body {
         font-size: 0.5em;
+        width: 640px;
+    }
+
+    .about__face {
+        width: 240px;
+        height: 320px;
+    }
+
+    .page-header {
+        width: 100%;
+    }
+
+    .page-header__item {
+        margin-top: var(--mt-25);
     }
 
     .grid, .contact__grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact__grid {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contact_item {
+        width: 97%;
+        margin-bottom: 15px;
     }
 
     #contact__item-one {
@@ -467,14 +493,44 @@ svg {
 }
 
 
+@media all and (min-width: 640px) and (max-width: 768px) {
 
+}
 
-@media all and (min-width: 640px) and (max-width: 1007px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
     body {
         font-size: 0.75em;
+        width: 100%;
+        margin: 0px;
+        grid-template-columns: 700px 0px;
+        grid-template-rows: 365px 0px;
     }
 
+    .about__face {
+        width: 210px;
+        height: 280px;
+        margin-left: 40px;
+    }
 
+    .navigation-list {
+        padding-left: 0px;
+    }
+
+    body {
+        margin: 15px 10px 300px 35px;
+    }
+
+    .page-header {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .page-header__item {
+        margin-top: var(--mt-25);
+        margin-right: 35px;
+    }
+
+    
     .grid {
         grid-template-columns: var(--grid-template-columns);
         display: var(--display-grid);
@@ -486,28 +542,45 @@ svg {
     .contact__grid {
         grid-template-columns: var(--grid-template-columns);
         display: var(--display-grid);
-        margin: 15px 100px 20px 100px;
-        grid-template-columns: 100px 200px;
-        grid-template-rows: 200px 200px;
+        margin: 0px 85px 5px 0px;
+        grid-template-columns: 440px 0px;
+        grid-template-rows: 365px 0px;
         grid-gap: var(--grid-gap);
-        max-width: var(--max-width-100);
+        max-width: 665px;
     }
 
     #contact__item-one {
-        height: 700px;
+        height: 705px;
+        width: 925px;
     }
 
     #contact__item-two {
-        height: 400px;
+        height: 460px;
+        margin-top: 325px;
+        width: 925px;
+
     }
 
     #contact__item-three {
         height: var(--height-150);
+        margin-top: 405px;
+        width: 925px;
     }
 
     #contact__item-four {
         height: 200px;
+        margin-top: 185px;
+        width: 925px;
     }
+
+    .main-contact h1 {
+        font-size: 25px;
+    }
+
+    .navigation-list li {
+        font-size: 1.25em;
+    }
+    
 
     /*svg {
       margin-top: var(--margin-top-50);
@@ -516,10 +589,12 @@ svg {
 }
 
 
-
-@media all and (min-width: 1007px) {
+@media all and (min-width: 1025px) {
     body {
         font-size: 1em;
+        width: 100%;
+        margin-left: 1em;
+        margin-top: 20px;
     }
 
     .grid, .contact__grid {
@@ -528,8 +603,43 @@ svg {
 
     .contact__item {
         height: var(--height-750);
+        max-width: 85%;
     }
-}
+
+    .about__face {
+        width: 300px;
+        height: 400px;
+        margin-left: 165px;
+    }
+/*
+    .contact__grid {
+        max-width: 80%;
+        margin: 15px 100px 15px 65px;
+        grid-template-columns: 380px 250px;
+        grid-template-rows: 435px 0px;
+    }
+*/
+    #contact__item-one {
+        height: 700px;
+        width: 80%;
+    }
+
+    #contact__item-two {
+        height: 470px;
+        width: 80%;
+    }
+
+    #contact__item-three {
+        height: 170px;
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    #contact__item-four {
+        width: 80%;
+        height: 250px;
+        margin-top: 0px;
+    }
 
 @keyframes sky-color-change {
     0% {
