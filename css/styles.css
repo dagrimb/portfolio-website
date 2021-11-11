@@ -59,6 +59,8 @@ a {
     color: var(--secondary-color);
 }
 
+
+
 body {
     font-family: var(--font-family);
     font-weight: var(--font-weight-400);
@@ -96,11 +98,9 @@ a {
     color: var(--secondary-color);
 }
 
-    a:visited {
-        /* visited link */
-        color: var(--secondary-color);
-        opacity: var(--standard-opacity);
-    }
+a .github__button {
+  color: var(--coral);
+}
 
     a:hover, a:focus {
         /* No underlining when hovering over a link*/
@@ -209,6 +209,7 @@ main {
     flex-direction: column;
     text-align: var(--text-align-center);
     margin-bottom: 10px;
+    margin-top: 6rem;
 }
 
 
@@ -243,30 +244,42 @@ main {
     text-align: right;
 }
 
-.main-contact, .main-work {
+.main-contact {
     margin: 50px auto;
     display: var(--display-block);
     text-align: var(--text-align-center);
     width: var(--width-100);
+
+}
+
+.main-work {
+  margin: 50px auto;
+  display: var(--display-block);
+  text-align: var(--text-align-center);
+  width: var(--width-100);
+  max-height: 1000rem;
 }
 
 .grid {
     display: var(--display-grid);
     margin: var(--margin-grid);
     grid-template-columns: 750px 750px;
-    grid-template-rows: 325px 325px;
+    grid-template-rows: 50rem 45rem;
     grid-gap: var(--grid-gap);
     max-width: var(--max-width-100);
+
 }
 
 .grid__item {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding: 25px;
+    padding: 1.5rem 2rem;
     display: var(--display-inline-block);
     width: var(--width-100);
     justify-content: var(--justify-content-center);
+    height: 50.5rem;
 }
+
 
 
 .contact__grid {
@@ -355,22 +368,8 @@ main {
     margin-right: var(--mr-auto);
 }
 
-.github__button {
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
-    background-color: var(--primary-color);
-    color: var(--coral);
-    text-decoration: var(--no-text-decoration);
-    /*adds spacing to the button*/
-    padding: 20px;
-    border-radius: var(--border-radius);
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
-    border-bottom: var(--border-bottom);
-    margin-top: var(--mt-25);
-    margin-right: 100px;
+.project {
+  margin-bottom: 1rem;
 }
 
 button:hover, button:focus {
@@ -419,6 +418,24 @@ svg {
     display: var(--blockdisplay);
 }
 
+
+
+.github__button, .hosted__button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
+  background-color: var(--primary-color);
+  color: var(--coral);
+  text-decoration: var(--no-text-decoration);
+  /*adds spacing to the button*/
+  padding: 20px;
+  border-radius: var(--border-radius);
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
+  border-bottom: var(--border-bottom);  
+  margin: auto 3rem;
+}
 
 #contact__item-one {
     height: 700px;
@@ -719,8 +736,4 @@ circle {
 #back__waves, #middle__waves, #front__waves {
     animation: 20s wave-move infinite alternate linear;
 }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
