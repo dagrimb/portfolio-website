@@ -96,11 +96,7 @@ a {
     color: var(--secondary-color);
 }
 
-    a:visited {
-        /* visited link */
-        color: var(--secondary-color);
-        opacity: var(--standard-opacity);
-    }
+
 
     a:hover, a:focus {
         /* No underlining when hovering over a link*/
@@ -175,6 +171,7 @@ main {
     align-items: center;
 }
 
+
 .profile__welcome {
     display: var(--display-block);
     text-align: var(--text-align-center);
@@ -208,6 +205,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: var(--text-align-center);
+    margin-top: 32rem;
     margin-bottom: 10px;
 }
 
@@ -254,7 +252,7 @@ main {
     display: var(--display-grid);
     margin: var(--margin-grid);
     grid-template-columns: 750px 750px;
-    grid-template-rows: 325px 325px;
+    grid-template-rows: 815px 325px;
     grid-gap: var(--grid-gap);
     max-width: var(--max-width-100);
 }
@@ -266,8 +264,12 @@ main {
     display: var(--display-inline-block);
     width: var(--width-100);
     justify-content: var(--justify-content-center);
+    height: 51rem;
 }
 
+.project {
+  margin-bottom: 0.5rem;
+}
 
 .contact__grid {
     display: var(--display-grid);
@@ -369,8 +371,7 @@ main {
     border-radius: var(--border-radius);
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
     border-bottom: var(--border-bottom);
-    margin-top: var(--mt-25);
-    margin-right: 100px;
+    margin: auto 3rem;
 }
 
 button:hover, button:focus {

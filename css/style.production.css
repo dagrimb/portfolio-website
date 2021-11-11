@@ -46,11 +46,7 @@ a {
   color: #7FFFD4;
 }
 
-  a:visited {
-      /* visited link */
-      color: #7FFFD4;
-      opacity: 0.8;
-  }
+
 
   a:hover, a:focus {
       /* No underlining when hovering over a link*/
@@ -140,6 +136,7 @@ main {
           align-items: center;
 }
 
+
 .profile__welcome {
   display: undefined;
   text-align: center;
@@ -178,6 +175,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  margin-top: 32rem;
   margin-bottom: 10px;
 }
 
@@ -242,8 +240,8 @@ main {
   margin: 15px 140px 20px 140px;
   -ms-grid-columns: 750px 20px 750px;
   grid-template-columns: 750px 750px;
-  -ms-grid-rows: 325px 20px 325px;
-  grid-template-rows: 325px 325px;
+  -ms-grid-rows: 815px 20px 325px;
+  grid-template-rows: 815px 325px;
   grid-gap: 20px;
   max-width: 100%;
 }
@@ -277,8 +275,12 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 51rem;
 }
 
+.project {
+margin-bottom: 0.5rem;
+}
 
 .contact__grid {
   display: -ms-grid;
@@ -294,12 +296,10 @@ main {
   display: undefined;
 }
 
-
 .contact__grid > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-
 
 .contact__grid > *:nth-child(2) {
   -ms-grid-row: 1;
@@ -411,8 +411,7 @@ main {
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  margin-top: 25px;
-  margin-right: 100px;
+  margin: auto 3rem;
 }
 
 button:hover {
