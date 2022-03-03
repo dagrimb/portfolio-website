@@ -635,6 +635,7 @@ svg {
 
     #contact__item-four {
         height: 275px;
+        margin-top: 4rem;
     }
 
     /*svg {
@@ -682,7 +683,7 @@ svg {
 
     
     .grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 22.5rem 22.5rem;
         display: var(--display-grid);
         margin: 0rem 0rem 0rem 0rem;
         grid-template-rows: 53rem 59rem;
@@ -692,9 +693,9 @@ svg {
     .contact__grid {
         grid-template-columns: var(--grid-template-columns);
         display: var(--display-grid);
-        margin: 0px 85px 5px 0px;
+        margin: 0px 85px 0rem 0px;
         grid-template-columns: 440px 0px;
-        grid-template-rows: 365px 0px;
+        grid-template-rows: 2rem 0px;
         grid-gap: var(--grid-gap);
         max-width: 665px;
     }
@@ -713,14 +714,14 @@ svg {
 
     #contact__item-three {
         height: var(--height-150);
-        margin-top: 405px;
-        width: 925px;
+        margin-top: 0rem;
+        width: 54rem;
     }
 
     #contact__item-four {
         height: 200px;
         margin-top: 185px;
-        width: 925px;
+        width: 54rem;
     }
 
     .main-contact h1 {
@@ -733,11 +734,17 @@ svg {
     }
     
     #project-one #bulleted-list, #project-one .project {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    #project-two .project img {
+      margin-left: 1rem;
     }
 
     #project-two .project {
       height: 18rem;
+      margin-bottom: 2rem;
+      width: 90%;
     }
 
     #project-three #bulleted-list {
@@ -746,10 +753,27 @@ svg {
 
     #project-three .project {
       margin-bottom: 2.5rem;
+      height: 27%;
     }
+
+    #project-four .project {
+      margin-bottom: 2.5rem;
+    }
+
+    #project-four #bulleted-list {
+      margin-bottom: 2rem;
+    }
+
+    #project-five p {
+      margin-bottom: 3.5rem;
+  }
 
     #project-five #bulleted-list {
       margin-bottom: 3.5rem;
+  }
+
+  #project-five .project {
+    margin-bottom: 2.5rem;
   }
 
   #project-six #bulleted-list {
@@ -758,8 +782,12 @@ svg {
 }
 
 #project-six .project {
-  height: 16rem;
+  height: 12rem;
   width: 20rem;
+}
+
+#contact-social {
+  margin-top: 20rem;
 }
 
     /*svg {
@@ -783,11 +811,41 @@ svg {
 
     .grid {
       margin: 1rem 1rem 10rem 1rem;
-      grid-template-rows: 63rem 72rem;
+      grid-template-rows: 63rem 65rem;
+    }
+
+    #project-one #bulleted-list {
+      margin-bottom: 3rem;
     }
 
     #project-one .project {
-      height: 14rem;
+      height: 17rem;
+      margin-bottom: 2.5rem;
+  }
+
+  #project-two #bulleted-list {
+    margin-bottom: 4rem;
+  }
+
+  #project-two .project {
+    margin-bottom: 4.5rem;
+  }
+
+  #project-three #bulleted-list {
+    margin-bottom: 1.5rem;
+  }
+
+  #project-three .project {
+    height: 16rem;
+    margin-bottom: 3rem;
+  }
+
+  #project-four #bulleted-list {
+    margin-bottom: 2rem;
+  }
+
+  #project-five #bulleted-list {
+    margin-bottom: 12.5rem;
   }
 
     .contact__item {
@@ -837,7 +895,7 @@ svg {
     }
 
     #project-six #bulleted-list {
-      margin-bottom: 8rem;
+      margin-bottom: 11rem;
   }
 
 @keyframes sky-color-change {
