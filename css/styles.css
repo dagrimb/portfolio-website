@@ -1,7 +1,7 @@
 ﻿:root {
-    --primary-color: #0000CD;
-    --secondary-color: #7FFFD4;
-    --coral: #F1ab85;
+    --primary-color: #5CDb95;
+    --secondary-color: #05386B;
+    --tertiary-color: #EDF5E1;
     --sky-one: #88C5CC;
     --sky-two: #638F94;
     --sky-three: #3E5A5D;
@@ -26,7 +26,7 @@
     --font-weight-400: 400;
     --font-weight-700: 700;
     --grid-gap: 20px;
-    --grid-template-columns: 1fr 1fr;
+    --grid-template-columns: 1fr 1fr 1fr;
     --height-150: 150px;
     --height-750: 750px;
     --justify-content-center: center;
@@ -67,7 +67,7 @@ body {
     line-height: var(--line-height);
     /* Sets the line-height to 1.6 */
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
 
@@ -118,7 +118,7 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
-    background-color: var(--coral);
+    background-color: var(--secondary-color);
     color: var(--primary-color);
     margin-left: 100px;
     text-decoration: var(--no-text-decoration);
@@ -205,7 +205,7 @@ main {
     display: flex;
     flex-direction: column;
     text-align: var(--text-align-center);
-    margin-top: 32rem;
+    margin-top: 5rem;
     margin-bottom: 10px;
 }
 
@@ -246,28 +246,35 @@ main {
     display: var(--display-block);
     text-align: var(--text-align-center);
     width: var(--width-100);
+    color: var(--secondary-color);
 }
 
 .grid {
     display: var(--display-grid);
     margin: var(--margin-grid);
     grid-template-columns: 750px 750px;
-    grid-template-rows: 815px 325px;
+    grid-template-rows: 55rem 59rem;
     grid-gap: var(--grid-gap);
     max-width: var(--max-width-100);
 }
 
 .grid__item {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 25px;
-    display: var(--display-inline-block);
-    width: var(--width-100);
-    justify-content: var(--justify-content-center);
-    height: 51rem;
+    color: var(--tertiary-color);
+    padding: 1.5rem;
+}
+
+.grid__item a {
+  padding: 0rem;
 }
 
 .project {
+  margin-bottom: 1.5rem;
+  height: 14rem;
+}
+
+.grid__item .github__button {
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -284,7 +291,7 @@ main {
 
 .contact__item {
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     display: var(--display-inline-block);
     width: var(--width-100);
     padding-left: 20px;
@@ -293,29 +300,116 @@ main {
 
 #fullname, #contact-email {
     width: 30%;
+    background-color: var(--tertiary-color);
 }
 
 #my-input {
     width: 275px;
+    background-color: var(--tertiary-color);
+}
+
+#bulleted-list {
+  margin-right: 2rem;
+}
+
+#bulleted-list li::before {
+  content: "•";
+  padding: 0.5rem;
+}
+
+#project-one .project {
+  height: 17rem;
+}
+
+#project-one .project {
+  height: 14rem;
+}
+
+#project-one .project, #project-two .project {
+  margin-bottom: 0rem;
+}
+
+#project-two p {
+  margin-bottom: 3rem;
+}
+
+#project-two .project {
+  height: 16rem;
+}
+
+#project-three .project {
+  height: 22%;
+}
+
+#project-four p {
+  margin-bottom: 1.5rem;
+}
+
+#project-four .project {
+  height: 15rem;
+}
+
+#project-four .project img {
+  height: 15rem;
+  width: 18rem;
+}
+
+#project-five #bulleted-list {
+  margin-bottom: 9.5rem;
+}
+
+#project-five p {
+  margin-bottom: 5.5rem;
+}
+
+
+#project-six h2 {
+  font-size: 1.45rem;
+}
+
+#project-six #bulleted-list {
+  margin-bottom: 6rem;
+}
+
+#project-six .project {
+  height: 17rem;
+}
+
+#project-six .project {
+  height: 16rem;
+  width: 17rem;
+}
+
+.thumbnail:hover {
+  position: fixed;
+  top:0rem;
+  bottom:2rem;
+  left:1rem;
+  right:1rem;
+  width:50%;
+  height:50%;
+  display:inline;
 }
 
 #aboutyou, #need, #message {
     width: 90%;
     height: var(--height-150);
+    background-color: var(--tertiary-color);
 }
 
 .contact__button, #contact__button {
     margin-left: 250px;
-    background-color: var(--coral);
+    background-color: var(--tertiary-color);
     color: var(--primary-color);
 }
 
 .contact__item a {
-    color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 .main-work h1 {
     text-align: var(--text-align-center);
+    color: var(--secondary-color);
 }
 
 
@@ -332,6 +426,7 @@ main {
 
 .social-media {
     text-align: var(--text-align-center);
+    color: var(--secondary-color);
 }
 
     .social-media p {
@@ -363,11 +458,11 @@ main {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
-    background-color: var(--primary-color);
-    color: var(--coral);
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
     text-decoration: var(--no-text-decoration);
     /*adds spacing to the button*/
-    padding: 20px;
+    padding: 1rem;
     border-radius: var(--border-radius);
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
     border-bottom: var(--border-bottom);
@@ -391,8 +486,8 @@ button:hover, button:focus {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the button */
-    background-color: var(--coral);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
     text-decoration: var(--no-text-decoration);
     padding: var(--padding-10);
     border-radius: var(--border-radius);
@@ -456,6 +551,61 @@ svg {
         margin-top: var(--mt-25);
     }
 
+    .grid {
+      width: 30rem;
+      margin: 0rem 0rem 0rem 5rem;
+      grid-template-rows: 67rem 59rem;
+    }
+
+    .grid h2 {
+      font-size: 2rem;
+    }
+
+    .social-media p { 
+      font-size: 1rem;
+    }
+
+    #project-one .project { 
+      margin-bottom: 2rem;
+    }
+
+    #project-two .project { 
+      margin-bottom: 2rem;
+    }   
+    
+    #project-three .project { 
+      margin-bottom: 2rem;
+    }   
+    
+    #project-four .project { 
+      margin-bottom: 2rem;
+    }   
+    
+    #project-five .project { 
+      margin-bottom: 2rem;
+    }   
+
+    #project-five p {
+      margin-bottom: 2.5rem;
+  }
+    
+  #project-five #bulleted-list {
+    margin-bottom: 3.5rem;
+}
+
+    #project-six .project { 
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    #project-six #bulleted-list {
+      margin-bottom: 0rem;
+  }
+
+    .grid p, .grid ul, .grid a {
+      font-size: 1.25rem;
+    }
+
     .grid, .contact__grid {
         grid-template-columns: 1fr;
     }
@@ -499,7 +649,7 @@ svg {
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
     body {
-        font-size: 0.75em;
+        font-size: 0.8em;
         width: 100%;
         margin: 0px;
         grid-template-columns: 700px 0px;
@@ -517,7 +667,7 @@ svg {
     }
 
     body {
-        margin: 15px 10px 300px 35px;
+        margin: 0rem 1rem 0rem 1rem;
     }
 
     .page-header {
@@ -532,10 +682,10 @@ svg {
 
     
     .grid {
-        grid-template-columns: var(--grid-template-columns);
+        grid-template-columns: 1fr 1fr;
         display: var(--display-grid);
-        margin: 15px 100px 20px 100px;
-        grid-gap: var(--grid-gap);
+        margin: 0rem 0rem 0rem 0rem;
+        grid-template-rows: 53rem 59rem;
     }
 
 
@@ -575,12 +725,42 @@ svg {
 
     .main-contact h1 {
         font-size: 25px;
+        color: var(--secondary-color);
     }
 
     .navigation-list li {
         font-size: 1.25em;
     }
     
+    #project-one #bulleted-list, #project-one .project {
+      margin-bottom: 2rem;
+    }
+
+    #project-two .project {
+      height: 18rem;
+    }
+
+    #project-three #bulleted-list {
+      margin-bottom: 6.5rem;
+    }
+
+    #project-three .project {
+      margin-bottom: 2.5rem;
+    }
+
+    #project-five #bulleted-list {
+      margin-bottom: 3.5rem;
+  }
+
+  #project-six #bulleted-list {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+#project-six .project {
+  height: 16rem;
+  width: 20rem;
+}
 
     /*svg {
       margin-top: var(--margin-top-50);
@@ -600,6 +780,15 @@ svg {
     .grid, .contact__grid {
         grid-template-columns: var(--grid-template-columns);
     }
+
+    .grid {
+      margin: 1rem 1rem 10rem 1rem;
+      grid-template-rows: 63rem 72rem;
+    }
+
+    #project-one .project {
+      height: 14rem;
+  }
 
     .contact__item {
         height: var(--height-750);
@@ -640,6 +829,16 @@ svg {
         height: 250px;
         margin-top: 0px;
     }
+
+    #project-six .project {
+      height: 16rem;
+      width: 25rem;
+      margin: auto;
+    }
+
+    #project-six #bulleted-list {
+      margin-bottom: 8rem;
+  }
 
 @keyframes sky-color-change {
     0% {
