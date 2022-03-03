@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -38,91 +38,36 @@
     </header>
     <!-- Main content -->
     <section>
-<<<<<<< Updated upstream
         <div class="main-work">
             <h1>Work</h1><br>
             <div class="grid">
                 <!-- Grid items will live here -->
-                <div class="grid__item">
-                    <h2>Pokédex</h2>
-                    <p>
-
-                A small, responsive web application built on HTML, CSS, vanilla Javascript, jQuery, and Bootstrap. This application loads data from the an external (Pokémon) API, allowing users to retrieve specific data pertaining to each 
-                Pokémon, including their height and image. All users have to do is click the button with the name of the pokemon they wish to research 
-                and a modal will be opened that reveals these details.
-                    </p>
-                    <div class="project">
-                      <img   src="img/pokedex_img.png" style="height: 100%; width: 100%; object-fit: contain" alt="Pokedex Project Image" />
+                <div class="main-work">
+                  <h1>Work</h1><br>
+                  <div class="grid">
+                    <!-- Grid items will live here -->
+                    <div class="grid__item" id="project-one">
+                      <h2>Pokédex</h2>
+                      <p> 
+                        A small, responsive application that loads data from an external (Pokemon) API, allowing users to retrieve specific 
+                        information pertaining to each Pokemon, including their height and image. All users have to do is click the button with 
+                        the name of the pokemon they wish to research and a modal will be opened that reveals these details.
+                      </p>
+                      <ul id="bulleted-list">
+                        Technologies Used:
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>vanilla JavaScript</li>
+                          <li>jQuery</li>
+                          <li>Bootstrap</li>
+                          <li><a href="https://pokeapi.co/api/v2/pokemon/" class="grid__item"  target="_blank" rel="noopener noreferrer">The Pokemon API</a></li>
+                      </ul>
+                      <div class="project">
+                        <img src="img/pokedex_img.png" style="height: 100%; width: 100%; object-fit: contain" class="thumbnail" alt="Pokedex Project Image" />
+                      </div>
+                      <a type="button" class="github__button" href="https://dagrimb.github.io/Pokedex/" target="_blank" rel="noopener noreferrer">See Hosted Site</a>
+                      <a type="button" class="github__button" href="https://github.com/dagrimb/Pokedex" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
                     </div>
-                    <a type="button" class="github__button" href="https://dagrimb.github.io/js-simple-app/">See Hosted Site</a>
-                    <a type="button" class="github__button" href="https://github.com/dagrimb/js-simple-app">See Project Repository on Github</a>
-                </div>
-                <div class="grid__item">
-                    <h2>myfavfilmz</h2>
-                    <p>
-                      A Single Page Application built on the MERN stack, using Node.js and Express to build the API, MongoDB to build the 
-                      database, and the React.js library for the User Interface. The application exists to allow movie fans the ability to 
-                      register for an account and create a list of their favorite movies. Users are also able to find out more about these 
-                      favorite movies, such as details about a movie's genre, director and score on Rotten Tomatoes.
-                    </p>
-                    <div class="project">
-                      <img  src="img/myfavfilmz_img.png" style="height: 100%; width: 100%; object-fit: contain" alt="myfavfilmz Project Image" />
-                    </div>
-                    <a type="button" class="github__button" href="https://myfavfilmz.netlify.app/">See Hosted Site</a>
-                    <a type="button" class="github__button" href="https://github.com/dagrimb/myfavfilmz-client">See Project Repository on Github</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Meet App</h2>
-                    <p>
-                      Meet App is a serverless, Progressive Web Application built with React using Test-Driven Development, using AWS Lambda
-                      serverless functions, OAuth2 authentication flow, and the Google Calendar API. It provides users with
-                      a lists of events in different cities, as well as useful details about those events. Users are able to filter events
-                      by location (along with Recharts data visualization showing number of events in relevant cities), determine the number of events that they 
-                      with to see on their page, and add a shortcut to their phone for mobile, offline use.
-                
-                      
-                    </p>
-                    <div class="project">
-                      <img src="img/meetapp_img.png" style="height: 100%; width: 100%; object-fit: contain;" alt="Meetapp Project Image" />
-                    </div>
-                    <a type="button" class="github__button" href="https://dagrimb.github.io/meet/">See Hosted Site</a>
-                    <a type="button" class="github__button" href="https://github.com/dagrimb/meet">See Project Repository on Github</a>
-                </div>
-                <div class="grid__item">
-                    <h2>Mobile web app #4</h2>
-                    <p>
-                    **Under Construction**
-                    </p>
-
-                </div>
-=======
-      <div class="main-work">
-        <h1>Work</h1><br>
-        <div class="grid">
-          <!-- Grid items will live here -->
-          <div class="grid__item" id="project-one">
-            <h2>Pokédex</h2>
-            <p> 
-              A small, responsive application that loads data from an external (Pokemon) API, allowing users to retrieve specific 
-              information pertaining to each Pokemon, including their height and image. All users have to do is click the button with 
-              the name of the pokemon they wish to research and a modal will be opened that reveals these details.
-            </p>
-            <ul id="bulleted-list">
-              Technologies Used:
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>vanilla JavaScript</li>
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-                <li><a href="https://pokeapi.co/api/v2/pokemon/" class="grid__item"  target="_blank" rel="noopener noreferrer">The Pokemon API</a></li>
-            </ul>
-            <div class="project">
-              <img src="img/pokedex_img.png" style="height: 100%; width: 100%; object-fit: contain" class="thumbnail" alt="Pokedex Project Image" />
->>>>>>> Stashed changes
-            </div>
-            <a type="button" class="github__button" href="https://dagrimb.github.io/Pokedex/" target="_blank" rel="noopener noreferrer">See Hosted Site</a>
-            <a type="button" class="github__button" href="https://github.com/dagrimb/Pokedex" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
-          </div>
           <div class="grid__item" id="project-two">
             <h2>myfavfilmz-API</h2>
             <p>
