@@ -6,7 +6,7 @@
 */
 
 a {
-  color: #7FFFD4;
+  color: #05386B;
 }
 
 body {
@@ -16,8 +16,8 @@ body {
   /*Sets the font size to 16px*/
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
-  background-color: #0000CD;
-  color: #7FFFD4;
+  background-color: #5CDb95;
+  color: #EDF5E1;
 }
 
 
@@ -43,7 +43,7 @@ h3 {
 }
 
 a {
-  color: #7FFFD4;
+  color: #05386B;
 }
 
 
@@ -55,7 +55,7 @@ a {
 
   a:active {
       /* selected link*/
-      color: #7FFFD4;
+      color: #05386B;
   }
 
   li {
@@ -68,8 +68,8 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
-  background-color: #F1ab85;
-  color: #0000CD;
+  background-color: #05386B;
+  color: #5CDb95;
   margin-left: 100px;
   text-decoration: none;
   /*adds spacing to the button*/
@@ -94,8 +94,8 @@ button {
   }
 
 .button__secondary {
-  background-color: #7FFFD4;
-  color: #0000CD;
+  background-color: #05386B;
+  color: #5CDb95;
 }
 
 main {
@@ -175,7 +175,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  margin-top: 32rem;
+  margin-top: 5rem;
   margin-bottom: 10px;
 }
 
@@ -225,6 +225,7 @@ main {
   display: undefined;
   text-align: center;
   width: 100%;
+  color: #05386B;
 }
 
 .main-work {
@@ -232,6 +233,7 @@ main {
   display: undefined;
   text-align: center;
   width: 100%;
+  color: #05386B;
 }
 
 .grid {
@@ -240,8 +242,8 @@ main {
   margin: 15px 140px 20px 140px;
   -ms-grid-columns: 750px 20px 750px;
   grid-template-columns: 750px 750px;
-  -ms-grid-rows: 815px 20px 325px;
-  grid-template-rows: 815px 325px;
+  -ms-grid-rows: 55rem 20px 59rem;
+  grid-template-rows: 55rem 59rem;
   grid-gap: 20px;
   max-width: 100%;
 }
@@ -267,18 +269,22 @@ main {
 }
 
 .grid__item {
-  background-color: #7FFFD4;
-  color: #0000CD;
-  padding: 25px;
-  display: inline-block;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 51rem;
+  background-color: #05386B;
+  color: #EDF5E1;
+  padding: 1.5rem;
+}
+
+.grid__item a {
+padding: 0rem;
 }
 
 .project {
+margin-bottom: 1.5rem;
+height: 14rem;
+}
+
+.grid__item .github__button {
+padding: 0.5rem;
 margin-bottom: 0.5rem;
 height: 18rem;
 }
@@ -308,55 +314,149 @@ height: 18rem;
 }
 
 .contact__item {
-  background-color: #7FFFD4;
-  color: #0000CD;
+  background-color: #05386B;
+  color: #EDF5E1;
   display: inline-block;
   width: 100%;
   padding-left: 20px;
   height: 750px;
 }
 
-#fullname, #contact-email {
+#fullname {
   width: 30%;
+  background-color: #EDF5E1;
+}
+
+#contact-email {
+  width: 30%;
+  background-color: #EDF5E1;
 }
 
 #my-input {
   width: 275px;
+  background-color: #EDF5E1;
+}
+
+#bulleted-list {
+margin-right: 2rem;
+}
+
+#bulleted-list li::before {
+content: "•";
+padding: 0.5rem;
+}
+
+#project-one .project {
+height: 17rem;
+}
+
+#project-one .project {
+height: 14rem;
+}
+
+#project-one .project, #project-two .project {
+margin-bottom: 0rem;
+}
+
+#project-two p {
+margin-bottom: 3rem;
+}
+
+#project-two .project {
+height: 16rem;
+}
+
+#project-three .project {
+height: 22%;
+}
+
+#project-four p {
+margin-bottom: 1.5rem;
+}
+
+#project-four .project {
+height: 15rem;
+}
+
+#project-four .project img {
+height: 15rem;
+width: 18rem;
+}
+
+#project-five #bulleted-list {
+margin-bottom: 9.5rem;
+}
+
+#project-five p {
+margin-bottom: 5.5rem;
+}
+
+
+#project-six h2 {
+font-size: 1.45rem;
+}
+
+#project-six #bulleted-list {
+margin-bottom: 6rem;
+}
+
+#project-six .project {
+height: 17rem;
+}
+
+#project-six .project {
+height: 16rem;
+width: 17rem;
+}
+
+.thumbnail:hover {
+position: fixed;
+top:0rem;
+bottom:2rem;
+left:1rem;
+right:1rem;
+width:50%;
+height:50%;
+display:inline;
 }
 
 #aboutyou {
   width: 90%;
   height: 150px;
+  background-color: #EDF5E1;
 }
 
 #need {
   width: 90%;
   height: 150px;
+  background-color: #EDF5E1;
 }
 
 #message {
   width: 90%;
   height: 150px;
+  background-color: #EDF5E1;
 }
 
 .contact__button {
   margin-left: 250px;
-  background-color: #F1ab85;
-  color: #0000CD;
+  background-color: #EDF5E1;
+  color: #5CDb95;
 }
 
 #contact__button {
   margin-left: 250px;
-  background-color: #F1ab85;
-  color: #0000CD;
+  background-color: #EDF5E1;
+  color: #5CDb95;
 }
 
 .contact__item a {
-  color: #0000CD;
+  color: #EDF5E1;
 }
 
 .main-work h1 {
   text-align: center;
+  color: #05386B;
 }
 
 
@@ -373,6 +473,7 @@ height: 18rem;
 
 .social-media {
   text-align: center;
+  color: #05386B;
 }
 
   .social-media p {
@@ -404,11 +505,11 @@ height: 18rem;
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
-  background-color: #0000CD;
-  color: #F1ab85;
+  background-color: #EDF5E1;
+  color: #05386B;
   text-decoration: none;
   /*adds spacing to the button*/
-  padding: 20px;
+  padding: 1rem;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -439,8 +540,8 @@ button:focus {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #F1ab85;
-  color: #0000CD;
+  background-color: #05386B;
+  color: #EDF5E1;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -462,8 +563,8 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #F1ab85;
-  color: #0000CD;
+  background-color: #05386B;
+  color: #EDF5E1;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -554,6 +655,62 @@ svg {
       margin-top: 25px;
   }
 
+  .grid {
+    width: 30rem;
+    margin: 0rem 0rem 0rem 5rem;
+    -ms-grid-rows: 67rem 20px 59rem;
+    grid-template-rows: 67rem 59rem;
+  }
+
+  .grid h2 {
+    font-size: 2rem;
+  }
+
+  .social-media p { 
+    font-size: 1rem;
+  }
+
+  #project-one .project { 
+    margin-bottom: 2rem;
+  }
+
+  #project-two .project { 
+    margin-bottom: 2rem;
+  }   
+  
+  #project-three .project { 
+    margin-bottom: 2rem;
+  }   
+  
+  #project-four .project { 
+    margin-bottom: 2rem;
+  }   
+  
+  #project-five .project { 
+    margin-bottom: 2rem;
+  }   
+
+  #project-five p {
+    margin-bottom: 2.5rem;
+}
+  
+#project-five #bulleted-list {
+  margin-bottom: 3.5rem;
+}
+
+  #project-six .project { 
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  #project-six #bulleted-list {
+    margin-bottom: 0rem;
+}
+
+  .grid p, .grid ul, .grid a {
+    font-size: 1.25rem;
+  }
+
   .grid, .contact__grid {
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -584,6 +741,7 @@ svg {
 
   #contact__item-four {
       height: 275px;
+      margin-top: 4rem;
   }
 
   /*svg {
@@ -598,7 +756,7 @@ svg {
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
   body {
-      font-size: 0.75em;
+      font-size: 0.8em;
       width: 100%;
       margin: 0px;
       -ms-grid-columns: 700px 0px;
@@ -634,7 +792,7 @@ svg {
   }
 
   body {
-      margin: 15px 10px 300px 35px;
+      margin: 0rem 1rem 0rem 1rem;
   }
 
   .page-header {
@@ -649,25 +807,50 @@ svg {
 
   
   .grid {
-      -ms-grid-columns: 1fr 20px 1fr;
-      grid-template-columns: 1fr 1fr;
+      -ms-grid-columns: 22.5rem 20px 22.5rem;
+      grid-template-columns: 22.5rem 22.5rem;
       display: -ms-grid;
       display: grid;
-      margin: 15px 100px 20px 100px;
-      grid-gap: 20px;
+      margin: 0rem 0rem 0rem 0rem;
+      -ms-grid-rows: 53rem 20px 59rem;
+      grid-template-rows: 53rem 59rem;
+  }
+
+  
+  .grid > *:nth-child(1) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+  }
+
+  
+  .grid > *:nth-child(2) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+  }
+
+  
+  .grid > *:nth-child(3) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+  }
+
+  
+  .grid > *:nth-child(4) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 3;
   }
 
 
   .contact__grid {
-      -ms-grid-columns: 1fr 20px 1fr;
-      grid-template-columns: 1fr 1fr;
+      -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       display: -ms-grid;
       display: grid;
-      margin: 0px 85px 5px 0px;
+      margin: 0px 85px 0rem 0px;
       -ms-grid-columns: 440px 20px 0px;
       grid-template-columns: 440px 0px;
-      -ms-grid-rows: 365px 20px 0px;
-      grid-template-rows: 365px 0px;
+      -ms-grid-rows: 2rem 20px 0px;
+      grid-template-rows: 2rem 0px;
       grid-gap: 20px;
       max-width: 665px;
   }
@@ -710,14 +893,26 @@ svg {
 
 
   .contact__grid > *:nth-child(3) {
-      -ms-grid-row: 3;
-      -ms-grid-column: 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 5;
   }
 
 
   .contact__grid > *:nth-child(4) {
       -ms-grid-row: 3;
+      -ms-grid-column: 1;
+  }
+
+
+  .contact__grid > *:nth-child(5) {
+      -ms-grid-row: 3;
       -ms-grid-column: 3;
+  }
+
+
+  .contact__grid > *:nth-child(6) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
   }
 
   #contact__item-one {
@@ -734,24 +929,81 @@ svg {
 
   #contact__item-three {
       height: 150px;
-      margin-top: 405px;
-      width: 925px;
+      margin-top: 0rem;
+      width: 54rem;
   }
 
   #contact__item-four {
       height: 200px;
       margin-top: 185px;
-      width: 925px;
+      width: 54rem;
   }
 
   .main-contact h1 {
       font-size: 25px;
+      color: #05386B;
   }
 
   .navigation-list li {
       font-size: 1.25em;
   }
   
+  #project-one #bulleted-list, #project-one .project {
+    margin-bottom: 3rem;
+  }
+
+  #project-two .project img {
+    margin-left: 1rem;
+  }
+
+  #project-two .project {
+    height: 18rem;
+    margin-bottom: 2rem;
+    width: 90%;
+  }
+
+  #project-three #bulleted-list {
+    margin-bottom: 6.5rem;
+  }
+
+  #project-three .project {
+    margin-bottom: 2.5rem;
+    height: 27%;
+  }
+
+  #project-four .project {
+    margin-bottom: 2.5rem;
+  }
+
+  #project-four #bulleted-list {
+    margin-bottom: 2rem;
+  }
+
+  #project-five p {
+    margin-bottom: 3.5rem;
+}
+
+  #project-five #bulleted-list {
+    margin-bottom: 3.5rem;
+}
+
+#project-five .project {
+  margin-bottom: 2.5rem;
+}
+
+#project-six #bulleted-list {
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+#project-six .project {
+height: 12rem;
+width: 20rem;
+}
+
+#contact-social {
+margin-top: 20rem;
+}
 
   /*svg {
     margin-top: var(--margin-top-50);
@@ -769,14 +1021,54 @@ svg {
   }
 
   .grid {
-      -ms-grid-columns: 1fr 20px 1fr;
-      grid-template-columns: 1fr 1fr;
+      -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   }
 
   .contact__grid {
-      -ms-grid-columns: 1fr 20px 1fr;
-      grid-template-columns: 1fr 1fr;
+      -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .grid {
+    margin: 1rem 1rem 10rem 1rem;
+    -ms-grid-rows: 63rem 20px 65rem;
+    grid-template-rows: 63rem 65rem;
+  }
+
+  #project-one #bulleted-list {
+    margin-bottom: 3rem;
+  }
+
+  #project-one .project {
+    height: 17rem;
+    margin-bottom: 2.5rem;
+}
+
+#project-two #bulleted-list {
+  margin-bottom: 4rem;
+}
+
+#project-two .project {
+  margin-bottom: 4.5rem;
+}
+
+#project-three #bulleted-list {
+  margin-bottom: 1.5rem;
+}
+
+#project-three .project {
+  height: 16rem;
+  margin-bottom: 3rem;
+}
+
+#project-four #bulleted-list {
+  margin-bottom: 2rem;
+}
+
+#project-five #bulleted-list {
+  margin-bottom: 12.5rem;
+}
 
   .contact__item {
       height: 750px;
@@ -817,6 +1109,16 @@ svg {
       height: 250px;
       margin-top: 0px;
   }
+
+  #project-six .project {
+    height: 16rem;
+    width: 25rem;
+    margin: auto;
+  }
+
+  #project-six #bulleted-list {
+    margin-bottom: 11rem;
+}
 
 @-webkit-keyframes sky-color-change {
   0% {

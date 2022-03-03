@@ -37,45 +37,9 @@
     <main class="main-contact">
         <h1>Choose from the following options to contact me:</h1> <br>
         <div class="contact__grid">
-            <div class="contact__item" id="contact__item-one">
-                <h2>Option 1: Fill out a little information about yourself below and I'll get back to you in a jiffy!</h2>
-                <p><em>*All fields required</em></p><br>
-                <form>
-                    <label class="standard-label" for="fullname">Please enter your full name:</label>   <br>
-                    <input type="text" id="fullname" name="fullname" required>   <br><br>
-                    <label for="aboutyou">Please tell me a little about yourself (240 characters max!):</label><br>
-                    <input type="text" id="aboutyou" name="aboutyou" maxlength="240" required>
-                    <br><br>
-                    <label for="need">
-                        Please tell me how I can help you! (240 characters max!):
-                    </label>
-                    <br>
-                    <input type="text" id="need" name="need" maxlength="240" required>
-                    <br><br>
-
-                    <button type="submit" class="contact__button">Hit me up!</button><br><br>
-                </form>
-            </div>
-        </div>
-        <div class="contact__grid">
-            <div class="contact__item" id="contact__item-two">
-                <h2>Option 2: Fill out this information here...</h2>
-                <form method="post">
-                    <label class="standard-label" for="contact-email">E-mail:*      </label>
-                    <input type="email" id="contact-email" required><br><br>
-                    <label for="my-input">Telephone:   </label>
-                    <input id="my-input"><br><br>
-                    <label for="message">Message (240 characters max!):*     </label>
-                    <input id="message" maxlength="240" required>
-                    <p>*Required field</p>
-                    <input type="submit" value="Send message" id="contact__button">
-                </form><br>
-            </div>
-        </div>
-        <div class="contact__grid">
             <div class="contact__item" id="contact__item-three">
                 <h2>
-                    Option 3: Contact me with
+                    Contact me with
                     <a href="mailto:dg98211@gmail.com?subject=Request%20for%20Services&body=I%20have%20seen%20a%20sample%20of%20your%20work%20and%20am%20very%20interested%20in%20recruiting%20your%20services%20for%20a%20project%20I%20have%20set%20out%20to%20complete!"> this template email!</a>
                 </h2><br>
             </div>
@@ -85,18 +49,23 @@
                 <h2>Or, use the following info to contact me at your discretion!</h2>
                 <p>
                     Telphone # <a href="tel:206-496-4427">+1 206-496-4427</a><br>
-                    Skype <a href="skype:live:dg982_2">live:dg982_2</a><br>
                         <a href="mailto:dg98211@gmail.com?subject=Request%20for%20Services&body=I%20have%20seen%20a%20sample%20of%20your%20work%20and%20am%20very%20interested%20in%20recruiting%20your%20services%20for%20a%20project%20I%20have%20set%20out%20to%20complete!">dg98211@gmail.com</a>
                 </p>
             </div>
         </div>
     </main>
     <footer class="page-footer">
-        <div class="social-media">
+        <div class="social-media" id="contact-social">
             <p>Find me on</p>
-            <img src="img/github_icon.svg" alt="Github">
-            <img src="img/twitter_icon.svg" alt="Twitter">
-            <img src="img/linkedin_icon.svg" alt="LinkedIn">
+            <a href="https://github.com/dagrimb" target="_blank" rel="noopener noreferrer">
+              <img src="img/github_icon.svg" class="social-media__icon" alt="Github">
+            </a>
+            <a href="https://twitter.com/DavidGrimberg1" target="_blank" rel="noopener noreferrer">
+              <img src="img/twitter_icon.svg" class="social-media__icon" alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com/in/david-grimberg/" target="_blank" rel="noopener noreferrer">
+              <img src="img/linkedin_icon.svg" class="social-media__icon" alt="LinkedIn">
+            </a>
         </div>
     </footer>
 
