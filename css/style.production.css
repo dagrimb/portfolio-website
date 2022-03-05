@@ -119,17 +119,25 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: -webkit-center;
 }
 
 .profile__portrait {
   text-align: center;
+  background-color: #5CDb95;
+  border-radius: 11px;
+  -webkit-box-shadow: 0 3px 10px #8b8eaf;
+          box-shadow: 0 3px 10px #8b8eaf;
+  padding: 20px;
+  margin: 10px; 
+  width: 40%;
 }
 
 .profile__portrait img {
-  height: 300px;
-  width: 225px;
+  height: 17rem;
+  width: 14rem;
   margin: auto;
-  border-radius: 50%;
+  border-radius: 10%;
   display: undefined;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -189,7 +197,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%
+  width: 100%;
+  -webkit-box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+          box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
 }
 
 .page-header__item {
@@ -271,8 +281,20 @@ main {
 .grid__item {
   background-color: #05386B;
   color: #EDF5E1;
-  padding: 1.5rem;
+  padding: 20px;
+  margin: 10px;    
+  border-radius: 11px;
+  -webkit-box-shadow: 0 1rem 1rem #8b8eaf;
+          box-shadow: 0 1rem 1rem #8b8eaf;
+  margin: 1rem;
 }
+
+.grid__item #api-link {
+-webkit-box-shadow: none;
+        box-shadow: none;
+
+}
+
 
 .grid__item a {
 padding: 0rem;
