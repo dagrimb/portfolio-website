@@ -7,6 +7,7 @@
 
 a {
   color: #05386B;
+  font-weight: bold;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
   /*Sets the font size to 16px*/
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
-  background-color: #5CDb95;
+  background-color: #EDF5E1;
   color: #EDF5E1;
 }
 
@@ -35,6 +36,11 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: 700;
+  margin: 1rem 5rem;
+}
+
+p {
+font-size: 0.85rem;
 }
 
 .cv {
@@ -99,44 +105,39 @@ button {
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .main-about {
   margin-top: 40px;
   text-align: center;
+  color: #05386B;
 }
 
 .profile {
-  max-width: 700px;
+  max-width: 98%;
   display: undefined;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: -webkit-center;
 }
 
 .profile__portrait {
-  text-align: center;
-  background-color: #5CDb95;
   border-radius: 11px;
-  -webkit-box-shadow: 0 3px 10px #8b8eaf;
-          box-shadow: 0 3px 10px #8b8eaf;
+  -webkit-box-shadow: 0 2px 3px #8b8eaf;
+          box-shadow: 0 2px 3px #8b8eaf;
   padding: 20px;
   margin: 10px; 
-  width: 40%;
+  margin-left: 5rem;
+  width: 100%;
 }
 
-.profile__portrait img {
+.portrait img {
   height: 17rem;
   width: 14rem;
-  margin: auto;
   border-radius: 10%;
   display: undefined;
   -webkit-box-align: center;
@@ -148,6 +149,7 @@ main {
 .profile__welcome {
   display: undefined;
   text-align: center;
+  color: #05386B;
 }
 
 .enterprise_logo {
@@ -200,6 +202,7 @@ main {
   width: 100%;
   -webkit-box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
           box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
+  background-color: #5CDb95;
 }
 
 .page-header__item {
@@ -207,7 +210,7 @@ main {
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
   width: 25%;
-  height: 150px;
+  height: 4.5rem;
   margin: 25px;
 }
 
@@ -292,6 +295,7 @@ main {
 .grid__item #api-link {
 -webkit-box-shadow: none;
         box-shadow: none;
+font-weight: normal;
 
 }
 
@@ -430,16 +434,6 @@ height: 16rem;
 width: 17rem;
 }
 
-.thumbnail:hover {
-position: fixed;
-top:0rem;
-bottom:2rem;
-left:1rem;
-right:1rem;
-width:50%;
-height:50%;
-display:inline;
-}
 
 #aboutyou {
   width: 90%;
@@ -447,11 +441,13 @@ display:inline;
   background-color: #EDF5E1;
 }
 
+
 #need {
   width: 90%;
   height: 150px;
   background-color: #EDF5E1;
 }
+
 
 #message {
   width: 90%;
@@ -478,6 +474,7 @@ display:inline;
 .main-work h1 {
   text-align: center;
   color: #05386B;
+  margin-top: 5rem;
 }
 
 
@@ -660,7 +657,7 @@ svg {
 @media all and (max-width: 640px) {
   body {
       font-size: 0.5em;
-      width: 640px;
+      width: 100%;
   }
 
   .about__face {
@@ -668,19 +665,68 @@ svg {
       height: 320px;
   }
 
+.page-header__item {
+  margin: 0rem;
+}
+
+.navigation-list {
+  margin-right: 0rem;
+}
+
+.navigation-list li {
+  margin-left: 0rem;
+}
+
+  .navigation-list li a {
+    margin-right: 0.1rem;
+    font-size: 1rem;
+  }
+
   .page-header {
       width: 100%;
   }
 
   .page-header__item {
-      margin-top: 25px;
+    margin: 0.5rem 0.05rem 1rem 0.05rem;
+    height: 2.5rem;
+  }
+
+  .page-header__item:last-child {
+    text-align: inherit;
+  }
+
+  .profile_about {
+    margin: 0rem 2.5rem;
+  }
+
+  .profile__welcome h3 {
+    margin: 1rem 2rem;
+  }
+
+  td, .profile_about ul li {
+    font-size: 0.75rem;
+  }
+
+  .profile_about h3 {
+    margin: 1rem 2rem;
+  }
+
+  .cv a {
+    width: 10rem;
+    font-size: 0.75rem;
+    height: 2.5rem;
+  }
+
+  .work__link {
+    margin-top: 2rem;
+    font-size: 0.75rem;
   }
 
   .grid {
     width: 30rem;
-    margin: 0rem 0rem 0rem 5rem;
-    -ms-grid-rows: 67rem 20px 59rem;
-    grid-template-rows: 67rem 59rem;
+    margin: 0rem 1rem;
+    -ms-grid-rows: 73rem 20px 69rem;
+    grid-template-rows: 73rem 69rem;
   }
 
   .grid h2 {
@@ -689,6 +735,19 @@ svg {
 
   .social-media p { 
     font-size: 1rem;
+  }
+
+  .main-contact h1 {
+    font-size: 1.25rem;
+    margin: 2rem 1rem 0rem 1rem;
+  }
+
+  .contact__item {
+    width: 94%;
+  }
+
+  .contact__item h2 {
+    font-size: 1.25rem;
   }
 
   #project-one .project { 
@@ -700,7 +759,7 @@ svg {
   }   
   
   #project-three .project { 
-    margin-bottom: 2rem;
+    height: 19%;
   }   
   
   #project-four .project { 
@@ -708,7 +767,7 @@ svg {
   }   
   
   #project-five .project { 
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
   }   
 
   #project-five p {
@@ -757,12 +816,12 @@ svg {
 
 
   #contact__item-three {
-      height: 150px;
+      height: 8rem;
   }
 
   #contact__item-four {
-      height: 275px;
-      margin-top: 4rem;
+      height: 14rem;
+      margin-top: 2rem;
   }
 
   /*svg {
@@ -770,8 +829,15 @@ svg {
   }*/
 }
 
+@media all and (min-width: 320px) and (max-width: 425px) {
 
-@media all and (min-width: 640px) and (max-width: 768px) {
+}
+
+@media all and (min-width: 375px) and (max-width: 425px) {
+
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
 
 }
 
@@ -802,6 +868,62 @@ svg {
       -ms-grid-column: 2;
   }
 
+  p {
+    font-size: 0.9rem;
+  }
+
+  #project-one {
+    height: 54rem;
+  }
+
+  #project-one .project a.github__button {
+    margin-top: 0.5rem;
+  }
+
+  #project-two {
+    height: 54rem;
+  }
+
+  #project-two #bulleted-list {
+    margin-bottom: 5rem;
+  }
+
+  #project-three {
+    margin-top: 3rem;
+    height: 59rem;
+  }
+
+  #project-four {
+    margin-top: 3rem;
+    height: 59rem;
+  }
+
+  #project-five {
+    margin-top: 3rem;
+    height: 59rem;
+  }
+
+  #project-five .buttons {
+    margin-top: 4rem;
+  }
+
+  #project-five .project {
+    height: 10rem;
+  }
+
+  #project-five .project a {
+    width: 75%;
+  }
+
+  #project-six {
+    margin-top: 3rem;
+    height: 59rem;
+  }
+
+  #project-six {
+    margin-bottom: 7rem;
+  }
+
   .about__face {
       width: 210px;
       height: 280px;
@@ -810,10 +932,12 @@ svg {
 
   .navigation-list {
       padding-left: 0px;
+      font-size: 1rem;
   }
 
   body {
-      margin: 0rem 1rem 0rem 1rem;
+      margin: 0rem;
+      max-width: 100%;
   }
 
   .page-header {
@@ -826,35 +950,34 @@ svg {
       margin-right: 35px;
   }
 
+  .profile_about {
+    margin: 0rem 6rem;
+  }
   
   .grid {
-      -ms-grid-columns: 22.5rem 20px 22.5rem;
-      grid-template-columns: 22.5rem 22.5rem;
+      -ms-grid-columns: 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr;
       display: -ms-grid;
       display: grid;
-      margin: 0rem 0rem 0rem 0rem;
+      margin: 0rem 1rem;
       -ms-grid-rows: 53rem 20px 59rem;
       grid-template-rows: 53rem 59rem;
   }
-
   
   .grid > *:nth-child(1) {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
   }
-
   
   .grid > *:nth-child(2) {
       -ms-grid-row: 1;
       -ms-grid-column: 3;
   }
-
   
   .grid > *:nth-child(3) {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
   }
-
   
   .grid > *:nth-child(4) {
       -ms-grid-row: 3;
@@ -867,13 +990,16 @@ svg {
       grid-template-columns: 1fr 1fr 1fr;
       display: -ms-grid;
       display: grid;
-      margin: 0px 85px 0rem 0px;
+      margin-left: 10rem;
       -ms-grid-columns: 440px 20px 0px;
       grid-template-columns: 440px 0px;
       -ms-grid-rows: 2rem 20px 0px;
       grid-template-rows: 2rem 0px;
       grid-gap: 20px;
       max-width: 665px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
   }
 
 
@@ -951,26 +1077,33 @@ svg {
   #contact__item-three {
       height: 150px;
       margin-top: 0rem;
-      width: 54rem;
+      width: 42rem;
+      -ms-grid-column-align: center;
+          justify-self: center;
   }
 
   #contact__item-four {
       height: 200px;
-      margin-top: 185px;
-      width: 54rem;
+      margin-top: 8rem;
+      width: 42rem;
+      -ms-grid-column-align: center;
+          justify-self: center;
   }
 
   .main-contact h1 {
       font-size: 25px;
       color: #05386B;
+      margin-top: 3rem;
   }
 
   .navigation-list li {
       font-size: 1.25em;
   }
   
+
   #project-one #bulleted-list, #project-one .project {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    height: 10rem;
   }
 
   #project-two .project img {
@@ -978,26 +1111,27 @@ svg {
   }
 
   #project-two .project {
-    height: 18rem;
+    height: 11.5rem;
     margin-bottom: 2rem;
-    width: 90%;
+    width: 100%;
+    margin-top: 3rem;
   }
 
   #project-three #bulleted-list {
-    margin-bottom: 6.5rem;
+    margin-bottom: 4.5rem;
   }
 
   #project-three .project {
-    margin-bottom: 2.5rem;
-    height: 27%;
+    height: 21%;
   }
 
-  #project-four .project {
-    margin-bottom: 2.5rem;
-  }
 
   #project-four #bulleted-list {
     margin-bottom: 2rem;
+  }
+
+  #project-four .project {
+    height: 11.5rem;
   }
 
   #project-five p {
@@ -1005,12 +1139,10 @@ svg {
 }
 
   #project-five #bulleted-list {
-    margin-bottom: 3.5rem;
+    margin-bottom: 6.5rem;
 }
 
-#project-five .project {
-  margin-bottom: 2.5rem;
-}
+
 
 #project-six #bulleted-list {
   margin-bottom: 2rem;
@@ -1019,7 +1151,8 @@ svg {
 
 #project-six .project {
 height: 12rem;
-width: 20rem;
+width: 100%;
+margin-bottom: 3rem;
 }
 
 #contact-social {
@@ -1037,8 +1170,6 @@ margin-top: 20rem;
   body {
       font-size: 1em;
       width: 100%;
-      margin-left: 1em;
-      margin-top: 20px;
   }
 
   .grid {
@@ -1087,8 +1218,20 @@ margin-top: 20rem;
   margin-bottom: 2rem;
 }
 
+#project-four .project {
+  margin-bottom: 4rem;
+}
+
 #project-five #bulleted-list {
   margin-bottom: 12.5rem;
+}
+
+#project-five .project a {
+  height: 16rem;
+}
+
+#project-five .buttons {
+  margin-top: 3rem;
 }
 
   .contact__item {
