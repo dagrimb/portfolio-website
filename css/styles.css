@@ -523,7 +523,7 @@ button:hover, button:focus {
     }
 
 svg {
-    max-width: 25%;
+    max-width: 15%;
     margin-top: var(--mt-25);
     margin-left: var(--ml-auto);
     margin-right: var(--mr-auto);
@@ -547,192 +547,423 @@ svg {
     height: 275px;
 }
 
-@media all and (max-width: 640px) {
-    body {
-        font-size: 0.5em;
-        width: 100%;
-    }
 
-    .about__face {
-        width: 240px;
-        height: 320px;
-    }
+
+@media only screen and (max-width: 320px) {
+  body {
+    width: 25rem;
+  }
+
+  .page-header {
+    width: 27rem;
+  }
 
   .page-header__item {
-    margin: 0rem;
+    height: 2.5rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+    max-width: 9rem;
   }
 
   .navigation-list {
-    margin-right: 0rem;
+    margin: 0rem;
+    padding: 0rem;
+    width: 15rem;
   }
 
-  .navigation-list li {
-    margin-left: 0rem;
+  .navigation-list li a {
+    font-size: 1rem;
   }
 
-    .navigation-list li a {
-      margin-right: 0.1rem;
-      font-size: 1rem;
-    }
-
-    .page-header {
-        width: 100%;
-    }
-
-    .page-header__item {
-      margin: 0.5rem 0.05rem 1rem 0.05rem;
-      height: 2.5rem;
-    }
-
-    .page-header__item:last-child {
-      text-align: inherit;
-    }
-
-    .profile_about {
-      margin: 0rem 2.5rem;
-    }
-
-    .profile__welcome h3 {
-      margin: 1rem 2rem;
-    }
-
-    td, .profile_about ul li {
-      font-size: 0.75rem;
-    }
-
-    .profile_about h3 {
-      margin: 1rem 2rem;
-    }
-
-    .cv a {
-      width: 10rem;
-      font-size: 0.75rem;
-      height: 2.5rem;
-    }
-
-    .work__link {
-      margin-top: 2rem;
-      font-size: 0.75rem;
-    }
-
-    .grid {
-      width: 30rem;
-      margin: 0rem 1rem;
-      grid-template-rows: 73rem 69rem;
-    }
-
-    .grid h2 {
-      font-size: 2rem;
-    }
-
-    .social-media p { 
-      font-size: 1rem;
-    }
-
-    .main-contact h1 {
-      font-size: 1.25rem;
-      margin: 2rem 1rem 0rem 1rem;
-    }
-
-    .contact__item {
-      width: 94%;
-    }
-
-    .contact__item h2 {
-      font-size: 1.25rem;
-    }
-
-    #project-one .project { 
-      margin-bottom: 2rem;
-    }
-
-    #project-two .project { 
-      margin-bottom: 2rem;
-    }   
-    
-    #project-three .project { 
-      height: 19%;
-    }   
-    
-    #project-four .project { 
-      margin-bottom: 2rem;
-    }   
-    
-    #project-five .project { 
-      margin-bottom: 6rem;
-    }   
-
-    #project-five p {
-      margin-bottom: 2.5rem;
+  .profile {
+    max-width: 100%;
   }
-    
+
+  .portrait {
+    text-align: center;
+  }
+
+  .portrait img {
+    height: 13rem;
+    width: 11rem;
+    margin-right: 4rem;
+  }
+
+  .profile__welcome h1 {
+    margin: 2.67rem 0.67rem;
+  }
+
+  .profile__welcome h3 {
+    margin: 1rem 1.75rem;
+  }
+
+  .main-about {
+    margin-top: 0rem;
+  }
+
+  .profile_about {
+    margin: 0rem 2.5rem;
+  }
+
+  svg {
+    max-width: 25%;
+  }
+
+  .main-contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact__grid {
+    margin: 0rem;
+  }
+
+  .page-header__item {
+    max-width: 8rem;
+  }
+
+  .page-header__item:last-child {
+    text-align: inherit;
+  }
+
+  #contact__item-three, #contact__item-four {
+    margin: 1rem;
+  }
+
+  .main-contact h1 {
+    margin: 5rem 3rem 2rem 3rem;
+  }
+
+  #contact__item-four {
+    height: 15rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 0rem 1.5rem;
+    grid-template-rows: 55rem 53rem;
+  }
+
+  #project-two .project {
+    height: 13rem;
+  }
+
+  #project-four .project {
+    height: 13rem;
+    margin-bottom: 0rem;
+  }
+
+  #project-five p {
+    margin-bottom: 2.5rem;
+  }
+
   #project-five #bulleted-list {
     margin-bottom: 3.5rem;
-}
-
-    #project-six .project { 
-      margin-bottom: 2rem;
-      width: 100%;
-    }
-
-    #project-six #bulleted-list {
-      margin-bottom: 0rem;
   }
 
-    .grid p, .grid ul, .grid a {
-      font-size: 1.25rem;
-    }
+  #project-five .buttons {
+    margin-top: 3rem;
+  }
 
-    .grid, .contact__grid {
-        grid-template-columns: 1fr;
-    }
+  #project-six p {
+    margin-bottom: 2.5rem;
+  }
 
-    .contact__grid {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+  #project-six #bulleted-list {
+    margin-bottom: 2rem;
+  }
 
-    .contact_item {
-        width: 97%;
-        margin-bottom: 15px;
-    }
-
-    #contact__item-one {
-        height: 700px;
-    }
-
-    #contact__item-two {
-        height: 425px;
-    }
-
-
-    #contact__item-three {
-        height: 8rem;
-    }
-
-    #contact__item-four {
-        height: 14rem;
-        margin-top: 2rem;
-    }
-
-    /*svg {
-        margin-top: 15px;
-    }*/
-}
-
-@media all and (min-width: 320px) and (max-width: 425px) {
+  #project-six .project {
+    width: 19rem;
+    height: 12rem;
+  }
 
 }
 
-@media all and (min-width: 375px) and (max-width: 425px) {
+@media all and (min-width: 321px) and (max-width: 375px) {
+
+  body {
+    width: 25rem;
+  }
+
+  .page-header {
+    width: 26rem;
+  }
+
+  .page-header__item {
+    height: 2.5rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+    max-width: 9rem;
+  }
+
+  .navigation-list {
+    margin: 0rem;
+    padding: 0rem;
+    width: 15rem;
+  }
+
+  .navigation-list li a {
+    font-size: 1rem;
+  }
+
+  .profile {
+    max-width: 100%;
+  }
+
+  .portrait {
+    text-align: center;
+  }
+
+  .portrait img {
+    height: 13rem;
+    width: 11rem;
+    margin-right: 4rem;
+  }
+
+  .profile__welcome h1 {
+    margin: 2.67rem 0.67rem;
+  }
+
+  .profile__welcome h3 {
+    margin: 1rem 1.75rem;
+  }
+
+  .main-about {
+    margin-top: 0rem;
+  }
+
+  .profile_about {
+    margin: 0rem 2.5rem;
+  }
+
+  svg {
+    max-width: 25%;
+  }
+
+  .main-contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact__grid {
+    margin: 0rem;
+  }
+
+  .page-header__item {
+    max-width: 8rem;
+  }
+
+  .page-header__item:last-child {
+    text-align: inherit;
+  }
+
+  #contact__item-three, #contact__item-four {
+    margin: 1rem;
+  }
+
+  .main-contact h1 {
+    margin: 5rem 3rem 2rem 3rem;
+  }
+
+  #contact__item-four {
+    height: 15rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 0rem 1.5rem;
+    grid-template-rows: 55rem 53rem;
+  }
+
+  #project-two .project {
+    height: 13rem;
+  }
+
+  #project-four .project {
+    height: 13rem;
+    margin-bottom: 0rem;
+  }
+
+  #project-five p {
+    margin-bottom: 2.5rem;
+  }
+
+  #project-five #bulleted-list {
+    margin-bottom: 3.5rem;
+  }
+
+  #project-five .buttons {
+    margin-top: 3rem;
+  }
+
+  #project-six p {
+    margin-bottom: 2.5rem;
+  }
+
+  #project-six #bulleted-list {
+    margin-bottom: 2rem;
+  }
+
+  #project-six .project {
+    width: 19rem;
+    height: 12rem;
+  }
 
 }
 
-@media all and (min-width: 425px) and (max-width: 768px) {
+@media all and (min-width: 376px) and (max-width: 425px) {
+
+  .page-header__item {
+    height: 2.5rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+    max-width: 9rem;
+  }
+
+  .navigation-list {
+    margin: 0rem;
+    padding: 0rem;
+    width: 15rem;
+  }
+
+  .navigation-list li a {
+    font-size: 1rem;
+  }
+
+  .profile_about {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .main-contact h1 {
+    margin: 5rem 2rem 2rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .contact__grid {
+    margin: 0;
+  }
+
+  .contact__item {
+    width: 90%;
+  }
+
+  #contact__item-three h2, #contact__item-four h2 {
+    font-size: 1.25rem;
+  }
+
+  #contact__item-three, #contact__item-four {
+    margin: 1rem;
+    width: 85%;
+  }
+
+  #contact__item-four {
+    height: 14rem;
+  }
+
+  svg {
+    max-width: 25%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 0rem 1.5rem;
+    grid-template-rows: 55rem 53rem;
+  }
+
+  #project-two .project {
+    height: 13rem;
+  }
+
+  #project-four .project {
+    height: 13rem;
+    margin-bottom: 0rem;
+  }
+
+  #project-five p {
+    margin-bottom: 2.5rem;
+  }
+
+  #project-five #bulleted-list {
+    margin-bottom: 3.5rem;
+  }
+
+  #project-five .buttons {
+    margin-top: 3rem;
+  }
+
+  #project-six p {
+    margin-bottom: 2.5rem;
+  }
+
+  #project-six #bulleted-list {
+    margin-bottom: 2rem;
+  }
+
+  #project-six .project {
+    width: 19rem;
+    height: 12rem;
+  }
 
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 426px) and (max-width: 768px) {
+
+
+.grid {
+  grid-template-columns: 1fr;
+  margin: 1rem;
+  grid-template-rows: 73rem 68rem;
+}
+
+.grid__item, .grid__item p {
+  font-size: 1.25rem;
+}
+
+#project-one .buttons {
+  margin-top: 13rem;
+}
+
+#project-two .buttons {
+  margin-top: 10rem;
+}
+
+#project-three .buttons {
+  margin-top: 10rem;
+}
+
+#project-four .buttons {
+  margin-top: 12rem;
+}
+
+#project-five #bulleted-list {
+  margin-bottom: 5.5rem;
+}
+
+#project-five .buttons {
+  margin-top: 23rem;
+}
+
+#project-six .project {
+  width: 100%;
+}
+
+#project-six .buttons {
+  margin-top: 12rem;
+}
+
+.main-contact h1 {
+  margin: 5rem 4rem 2rem 4rem;
+}
+
+.contact__item {
+  display: grid;
+}
+
+#contact__item-three, #contact__item-four {
+  width: 90%;
+  margin-left: 2rem;
+}
+
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
     body {
         font-size: 0.8em;
         width: 100%;
@@ -773,11 +1004,11 @@ svg {
 
     #project-five {
       margin-top: 3rem;
-      height: 59rem;
+      height: 55rem;
     }
 
     #project-five .buttons {
-      margin-top: 4rem;
+      margin-top: 8rem;
     }
 
     #project-five .project {
@@ -790,7 +1021,7 @@ svg {
 
     #project-six {
       margin-top: 3rem;
-      height: 59rem;
+      height: 55rem;
     }
 
     #project-six {
@@ -888,9 +1119,14 @@ svg {
       height: 10rem;
     }
 
+    #project-one .buttons {
+      margin-top: 8rem;
+    }
+
     #project-two .project img {
       margin-left: 1rem;
     }
+
 
     #project-two .project {
       height: 11.5rem;
@@ -899,14 +1135,21 @@ svg {
       margin-top: 3rem;
     }
 
+    #project-two .buttons {
+      margin-top: 6rem;
+    }
+
     #project-three #bulleted-list {
-      margin-bottom: 4.5rem;
+      margin-bottom: 6.5rem;
     }
 
     #project-three .project {
       height: 21%;
     }
 
+    #project-three .buttons {
+      margin-top: 5.5rem;
+    }
 
     #project-four #bulleted-list {
       margin-bottom: 2rem;
@@ -916,26 +1159,32 @@ svg {
       height: 11.5rem;
     }
 
+    #project-four .buttons {
+      margin-top: 6rem;
+    }
+
     #project-five p {
       margin-bottom: 3.5rem;
   }
 
     #project-five #bulleted-list {
-      margin-bottom: 6.5rem;
+      margin-bottom: 3.5rem;
   }
 
 
 
   #project-six #bulleted-list {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     margin-left: 1rem;
 }
 
 #project-six .project {
   height: 12rem;
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
+
+
 
 #contact-social {
   margin-top: 20rem;
@@ -952,6 +1201,18 @@ svg {
     body {
         font-size: 1em;
         width: 100%;
+    }
+
+    .profile__welcome h3 {
+      margin: 1rem 11rem;
+    }
+
+    .profile_welcome h3, .profile_about p, .work__link {
+      font-size: 1rem;
+    }
+
+    .profile_about p {
+      margin: 1rem 3rem;
     }
 
     .grid, .contact__grid {
