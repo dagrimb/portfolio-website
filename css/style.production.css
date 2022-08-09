@@ -1,8 +1,8 @@
 ﻿/*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
 */
 
 a {
@@ -13,8 +13,6 @@ a {
 body {
   font-family: 'Castoro', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  /*Sets the font size to 16px*/
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
   background-color: #EDF5E1;
@@ -28,22 +26,16 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
   font-weight: 700;
   margin-top: 50px;
 }
 
-h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 1rem 5rem;
-}
 
 p {
 font-size: 0.85rem;
 }
 
-.cv {
+.resume {
   margin-left: 25px;
   margin-top: 50px;
 }
@@ -76,7 +68,6 @@ button {
   /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
   background-color: #05386B;
   color: #5CDb95;
-  margin-left: 100px;
   text-decoration: none;
   /*adds spacing to the button*/
   padding: 10px;
@@ -118,7 +109,7 @@ main {
 }
 
 .profile {
-  max-width: 98%;
+  /*max-width: 98%;*/
   display: undefined;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -132,12 +123,12 @@ main {
   padding: 20px;
   margin: 10px; 
   margin-left: 5rem;
-  width: 100%;
+  /*width: 100%;*/
 }
 
 .portrait img {
   height: 17rem;
-  width: 14rem;
+  /*width: 14rem;*/
   border-radius: 10%;
   display: undefined;
   -webkit-box-align: center;
@@ -156,11 +147,6 @@ main {
   margin: 25px;
   display: inline-block;
   height: 150px;
-}
-
-.navigation-list {
-  list-style-type: none;
-  margin-right: 25px;
 }
 
   .navigation-list li {
@@ -199,7 +185,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  /*width: var(--width-100);*/
   -webkit-box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
           box-shadow: 0 1rem 2rem rgb(0 0 0 / 10%);
   background-color: #5CDb95;
@@ -209,7 +195,7 @@ main {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
-  width: 25%;
+  /*width: var(--width-25);*/
   height: 4.5rem;
   margin: 25px;
 }
@@ -237,7 +223,7 @@ main {
   margin: 50px auto;
   display: undefined;
   text-align: center;
-  width: 100%;
+  /*width: var(--width-100);*/
   color: #05386B;
 }
 
@@ -245,20 +231,27 @@ main {
   margin: 50px auto;
   display: undefined;
   text-align: center;
-  width: 100%;
+  /*width: var(--width-100);*/
+  color: #05386B;
+}
+
+.case-study {
+  margin: 50px auto;
+  display: undefined;
+  text-align: center;
+  /*width: var(--width-100);*/
   color: #05386B;
 }
 
 .grid {
-  display: -ms-grid;
-  display: grid;
-  margin: 15px 140px 20px 140px;
+ /* display: var(--display-grid); */
+  margin: 28rem 7rem;
   -ms-grid-columns: 750px 20px 750px;
   grid-template-columns: 750px 750px;
   -ms-grid-rows: 55rem 20px 59rem;
   grid-template-rows: 55rem 59rem;
   grid-gap: 20px;
-  max-width: 100%;
+  /*max-width: var(--max-width-100);*/
 }
 
 .grid > *:nth-child(1) {
@@ -281,6 +274,37 @@ main {
   -ms-grid-column: 3;
 }
 
+.case-study-sections {
+ /* display: var(--display-grid); */
+  margin: 28rem 7rem;
+  -ms-grid-columns: 750px 20px 750px;
+  grid-template-columns: 750px 750px;
+  -ms-grid-rows: 55rem 20px 59rem;
+  grid-template-rows: 55rem 59rem;
+  grid-gap: 20px;
+  /*max-width: var(--max-width-100);*/
+}
+
+.case-study-sections > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.case-study-sections > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.case-study-sections > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.case-study-sections > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
 .grid__item {
   background-color: #05386B;
   color: #EDF5E1;
@@ -292,6 +316,11 @@ main {
   margin: 1rem;
 }
 
+.overview, .purpose {
+margin: 10px;    
+color: #05386B;
+}
+
 .grid__item #api-link {
 -webkit-box-shadow: none;
         box-shadow: none;
@@ -300,31 +329,29 @@ font-weight: normal;
 }
 
 
-.grid__item a {
+.grid__item a, .overview a, .purpose a {
 padding: 0rem;
 }
 
 .project {
-margin-bottom: 1.5rem;
 height: 14rem;
 }
 
-.grid__item .github__button {
+.grid__item .github__button, .trello__board, .case__study {
 padding: 0.5rem;
-margin-bottom: 0.5rem;
 }
 
 .contact__grid {
   display: -ms-grid;
   display: grid;
-  margin: 15px 140px 20px 140px;
+  margin: 28rem 7rem;
   -ms-grid-columns: 1500px 20px 1500px;
   grid-template-columns: 1500px 1500px;
   -ms-grid-rows: 1500px;
   grid-template-rows: 1500px;
   grid-gap: 20px;
   text-align: left;
-  max-width: 100%;
+  /*max-width: var(--max-width-100);*/
   display: undefined;
 }
 
@@ -342,18 +369,18 @@ margin-bottom: 0.5rem;
   background-color: #05386B;
   color: #EDF5E1;
   display: inline-block;
-  width: 100%;
+ /* width: var(--width-100);*/
   padding-left: 20px;
   height: 750px;
 }
 
 #fullname {
-  width: 30%;
+ /* width: 30%;*/
   background-color: #EDF5E1;
 }
 
 #contact-email {
-  width: 30%;
+ /* width: 30%;*/
   background-color: #EDF5E1;
 }
 
@@ -512,7 +539,7 @@ width: 17rem;
   text-align: center;
 }
 
-.center {
+.skills {
   margin-left: auto;
   margin-right: auto;
 }
@@ -531,7 +558,38 @@ width: 17rem;
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  margin: auto 3rem;
+}
+
+.trello__board {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
+  background-color: #EDF5E1;
+  color: #05386B;
+  text-decoration: none;
+  /*adds spacing to the button*/
+  padding: 1rem;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.case__study {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font, color, and text decoration (underline, etc.) of the button */
+  background-color: #EDF5E1;
+  color: #05386B;
+  text-decoration: none;
+  /*adds spacing to the button*/
+  padding: 1rem;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format*/
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 button:hover {
@@ -567,7 +625,6 @@ button:focus {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   /* [transition-property] [transition-duration] [transition-timing-function] [transition-delay] */
   -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
@@ -590,7 +647,6 @@ button {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   /* [transition-property] [transition-duration] [transition-timing-function] [transition-delay] */
   -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
@@ -646,61 +702,187 @@ svg {
   height: 450px;
 }
 
-#contact__item-three {
+#contact__item-one {
   height: 150px;
 }
 
-#contact__item-four {
+#contact__item-two {
   height: 275px;
+}
+
+
+.text {
+max-width: 30%;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.image {
+-ms-flex-preferred-size: 55%;
+    flex-basis: 55%;
+}
+
+
+.logindisplaynumbers {
+display: -webkit-inline-box;
+display: -ms-inline-flexbox;
+display: inline-flex;
+-webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+}
+
+.logindisplaynumbers p {
+margin-left: 20rem;
+margin-right: 15rem;
+}
+
+
+#approach-item-five, #approach-item-six {
+width: 45%;
+height: 5%;
+}
+
+.approach-img-one, .approach-imgs-nine {
+text-align: center;
+}
+
+.cs-img-container-fourfive {
+width: 45%;
+}
+
+.cs-img-container-fifty {
+width: 50%;
+}
+
+.approach-img-twentyseven, .approach-img-twentyeight {
+width: 55%;
+}
+
+
+.cs-img-container-sixfive {
+width: 65%;
+}
+
+.cs-img-container-seventy {
+width: 70%;
+}
+
+.cs.img-container-ninefive {
+width: 95%;
+}
+
+.cs-img-container-full {
+width: 100%;
+}*/
+
+#project-five .buttons .github__button_2 {
+width: 16rem;
+margin: 0.5rem auto;
+background-color: #EDF5E1;
+-webkit-text-decoration: auto;
+        text-decoration: auto;
+}.trello__board {
+width: 16rem;
+margin: 0.5rem auto;
+background-color: #EDF5E1;
+-webkit-text-decoration: auto;
+        text-decoration: auto;
+}.case__study {
+width: 16rem;
+margin: 0.5rem auto;
+background-color: #EDF5E1;
+-webkit-text-decoration: auto;
+        text-decoration: auto;
+}
+
+.form {
+margin-top: 23rem;
+float: left;
+margin-left: 3rem;
+}
+
+.github__button_2 {
+border-radius: 3px;
 }
 
 
 
 @media only screen and (max-width: 320px) {
-body {
-  width: 25rem;
+
+
+.main-work {
+  width: 90%;
 }
 
 .page-header {
-  width: 27rem;
-}
-
-.page-header__item {
-  height: 2.5rem;
-  margin: 1rem 0rem 1rem 0.5rem;
-  max-width: 9rem;
-}
-
-.navigation-list {
-  margin: 0rem;
-  padding: 0rem;
-  width: 15rem;
-}
-
-.navigation-list li a {
-  font-size: 1rem;
-}
-
-.profile {
   max-width: 100%;
 }
 
+
+.page-header__item {
+  height: 25%;
+  max-width: 30%;
+  margin: 1rem;
+  margin-top: 1.5rem;
+  margin-right: 0rem;
+}
+
+#project-one #buttons {
+  margin-bottom: 1rem;
+}
+
+#project-one {
+  margin: 0rem;
+}
+
+nav {
+  max-width: 60%;
+  padding-top: 1rem;
+}
+
+.navigation-list li {
+  margin-left: 0rem;
+  margin-right: 0.2rem;
+  font-size: 0.25rem;
+}
+
+.navigation-list li a {
+  font-size: 0.8rem;
+}
+
+
+main {
+  width: 100%;
+}
+
+
+
 .portrait {
-  text-align: center;
+  -moz-text-align-last: center;
+       text-align-last: center;
 }
 
-.portrait img {
-  height: 13rem;
-  width: 11rem;
-  margin-right: 4rem;
+.profile__portrait {
+  margin-left: 0rem;
+  margin-top: 0rem;
 }
 
-.profile__welcome h1 {
-  margin: 2.67rem 0.67rem;
+#contact__item-one, #contact__item-two, #contact__item-three {
+  margin: 1rem;
 }
+
+
+#contact__item-one {
+  width: 18rem;
+}
+
+
 
 .profile__welcome h3 {
-  margin: 1rem 1.75rem;
+  margin: auto;
+  width: 75%;
 }
 
 .main-about {
@@ -708,66 +890,199 @@ body {
 }
 
 .profile_about {
-  margin: 0rem 2.5rem;
+  margin: auto;
+  width: 80%;
+}
+
+.profile_about h2 {
+  margin-right: 0rem;
+}
+
+.profile_about p {
+  font-size: 1rem;
+  margin: 0rem 0.5rem;
+}
+
+.profile_about table h3 {
+  margin: 1rem 1rem;
+}
+
+.profile_about ul {
+  margin-right: 2rem;
 }
 
 svg {
-  max-width: 25%;
+  max-width: 45%;
 }
 
 .main-contact h1 {
   font-size: 1.5rem;
 }
 
+.resume {
+  margin-left: 0rem;
+}
+
 .contact__grid {
   margin: 0rem;
 }
 
-.page-header__item {
-  max-width: 8rem;
+#project-two .buttons {
+  margin-top: 1.5rem;
 }
 
 .page-header__item:last-child {
   text-align: inherit;
 }
 
-#contact__item-three, #contact__item-four {
-  margin: 1rem;
+.navigation-list {
+  width: 14rem;
+  margin-top: 0.5rem;
+}
+
+.contact__item {
+  padding: 0rem 1rem;
+  height: 8rem;
+}
+
+#contact__item-two .contact-form form button {
+  background-color: #EDF5E1;
+  color: #05386B;
+  margin: 0.5rem 5rem;
+  font-size: 0.75rem;
+}
+
+#contact__item-two {
+  height: 20rem;
+}
+
+#contact__item-two .contact-form form input {
+  width: 10rem;
+}
+
+textarea {
+  width: 16rem;
+  height: 5rem;
+}
+
+#bulleted-list li {
+  font-size: 0.9rem;
+}
+
+.contact__item h2 {
+  font-size: 0.95rem;
 }
 
 .main-contact h1 {
   margin: 5rem 3rem 2rem 3rem;
 }
 
-#contact__item-four {
-  height: 15rem;
+#contact__item-three {
+  height: 12rem;
 }
 
-.grid {
+.case-study {
+  max-width: 100%;
+}
+
+.grid, .case-study-sections {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  margin: 0rem 1.5rem;
-  -ms-grid-rows: 55rem 20px 53rem;
-  grid-template-rows: 55rem 53rem;
+  margin: 0rem 0.5rem;
+  -ms-grid-rows: 60rem 20px 53rem;
+  grid-template-rows: 60rem 53rem;
+  display: contents;
+  max-width: 90%;
 }
 
-.grid > *:nth-child(1) {
+.grid > *:nth-child(1), .case-study-sections > *:nth-child(1) {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
 }
 
-.grid > *:nth-child(2) {
+.grid > *:nth-child(2), .case-study-sections > *:nth-child(2) {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
 }
 
+#project-one .project {
+  height: 12rem;
+}
+
+#project-four #bulleted-list li a {
+  margin: 0rem;
+}
+
+#project-three .project {
+  height: 18%;
+  margin-bottom: 1rem;
+}
+
+#project-two {
+  margin: 3rem 0rem;
+  height: 50rem;
+}
+
+#project-three {
+  margin: 3rem 0rem;
+  height: 57rem;
+}
+
+#project-four {
+  margin: 3rem 0rem;
+  height: 57rem;
+}
+
+#project-four .buttons .github__button {
+  width: 13.5rem;
+}
+
+.main-work h1 {
+  margin-top: 0rem;
+}
+
+.buttons .github__button, .buttons .trello__board, .buttons .case__study {
+  margin-bottom: 1rem;
+  width: 15.5rem;
+  padding: 0.5rem;
+}
+
+.case-study h1 {
+  margin: 7rem auto;
+  width: 75%;
+}
+
 #project-two .project {
-  height: 13rem;
+  height: 9rem;
+}
+
+.github__button_2 {
+  background-color: #EDF5E1;
+  margin-bottom: 1rem;
+}
+
+#project-four {
+  margin: 3rem 0rem;
+  height: 59rem;
+}
+
+#project-five {
+  margin: 3rem 0rem;
+  height: 54rem;
+}
+
+#project-five .buttons {
+  margin-top: 1rem;
+}
+
+#project-six {
+  margin: 3rem 0rem;
+  height: 62rem;
 }
 
 #project-four .project {
-  height: 13rem;
-  margin-bottom: 0rem;
+  height: 9rem;
+  margin-bottom: 2rem;
 }
 
 #project-five p {
@@ -778,8 +1093,10 @@ svg {
   margin-bottom: 3.5rem;
 }
 
-#project-five .buttons {
-  margin-top: 3rem;
+
+
+.github__button_2 {
+  width: 15rem;
 }
 
 #project-six p {
@@ -791,8 +1108,238 @@ svg {
 }
 
 #project-six .project {
-  width: 19rem;
-  height: 12rem;
+  width: 15rem;
+  height: 10rem;
+  margin-left: 0.25rem;
+}
+
+.page-footer {
+  margin-top: 2rem;
+}
+
+
+.overview, .purpose, .objectives, .tools, .approach-intro, .approach-item-one, .approach-item-fortyone, 
+.approach-items-three-five .logindisplays, .duration, .conclusion {
+margin: 3.5rem 2rem 0rem 2rem;
+}
+
+.approach-item-two, .approach-items-three-five, .approach-item-six, .approach-items-nine-eleven, .approach-items-twelve-thirteen,
+.wrap-up {
+margin: 3.5rem 2rem 0rem 2rem;
+}
+
+.logindisplays {
+margin: 0.5rem 3rem 0rem 3rem;
+}
+
+.approach-item-two p, .approach-items-three-five p, .approach-item-six p, .approach-items-nine-eleven p {
+margin-bottom: 0.5rem;
+}
+
+
+.overview h2, .purpose h2, .objectives h2, .tools h2, .approach-intro h2, .approach-item-one h2, .approach-item-fortyone h2, 
+.approach-item-two, .approach-items-three-five h2, .duration h2, .conclusion h2, .approach-items-three-five p {
+font-size: 1.75rem;
+}
+
+.overview p, .purpose p, .objectives p, .tools p, .approach-img-one p, .approach-intro p, .approach-item-one p, 
+.approach-item-fortyone p, .approach-item-two p, .approach-items-three-five p, .duration p, .conclusion p, .approach-items-nine-eleven p, 
+.approach-items-nine-eleven p, .approach-img-two p, .approach-imgs-three-five p, approach-item-six p, .approach-imgs-seven-eight p, 
+.approach-items-nine-eleven p, .approach-items-twelve-thriteen p, .approach-imgs-twelve-thirteen p, 
+.wrap-up p, .duration p, .conclusion p, .approach-intro p,  .approach-items-twelve-thirteen p {
+font-size: 1rem;
+}
+
+.approach-items-three-five p {
+margin-top: 3rem;
+}
+
+
+
+.overview p {
+margin: 0;
+}
+
+.logindisplaynumbers p {
+margin-left: 2.5rem;
+margin-right: 2.5rem;
+}
+
+
+.approach-items-sixteen p {
+margin-left: 1rem;
+margin-right: 1rem;  
+}
+
+.approach-imgs-seven-eight p, .approach-items-fourteen p, .approach-img-sixteen p {
+margin-left: 1.5rem;
+margin-right: 1.5rem;
+}
+
+
+.centered-image-eighty p, .logindisplaynumbers p, .image p, .approach-items-fortyone p, .approach-items-nine-eleven p {
+margin-top: 0rem;
+}
+
+.approach-img-one p, .approach-img-two p {
+font-size: 0.7rem;
+margin: 0rem 2rem;
+}
+
+.approach-img-one p, .approach-img-two p, .approach-imgs-three-five .image p, .approach-item-six .image p {
+font-size: 0.7rem;
+margin: 0rem 2rem;
+}
+
+.approach-item-six .image p {
+font-size: 0.7rem;
+margin: 0rem;
+}
+
+approach-item-six .image p {
+font-size: 0.70rem;
+margin: 0rem 0.5rem;
+}
+
+.approach-items-twelve-thirteen p {
+margin-bottom: 0rem;
+}
+
+.approach-imgs-seven-eight .image p {
+font-size: 0.7rem;
+margin: 0rem 2.5rem;
+}
+
+.approach-imgs-nine-eleven p, .approach-imgs-twelve-thirteen .image p {
+font-size: 0.7rem;
+margin: 0rem 3rem 1rem 3rem;
+width: 14rem;
+}
+
+.approach-imgs-nine-eleven img {
+width: 15rem;
+}
+
+.approach-items-seven-eight, .img-eight {
+margin-top: 4rem;
+}
+
+
+.approach-img-two img {
+width: 16rem;
+height: 3rem;
+}
+
+.approach-imgs-three-five .image img {
+width: 16rem;
+height: 2rem;
+}
+
+.approach-img-twentythree, .img-four  {
+width: 80%;
+height: 3rem;
+}
+
+.approach-img-twenty, .approach-img-twentytwo {
+width: 80%;
+height: 4.5rem;
+}
+
+.img-eight {
+width: 90%;
+height: 4.5rem;
+}
+
+.approach-item-six {
+margin-top: 5rem;
+}
+
+.approach-img-eleven, .approach-img-fourteen, .approach-img-thirtyone, .approach-img-thirtytwo,  .approach-img-thirtynine {
+width: 80%;
+height: 5.5rem;
+}
+
+.approach-img-eleven {
+height: 2.5rem;
+}
+
+.img-seven {
+width: 90%;
+height: 10.5rem;
+}
+
+.approach-img-fifteen {
+width: 80%;
+height: 7.5rem;
+}
+
+.approach-imgs-three-five .image p, .image p {
+height: 2rem;
+width: 15rem;
+margin-bottom: 3.5rem;
+}
+
+.approach-imgs-twelve-thirteen .image img {
+width: 14rem;
+margin-top: 1.75rem;
+}
+
+.approach-img-twentyseven, .approach-img-twentyeight, .cs-img-container-fifty, .approach-img-twentyone, .approach-img-twentyfour,
+.img-twelve {
+width: 80%;
+}
+
+.apparoach-imgs-nine-eleven p {
+font-size: 0.70rem;
+}
+
+
+.img-five {
+width: 80%;
+height: 4rem;
+}
+
+.user-display, .sixnine {
+width: 80%;
+height: 7rem;
+}
+
+.cs-img-container-fourfive, .approach-img-eighteen, .approach-img-thirtyfour, .approach-img-thirtyfive, .approach-img-thirtyseven {
+width: 80%;
+height: 10rem;
+}
+
+.approach-img-one img,  .overview .image img, .approach-img-six, .img-seven, .img-eight  {
+  width: 16rem;
+}
+
+.cs-img-container-six, .approach-img-thirtysix, .approach-img-thirtyeight {
+width: 80%;
+height: 6rem;
+}
+
+
+
+.overview p {
+margin-bottom: 1rem;
+}
+
+.approach-items-twentyone p, .approach-items-twentyfour p, .approach-items-twentyfive p, .approach-items-twentynine p, 
+.approach-items-thirtyone p, .approach-items-thirtysix p, .approach-items-thirtyseven p, .approach-items-forty p {
+margin-right: 1rem;
+margin-left: 1rem;
+}
+
+
+.approach-items-fortyone p {
+margin-right: 2rem;
+margin-left: 2rem;
+}
+
+
+.approach-items-fortyone img {
+width: 80%;
+height: 7rem;
 }
 
 }
@@ -803,8 +1350,12 @@ body {
   width: 25rem;
 }
 
+.profile__portrait {
+  margin-top: 8rem;
+}
+
 .page-header {
-  width: 26rem;
+  width: 25rem;
 }
 
 .page-header__item {
@@ -814,9 +1365,16 @@ body {
 }
 
 .navigation-list {
-  margin: 0rem;
+  margin: 2rem;
   padding: 0rem;
-  width: 15rem;
+  width: 14rem;
+  margin-left: 3rem;
+  margin-top: 1.5rem;
+}
+
+.navigation-list li {
+  font-size: 16px;
+  margin-left: 0.25rem;
 }
 
 .navigation-list li a {
@@ -858,7 +1416,7 @@ svg {
 }
 
 .main-contact h1 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .contact__grid {
@@ -866,14 +1424,19 @@ svg {
 }
 
 .page-header__item {
-  max-width: 8rem;
+  max-width: 20rem;
+  height: 5rem;
+  margin-left: 0.5rem;
+  margin-top: 2rem;
 }
+
+
 
 .page-header__item:last-child {
   text-align: inherit;
 }
 
-#contact__item-three, #contact__item-four {
+#contact__item-one, #contact__item-three {
   margin: 1rem;
 }
 
@@ -881,11 +1444,11 @@ svg {
   margin: 5rem 3rem 2rem 3rem;
 }
 
-#contact__item-four {
+#contact__item-three {
   height: 15rem;
 }
 
-.grid {
+.grid, .case-study-sections {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
   margin: 0rem 1.5rem;
@@ -893,22 +1456,22 @@ svg {
   grid-template-rows: 55rem 53rem;
 }
 
-.grid > *:nth-child(1) {
+.grid > *:nth-child(1), .case-study-sections > *:nth-child(1) {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
 }
 
-.grid > *:nth-child(2) {
+.grid > *:nth-child(2), .case-study-sections > *:nth-child(2) {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
 }
 
 #project-two .project {
-  height: 13rem;
+  height: 10rem;
 }
 
 #project-four .project {
-  height: 13rem;
+  height: 11rem;
   margin-bottom: 0rem;
 }
 
@@ -921,7 +1484,7 @@ svg {
 }
 
 #project-five .buttons {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 #project-six p {
@@ -933,24 +1496,446 @@ svg {
 }
 
 #project-six .project {
-  width: 19rem;
-  height: 12rem;
+  width: 16rem;
+  height: 10rem;
 }
 
+.overview, .purpose {
+  margin: 10px;
+  color: #05386B;
+  margin-top: 5rem;
 }
+
+.case-study h1 {
+  font-size: 2.5rem;
+  width: 70%;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+.overview h2, .purpose h2, .objectives h2, .tools h2, .approach-intro h2, .approach-item-one h2, .approach-item-fortyone h2, 
+.approach-item-two h2, .approach-items-three-five h2, .duration h2, .conclusion h2 {
+  font-size: 2rem;
+}
+
+.overview .image img {
+  width: 85% !important;
+}
+
+.case-study-sections {
+  display: contents;
+}
+
+
+
+.objectives p {
+  font-size: 1rem;
+  margin: 2rem;
+}
+
+#approach-item-five, #approach-item-six {
+  width: 35%;
+  height: 5%;
+}
+
+.img-four {
+  height: 8rem;
+}
+
+
+
+.approach-items-seventeen {
+  width: 70%;
+}
+
+.approach-img-eighteen {
+  width: 100%;
+}
+
+.approach-img-thirtyseven, .approach-img-thirtyeight, .approach-img-thirtynine, .approach-img-forty {
+  width: 75%;
+}
+
+.approach-img-fortyone {
+  width: 90%;
+  margin: auto;
+}
+
+.approach-img-forty {
+  width: 75%;
+  height: 3rem;
+}
+
+.logindisplaynumbers {
+  max-width: 100%;
+}
+
+.eightnine {
+  max-width: 75%;
+}
+
+.page-header__item {
+  height: 25%;
+  max-width: 32%;
+  margin-right: 0rem;
+}
+
+
+.navigation-list__item {
+  font-size: 1.5rem;
+}
+
+nav {
+  max-width: 60%;
+  margin-top: 0.75rem;
+}
+
+.logindisplaynumbers p {
+margin-left: 4rem;
+margin-right: 3rem;
+}
+
+.tools, .approach-intro, .approach-item-one, .approach-img-one, .approach-item-two, .approach-img-two, .approach-items-three-five,
+.approach-imgs-three-five, .approach-item-six, .approach-imgs-seven-eight, .approach-items-nine-eleven, .approach-imgs-nine-eleven,
+.approach-items-twelve-thriteen, .approach-imgs-twelve-thirteen, .wrap-up, .duration, .conclusion, #final-approach, .duration, .conclusion {
+margin-left: 1.5rem;
+margin-right: 1.5rem;
+}
+
+.approach-intro, .approach-item-one {
+margin: 1rem;
+}
+
+.approach-imgs-three-five .image img {
+margin-top: 1rem;
+}
+
+.approach-item-two {
+margin: 2rem 2rem 0.5rem 2rem;
+} 
+
+.img-five {
+margin: 0rem 2rem;
+font-size: 0.85rem;
+}
+
+
+.approach-item-fortyone p, .conclusion {
+margin: 2rem;
+}
+
+
+.profile_about p {
+font-size: 1rem;
+}
+
+.profile_about ul {
+margin-right: 2rem;
+}
+
+.resume {
+margin-left: 0rem;
+}
+
+.contact-form form {
+display: -ms-grid;
+display: grid;
+}
+
+button {
+width: 5rem;
+margin: 1rem auto;
+height: 2rem;
+}
+
+textarea {
+width: 95%;
+height: 6rem;
+}
+
+#contact__item-two {
+width: 90%;
+}
+
+input {
+width: 8rem;
+}
+
+svg {
+max-width: 35%;
+}
+
+.contact__item {
+margin: 1rem;
+padding: 0.5rem;
+}
+
+.contact__item h2 {
+font-size: 1.2rem;
+}
+
+#contact__item-three {
+text-align: left;
+}
+
+input, textarea, .contact-form button {
+font-size: 80%;
+}
+
+.contact-form button {
+height: 2rem;
+}
+
+#contact__item-one, #contact__item-two, #contact__item-three {
+width: 85%;
+}
+
+#contact__item-two {
+height: 20.5rem;
+}
+
+main {
+margin-top: 0rem;
+}
+
+
+
+#project-one .buttons .github__button {
+margin-bottom: 0.75rem;
+}
+
+.contact-form {
+margin-left: 0.25rem;
+}
+
+#project-two .buttons {
+margin-top: 2rem;
+}
+
+
+#contact__item-three {
+height: 14rem;
+}
+
+#contact__item-three p {
+margin-top: 2rem;
+}
+
+.github__button {
+margin-bottom: 1rem;
+}
+
+.github__button_2 {
+background-color: #EDF5E1;
+margin: 1rem 0rem;
+}
+
+
+.github__button, .trello__board, .case__study {
+width: 15rem;
+margin-bottom: 0.5rem;
+}
+
+.trello__board, .case__study {
+margin-top: 0.5rem;
+margin-left: 0.25rem;
+}
+
+.contact-form button {
+background-color: #EDF5E1;
+color: #05386B;
+}
+
+.overview p {
+margin-bottom: 0.5rem;
+}
+
+.overview .image img {
+width: 15rem;
+}
+
+#project-one .project {
+height: 14rem;
+}
+
+
+
+.page-footer {
+margin-top: 0rem;
+}
+
+
+#project-one #bulleted-list li {
+width: 12rem;
+}
+
+.project-six .project .MagicThumb img {
+width: 80%;
+}
+
+#project-five .project {
+height: 13rem;
+}
+
+
+
+.grid__item p {
+font-size: 0.90rem;
+}
+
+.grid__item {
+margin: 4rem 0rem;
+}
+
+#project-one .buttons {
+margin-bottom: 1rem;
+}
+
+#project-two #bulleted-list {
+margin-bottom: 1.5rem;
+}
+
+#project-four .buttons {
+margin-top: 2rem;
+margin-bottom: 1rem;
+}
+
+#project-three .buttons {
+margin-bottom: 1rem;
+}
+
+.overview p, .purpose p, .objectives p, .tools p, .approach-intro p,  .approach-item-two p,
+.approach-items-three-five p, .approach-item-six p, 
+.duration p, .conclusion p, .approach-items-nine-eleven p {
+margin: 2rem;
+font-size: 1rem;
+}
+
+.approach-item-one p {
+margin: 0rem 2rem;
+font-size: 1rem;
+}
+
+.img-twelve, .approach-img-eleven, .approach-img-ten, .approach-img-nine, .img-eight, .img-seven, .approach-img-six, 
+.img-five, .img-three, .api-vs-fetchcomp, .approach-img-twentysix, .img-four, .img-two {
+width: 20rem;
+}
+
+.approach-img-one p, .approach-item-six .image p, .approach-imgs-three-five .image p, 
+.approach-imgs-seven-eight .image p, .approach-imgs-nine-eleven p, .approach-imgs-tweleve-thirteen .image p {
+margin: 0rem 2rem;
+font-size: 0.85rem;
+}
+
+.approach-img-two p {
+margin: 0rem 1rem;
+font-size: 0.85rem;
+}
+
+
+
+
+.approach-items-three-five p {
+margin-bottom: 1rem;
+}
+
+#project-six .project {
+margin: auto;
+}
+
+.approach-item-two p, .approach-items-three-five p, .approach-item-six p, .approach-items-nine-eleven p,
+.approach-img-two p, .approach-items-twelve-thirteen p, .wrap-up p {
+margin: 4rem 2rem 0rem 2rem;
+}
+
+.approach-items-twelve-thirteen p,  .wrap-up p {
+font-size: 1rem;
+}
+
+.img-five {
+width: 19rem;
+}
+
+.tools, .approach-intro, .approach-item-one, .approach-img-one, .approach-item-two, .approach-img-two, .approach-items-three-five, 
+.approach-imgs-three-five, .approach-item-six, .approach-imgs-seven-eight, .approach-items-nine-eleven, .approach-imgs-nine-eleven, 
+.approach-items-twelve-thriteen,  .wrap-up, .duration, .conclusion, #final-approach, .duration, 
+.conclusion {
+margin-left: 0rem;
+margin-right: 0rem;
+}
+
+.approach-img-six, .img-seven, .img-eight, .approach-img-nine, .approach-img-ten, .approach-img-eleven, .img-twelve,
+.approach-img-twelvesix {
+margin-top: 0.5rem;
+}
+
+.trello__board, .case__study {
+margin-top: 0rem;
+}
+
+#project-six .buttons .trello__board, #project-six .buttons .case__study {
+padding: 0.5rem;
+}
+
+#project-five .buttons {
+margin-top: 3.5rem;
+margin-bottom: 1rem;
+}
+
+#project-five .buttons .github__button_2 {
+width: 15rem;
+}
+
+#project-six .project {
+width: 15rem;
+}
+
+#project-six .buttons {
+margin-bottom: 1rem;
+}
+
+#project-three .buttons{
+margin-top: 2rem;
+}
+
+
+
+
+
+
+}
+
+
+
+
 
 @media all and (min-width: 376px) and (max-width: 425px) {
 
-.page-header__item {
-  height: 2.5rem;
-  margin: 1rem 0rem 1rem 0.5rem;
-  max-width: 9rem;
+.page-header {
+  max-width: 100%;
+}
+
+
+.page-header__item {    height: 25%;
+  max-width: 30%;
+  margin: 1rem;
+  margin-right: 0rem;
+}
+
+nav {
+  max-width: 60%;
 }
 
 .navigation-list {
   margin: 0rem;
   padding: 0rem;
   width: 15rem;
+}
+
+.navigation-list li {
+  margin-left: 0rem;
+  margin-right: 0.2rem;
+  font-size: 0.25rem;
 }
 
 .navigation-list li a {
@@ -975,16 +1960,54 @@ svg {
   width: 90%;
 }
 
-#contact__item-three h2, #contact__item-four h2 {
-  font-size: 1.25rem;
+#contact__item-one h2 {
+  font-size: 1.2rem;
 }
 
-#contact__item-three, #contact__item-four {
-  margin: 1rem;
+#contact__item-three h2 {
+  font-size: 0.95rem;
+}
+
+#contact__item-one, #contact__item-three {
+  margin: 1rem 1.75rem;
   width: 85%;
 }
 
-#contact__item-four {
+#contact__item-two {
+  width: 85%;
+  margin-left: 1.75rem;
+  height: 20rem;
+}
+
+.contact-form button {
+  height: 2rem;
+  background-color: #EDF5E1;
+  color: #05386B;
+}
+
+.contact-form {
+  margin-left: 0rem;
+}
+
+.contact-form input, .contact-form button {
+  margin-bottom: 0.15rem;
+}
+
+input {
+  width: 8rem;
+}
+
+.contact__item {
+  padding-left: 1rem;
+}
+
+
+textarea {
+  width: 95%;
+  height: 5rem;
+}
+
+#contact__item-three {
   height: 14rem;
 }
 
@@ -992,22 +2015,40 @@ svg {
   max-width: 25%;
 }
 
-.grid {
+.contact-form button {
+  width: 5rem;
+  margin: 0.5rem auto;
+}
+
+.grid__item .buttons {
+  margin: 0rem;
+}
+
+.case-study {
+  max-width: 100%;
+}
+
+.grid, .case-study-sections {
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  margin: 0rem 1.5rem;
+  margin: 0rem 1rem;
   -ms-grid-rows: 55rem 20px 53rem;
   grid-template-rows: 55rem 53rem;
 }
 
-.grid > *:nth-child(1) {
+.grid > *:nth-child(1), .case-study-sections > *:nth-child(1) {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
 }
 
-.grid > *:nth-child(2) {
+.grid > *:nth-child(2), .case-study-sections > *:nth-child(2) {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
+}
+
+.case-study h1 {
+  margin: 7rem auto;
+  width: 75%;
 }
 
 #project-two .project {
@@ -1027,8 +2068,21 @@ svg {
   margin-bottom: 3.5rem;
 }
 
+.approach-imgs-three-five {
+  margin-left: 0rem;
+}
+
 #project-five .buttons {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+#project-six .buttons .trello__board, #project-six .buttons .case__study {
+  padding: 0.5rem;
+}
+
+#project-six .buttons .github__button, #project-six .buttons .trello__board, #project-six .buttons .case__study {
+  margin: 0rem;
 }
 
 #project-six p {
@@ -1044,37 +2098,540 @@ svg {
   height: 12rem;
 }
 
+main {
+  width: 100%;
 }
 
-@media all and (min-width: 426px) and (max-width: 768px) {
+.overview, .purpose, .objectives, .tools, .approach-intro, .approach-item-fortyone, 
+.approach-items-three-five .logindisplays, .approach-items-three-five {
+  margin: 7.5rem 2rem 0rem 2rem;
+}
 
+.duration, .conclusion {
+  margin: 5rem 2rem 0rem 2rem;
+}
 
-.grid {
--ms-grid-columns: 1fr;
-grid-template-columns: 1fr;
-margin: 1rem;
--ms-grid-rows: 73rem 20px 68rem;
-grid-template-rows: 73rem 68rem;
+.approach-item-one {
+  margin: 2.5rem 2rem 0rem 2rem;
+}
+
+.approach-item-two {
+  margin: 3.5rem 2rem 0rem 2rem;
+}
+
+.logindisplays {
+  margin: 0.5rem 3rem 0rem 3rem;
+}
+
+.approach-img-one p, .approach-img-two p {
+  margin: 0rem 2rem;
+  font-size: 0.7rem;
+}
+
+.approach-imgs-three-five .image p  {
+  margin: 0rem 0rem;
+  font-size: 0.7rem;
+  margin-left: 4rem;
+}
+
+#localStorage .image p, .approach-imgs-seven-eight .image p {
+  font-size: 0.7rem;
+  margin: 0rem 2rem;
+}
+
+.approach-imgs-nine-eleven p, .approach-imgs-twelve-thirteen .image p {
+  font-size: 0.7rem;
+  margin: 0rem 3rem 0.5rem 3rem;
+}
+
+.overview h2, .purpose h2, .objectives h2, .tools h2, .approach-intro h2, .approach-item-one h2, .approach-item-fortyone h2, 
+.approach-item-two, .approach-items-three-five h2, .duration h2, .conclusion h2 {
+  font-size: 1.75rem;
+}
+
+.approach-img-nine, .approach-imgs-twelve-thirteen .image img {
+  width: 20rem;
+}
+
+.img-eight {
+  margin-top: 1rem;
+}
+
+.overview p {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.purpose h2 {
+  margin-bottom: 2rem;
 }
 
 
-.grid > *:nth-child(1) {
+.logindisplaynumbers p {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+
+
+
+.approach-img-twentythree, .img-four  {
+  width: 80%;
+  height: 3rem;
+}
+
+
+
+
+
+.approach-img-fifteen {
+  width: 80%;
+  height: 7.5rem;
+}
+
+ 
+
+
+
+
+
+
+.img-five {
+  width: 80%;
+  height: 4rem;
+}
+
+.user-display, .sixnine {
+  width: 80%;
+  height: 7rem;
+}
+
+.cs-img-container-fourfive, .approach-img-eighteen, .approach-img-thirtyfour, .approach-img-thirtyfive, .approach-img-thirtyseven {
+  width: 80%;
+  height: 10rem;
+}
+
+
+*/
+
+.approach-items-twentyone p, .approach-items-twentyfour p, .approach-items-twentyfive p, .approach-items-twentynine p, 
+.approach-items-thirtyone p, .approach-items-thirtysix p, .approach-items-thirtyseven p, .approach-items-forty p {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+
+.approach-items-fortyone p {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+/*
+.approach-items-fortyone img {
+  width: 80%;
+  height: 7rem;
+}
+
+.cs-img-container-sixfive {
+  width: 100%;
+  height: 7rem;
+  margin-left: 2rem;
+}
+
+.eightnine { 
+  width: 95%;
+  height: 10rem;
+  margin-left: 2.25rem;
+}
+
+
+/*
+*/
+
+.approach-img-seventeen {
+  width: 80%;
+  height: 13.5rem;
+}
+
+.overview .image img {
+  width: 95%;
+  height: 10rem;
+}
+
+.approach-img-one img, .approach-items-nine-eleven img, .img-two, .approach-imgs-three-five, .approach-img-ten,
+.approach-img-ten, .approach-img-eleven, .img-seven, .img-eight, .approach-img-fourteen, .approach-img-fifteen,
+.approach-items-seventeen, .eightnine, .approach-img-twenty, .approach-img-twentyone, .approach-img-twentytwo, .approach-img-twentythree, 
+.approach-img-twentyfour, .img-twelve, .img-thirteen, .approach-img-twentyseven, .approach-img-twentyeight,
+.img-four, .img-five, .approach-img-thirtyone, .approach-img-thirtytwo, .approach-img-six,
+.approach-img-thirtyfour, .approach-img-thirtyfive, .approach-img-thirtysix, .approach-img-thirtyseven, .approach-img-thirtyeight,
+.approach-img-thirtynine, .approach-img-forty, .approach-img-fortyone {
+  width: 85%;
+}
+
+.img-three, .img-four, .img-five {
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.purpose p, .objectives p, .tools p, .approach-intro p, .approach-item-one p, .approach-item-two p, .approach-items-three-five p,
+.approach-item-six p {
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.approach-items-nine-eleven p {
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#final-approach p, .wrap-up p, .duration p, .conclusion p {
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+}
+
+.duration p, .conclusion p {
+  font-size: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+.overview p {
+  font-size: 1rem;
+}
+
+.approach-items-three-five, .approach-item-six {
+  margin: 3.5rem 2rem 0rem 2rem;
+}
+
+#approach-item-five {
+  width: 45%;
+  height: 5%;
+}
+
+.approach-item-fortyone {
+  margin: 1.5rem 2rem 0rem 2rem;
+}
+
+.approach-items-nine-eleven {
+  margin-top: 3rem;
+}
+
+.approach-img-fortyone {
+  margin: auto;
+  width: 90%;
+}
+
+.page-header {
+  width: 28rem;
+}
+
+main {
+  width: 100%;
+  margin-top: 0rem;
+}
+
+.case-study {
+  max-width: 100%;
+}
+
+.case-study-sections {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  margin: 0rem 1.5rem;
+  -ms-grid-rows: 55rem 20px 53rem;
+  grid-template-rows: 55rem 53rem;
+  display: contents;
+  max-width: 100%;
+}
+
+.case-study-sections > *:nth-child(1) {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
 }
 
-
-.grid > *:nth-child(2) {
+.case-study-sections > *:nth-child(2) {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
 }
 
-.grid__item, .grid__item p {
+.approach-img-eighteen {
+  width: 100%;
+}
+
+.page-header__item {
+  height: 25%;
+  max-width: 30%;
+  margin: 1rem;
+  margin-right: 0rem;
+}
+
+nav {
+  max-width: 60%;
+  margin-left: 3rem;
+}
+
+.navigation-list {
+  margin: 1rem;
+  padding: 0rem;
+  width: 13rem;
+  text-align: right;
+}
+
+.navigation-list li {
+  margin-left: 0.25rem;
+  margin-right: 0.3rem;
+  font-size: 0.25rem;
+}
+
+.navigation-list li a {
+  font-size: 1rem;
+}
+
+.contact__item h2 {
+  font-size: 1.2rem;
+}
+
+#project-two .buttons .github__button {
+  margin-bottom: 1rem;
+  width: 11rem;
+}
+
+#project-one .buttons .github__button {
+  margin-bottom: 0rem;
+  width: 11rem;
+}
+
+#project-six .project {
+  margin-bottom: 0rem;
+  margin: auto;
+}
+
+ #project-six .buttons .trello__board, #project-six .buttons .case__study {
+  margin-bottom: 0.5rem;
+}
+
+#project-one .buttons .github__button {
+  margin: 0.5rem 0rem;
+}
+
+#project-two .buttons .github__button {
+  margin: 1rem 0rem;
+}
+
+#project-two .buttons .github__button {
+  margin: 0rem;
+}
+
+#project-six .buttons .github__button {
+  margin-bottom: 0.6rem;
+}
+
+#project-three .buttons .github__button {
+  margin: 0rem;
+  width: 11rem;
+}
+
+#project-four .buttons .github__button  {
+  margin-top: 1rem;
+  width: 11rem;
+}
+
+#project-five .buttons .github__button   {
+  margin: 0rem;
+  width: 11rem;
+}
+
+#project-six .buttons {
+  display: -ms-grid;
+  display: grid;
+}
+
+.profile__portrait {
+  margin-top: 5rem;
+}
+
+.portrait img {
+  margin-left: 6.5rem;
+}
+
+.profile__welcome h3 {
+  margin: auto 2rem;
+}
+
+.profile_about p {
+  font-size: 1rem;
+  margin: auto 1.25rem;
+}
+
+
+
+.contact-form form {
+  display: -ms-grid;
+  display: grid;
+}
+
+.profile_about table {
+  margin: auto 2rem;
+}
+
+.profile_about ul {
+  margin-right: 2rem;
+}
+
+.profile_about .resume {
+  margin-left: 0rem;
+}
+
+svg {
+  max-width: 40%;
+}
+
+ #project-four .buttons .github__button,
+#project-six .buttons .github__button, .trello__board, .case__study 
+{
+  width: 11rem;
+}
+
+
+#project-three .buttons .github__button {
+  width: 11rem;
+  margin: 0.5rem;
+}
+
+#project-six .buttons {
+  margin-bottom: 0rem;
+}
+
+
+
+#project-three .buttons {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#project-one h2 {
+  font-size: 1.6rem;
+}
+
+#project-one p, #project-two p, #project-three p, #project-four p, #project-five p, #project-six p {
+  font-size: 1rem;
+}
+
+#bulleted-list {
+  margin-top: 3rem;
+  text-align: -webkit-center;
+}
+
+.project {
+  margin-top: 3rem;
+}
+
+.grid__item {
+  margin-top: 3rem;
+}
+
+.buttons {
+  justify-items: center;
+  margin-top: 1rem;
+}
+
+
+
+#project-five .buttons .github__button_2, .trello__board, .case__study {
+  width: 11rem;
+}
+
+.img-four, .img-five {
+  margin-top: 1rem;
+}
+
+#project-five .buttons .github__button_2 {
+  background-color: #EDF5E1;
+  margin-bottom: 1rem;
+}
+
+.approach-items-seven-eight {
+  margin-top: 4rem;
+}
+
+
+}
+
+
+@media all and (min-width: 426px) and (max-width: 768px) {
+
+
+.navigation-list_item {
 font-size: 1.25rem;
+}
+
+.grid, .case-study-sections {
+-ms-grid-columns: 1fr;
+grid-template-columns: 1fr;
+margin: 3rem;
+-ms-grid-rows: 43rem 20px 38rem;
+grid-template-rows: 43rem 38rem;
+}
+
+.grid > *:nth-child(1), .case-study-sections > *:nth-child(1) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2), .case-study-sections > *:nth-child(2) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+}
+
+.grid__item, .grid__item p, .overview, .overview p, .purpose, .purpose p, .objectives p, .tools p, .approach-intro p, 
+.approach-item-fortyone p, .approach-item-two p, .duration p, .conclusion p, 
+.approach-items-nine-eleven p, .logindisplaynumbers p, .approach-item-six p {
+font-size: 1.25rem;
+margin: auto 1rem 3rem;
+}
+
+.approach-items-three-five p {
+font-size: 1.25rem;
+margin: auto 1rem 1rem;
+}
+
+.approach-item-one p {
+margin: auto 1rem 1rem;
+font-size: 1.25rem;
+}
+
+.approach-img-one p, .approach-items-nine-eleven p, .approach-item-six .image p, .approach-items-nine-eleven p,
+.approach-items-sixteen .image p, .approach-three .image p, .approach-img-two p, .approach-imgs-three-five .image p,
+.approach-imgs-twelve-thirteen .image p  {
+font-size: 0.75rem;
+}
+
+.approach-imgs-seven-eight .image p {
+margin: 0rem 0.5rem 1rem 0.5rem;
+font-size: 0.75rem;
+}
+
+.approach-img-one, .approach-item-two {
+margin: auto;
+}
+
+.approach-img-one p, .approach-items-nine-eleven p {
+margin-top: 0rem;
+margin: auto;
+}
+
+.approach-img-two {
+margin: 0rem 0.5rem;
 }
 
 #project-one .buttons {
 margin-top: 13rem;
+margin-bottom: 2rem;
 }
 
 #project-two .buttons {
@@ -1106,7 +2663,24 @@ margin-top: 12rem;
 }
 
 .main-contact h1 {
-margin: 5rem 4rem 2rem 4rem;
+margin: 7rem auto 0rem;
+width: 90%;
+}
+
+.profile {
+margin-top: 10rem;
+}
+
+nav {
+margin-left: 6rem;
+}
+
+#contact__item-one h2, #contact__item-three h2, #contact__item-three p {
+margin-left: 0.75rem;
+}
+
+#contact__item-three {
+height: 15rem;
 }
 
 .contact__item {
@@ -1114,10 +2688,437 @@ display: -ms-grid;
 display: grid;
 }
 
-#contact__item-three, #contact__item-four {
-width: 90%;
-margin-left: 2rem;
+.github__button_2 {
+background-color: #EDF5E1;
 }
+
+#bulleted-list {
+text-align: -webkit-center;
+}
+
+.social-media p {
+font-size: 1rem;
+}
+
+.approach-img-two p {
+margin: 0rem 1rem 1rem 1rem;
+}
+
+.contact-form button {
+background-color: #EDF5E1;
+color: #05386B;
+width: 15%;
+margin: 0rem auto;
+}
+
+#contact__item-two {
+height: 30rem;
+}
+
+.contact-form {
+margin-top: 0rem;
+margin-left: 0.5rem;
+margin-bottom: 0.5rem;
+}
+
+input {
+margin: 0.1rem;
+height: 1.75rem;
+width: 40%;
+}
+
+textarea {
+height: 10rem;
+width: 95%;
+margin: 0.15rem;
+}
+
+.contact__item h2 {
+font-size: 1.25rem;
+}
+
+#contact__item-two h2 {
+margin-bottom: 0rem;
+margin-left: 1rem;
+}
+
+.contact-form {
+display: -ms-grid;
+display: grid;
+}
+
+#contact__item-one, #contact__item-two, #contact__item-three {
+width: 90%;
+}
+
+
+
+.overview .image img, .approach-img-one img, .approach-items-nine-eleven img, .cs-img-container-seventy, #cs-img-container-seventy,
+.approach-three, .img-two, .approach-imgs-three-five, .img-three, .approach-imgs-seven-eight, .approach-img-fourteen, .approach-img-fifteen,
+.eightnine, .approach-img-seventeen, .approach-img-twenty, .approach-items-twentyone, .approach-img-twentyone, .approach-img-twentytwo,
+.approach-img-twentythree, .approach-items-twentyfour, .approach-img-twentyfour, .approach-items-twentyfive, .img-twelve,
+.img-thirteen, .approach-img-twentyseven, .approach-img-twentyeight, .approach-items-twentynine, .img-four,
+.img-five, .approach-items-thirtyone, .approach-img-thirtyone, .approach-img-thirtytwo, .approach-img-six,
+.approach-img-thirtyfour, .approach-img-thirtyfive, .approach-img-thirtysix, .approach-items-thirtysix, .approach-items-thirtyseven,
+.approach-img-thirtyseven, .approach-img-thirtyeight, .approach-img-thirtynine, .approach-items-forty, .approach-img-forty, 
+.approach-item-fortyone, .approach-img-fortyone {
+width: 40rem;
+}
+
+.approach-imgs-nine-eleven p {
+font-size: 0.75rem;
+margin: 0rem 1rem;
+}
+
+
+.logindisplaynumbers p {
+margin-left: 8rem;
+margin-right: 8rem;
+margin-top: 0rem;
+}
+
+.approach-item-six, .approach-img-eleven,
+.approach-items-fourteen, .approach-items-sixteen, .approach-items-seventeen, .approach-img-sixteen {
+width: 42rem;
+}
+
+
+
+
+
+.img-eight {
+width: 37rem;
+}
+
+.img-seven {
+width: 37rem;
+margin-left: 0rem;
+}
+
+.approach-imgs-seven-eight {
+margin-left: 1rem;
+}
+
+.page-header__item {
+height: 2.5rem;
+}
+
+.navigation-list {
+margin-top: 1.5rem;
+margin-left: 6rem;
+}
+
+.case-study h1 {
+margin: 10rem auto;
+width: 50%;
+}
+
+.img-two {
+height: 6rem;
+}
+
+.approach-item-six .image p, .approach-imgs-seven-eight p, .approach-items-fourteen .image p, .approach-items-sixteen .image p,
+.approach-items-twentyone .image p, .approach-items-twentyfour p, .approach-items-twentyfive p, .approach-items-twentynine .image p,
+.approach-items-thirtyone .image p, .approach-items-thirtysix .image p, .approach-items-thirtyseven .image p, .approach-img-fortyone p,
+.approach-items-forty .image p, .approach-three .image p, .approach-item-six .image p {
+margin-top: 0rem;
+}
+
+.approach-imgs-three-five, .img-three, .approach-img-forty {
+height: 4rem;
+}
+
+.approach-imgs-three-five {
+margin-left: 1rem;
+margin-bottom: 32rem;
+}
+
+.approach-img-twentysix {
+width: 90%;
+}
+
+.approach-img-nine, .approach-img-ten, .approach-img-eleven {
+width: 95%;
+}
+
+.approach-imgs-seven-eight p, .approach-items-fourteen p, .approach-img-sixteen p, .approach-items-twentyone p,
+.approach-items-twentyfour p, .approach-items-twentyfive p, .approach-items-twentynine p, .approach-items-thirtyone p,
+.approach-items-thirtysix p, .approach-items-thirtyseven .image p, .approach-items-thirtyseven p, .approach-items-forty p,
+.approach-img-fortyone p, #final-approach p {
+font-size: 1.25rem;
+}
+
+#final-approach p {
+margin: 4rem 1rem 2rem 1rem;
+}
+
+.approach-img-twentytwo, .approach-img-twentythree, .approach-img-thirtyone, 
+.approach-img-thirtynine {
+height: 13rem;
+}
+
+.approach-img-eleven {
+height: 6rem;
+}
+
+.approach-imgs-twelve-thirteen .image p {
+margin: 0rem 3rem 1rem 3rem;
+}
+
+
+
+.wrap-up p {
+font-size: 1.25rem;
+margin: 4rem 0rem;
+}
+
+.approach-img-fourteen, .img-twelve, .approach-img-thirtyfour {
+height: 21rem;
+}
+
+.approach-img-fifteen {
+height: 18rem;
+}
+
+.approach-img-twenty {
+height: 12rem;
+}
+
+.approach-img-twentyone {
+height: 11rem;
+}
+
+.approach-img-twentyfour, .approach-img-thirtytwo {
+height: 16rem;
+}
+
+.approach-items-twentyone, .approach-items-twentyfive, img-four, .img-five,
+.approach-items-twentynine, .approach-items-thirtyone, .approach-items-thirtysix, .approach-items-thirtyseven, .approach-items-forty,
+.approach-item-fortyone, .approach-img-fortyone {
+margin: auto;
+}
+
+.img-four {
+height: 9rem;
+}
+
+.approach-img-six .image img {
+height: 23rem;
+margin-top: 3rem;
+}
+
+.img-twelve {
+height: 26rem;
+width: 33rem;
+}
+
+#project-three .buttons a {
+margin-top: 1rem;
+}
+
+#project-one .buttons {
+display: -ms-grid;
+display: grid;
+}
+
+#project-one .buttons .github__button {
+width: 20rem;
+margin-top: 0.5rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+margin-bottom: 0rem;  
+}
+
+#project-four .buttons .github__button,
+#project-six .buttons .github__button, .trello__board, .case__study {
+width: 20rem;
+margin-top: 1.5rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+margin-bottom: 1rem;
+}
+
+
+
+#project-six .buttons .trello__board, #project-six .buttons .case__study {
+padding: 0.5rem;
+margin-left: 0rem;
+}
+
+#project-five .buttons .github__button {
+margin-top: 0rem;
+}
+
+.trello__board, .case__study {
+margin-top: 1.5rem;
+width: 20rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+#project-three .buttons .github__button {
+margin-top: 0.5rem;
+width: 20rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+#project-one .project {
+height: 13rem;
+}
+
+#project-two .buttons {
+margin-top: 8rem;
+margin-bottom: 2rem;
+}
+
+#project-three .buttons {
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.approach-items-nine-eleven p {
+font-size: 1.25rem;
+margin-top: 4rem;
+margin-bottom: 1rem;
+width: 39rem;
+}
+
+#project-four .buttons {
+margin-top: 10rem;
+}
+
+.trello__board, .case__study  {
+margin-top: 0.5rem;
+}
+
+#project-five .buttons .github__button {
+width: 21rem;
+}
+
+#project-four .buttons .github__button {
+margin-top: 0rem;
+}
+
+#project-five #bulleted-list {
+margin-bottom: 2.5rem;
+}
+
+#project-five .buttons {
+margin-top: 20rem;
+margin-bottom: 2rem;
+}
+
+#project-five p {
+margin-bottom: 2.5rem;
+}
+
+#project-six #bulleted-list {
+margin-bottom: 3rem;
+}
+
+#project-six .buttons {
+margin-top: 8rem;
+}
+
+.approach-item-six {
+margin-left: 0rem;
+}
+
+#project-six .buttons .github__button, #project-six .trello__board, #project-six .case__study {
+margin-top: 0rem;
+}
+
+.portrait {
+text-align: center;
+}
+
+
+.portrait .profile__portrait {
+margin: auto;
+}
+
+.profile__welcome h1 {
+margin-top: 4rem;
+}
+
+.profile__welcome h3 {
+width: 80%;
+margin: auto;
+font-size: 1.25rem;
+}
+
+.profile_about {
+margin-left: 3.75rem;
+margin-right: 3.75rem;
+}
+
+.profile_about p {
+font-size: 1rem;
+}
+
+.profile_about ul {
+margin-right: 2rem;
+}
+
+.resume {
+margin-left: 0rem;
+}
+
+svg {
+max-width: 25%;
+}
+
+.contact__grid p {
+font-size: 1rem;
+}
+
+#project-one .buttons .github__button, .trello__board, .case__study {
+margin-top: 0.5rem;
+}
+
+.contact__item {
+margin: auto;
+}
+
+#bulleted-list {
+margin-bottom: 3rem;
+}
+
+#project-five .buttons .github__button_2, #project-six .buttons .github__button, .trello__board, .case__study {
+width: 21rem;
+}
+
+#project-five .buttons .github__button_2, .trello__board, .case__study {
+margin-bottom: 1rem;
+} 
+
+.overview h2, .purpose h2, .objectives h2, .tools h2, .approach-intro h2, .duration h2, .conclusion h2 {
+font-size: 1.75rem;
+}
+
+.approach-item-two, .approach-item-six, .approach-items-seven-eight {
+margin-top: 0rem;
+}
+
+.approach-items-three-five {
+margin: 4rem 1rem 0rem 1rem;
+}
+
+.approach-item-two p, .approach-item-six p {
+margin: 4rem 1rem 1rem 1rem;
+}
+
+.approach-three {
+margin: auto;
+}
+
+.approach-img-ten, .approach-img-eleven {
+margin-top: 1rem;
+}
+
+
+
 
 }
 
@@ -1152,15 +3153,15 @@ margin-left: 2rem;
     font-size: 0.9rem;
   }
 
-  #project-one {
+  #project-one, .overview {
     height: 54rem;
   }
 
-  #project-one .project a.github__button {
+  #project-one .project a.github__button, .trello__board, .case__study {
     margin-top: 0.5rem;
   }
 
-  #project-two {
+  #project-two, .purpose {
     height: 54rem;
   }
 
@@ -1184,7 +3185,8 @@ margin-left: 2rem;
   }
 
   #project-five .buttons {
-    margin-top: 8rem;
+    margin: 9rem auto;
+    width: 16rem;
   }
 
   #project-five .project {
@@ -1240,8 +3242,8 @@ margin-left: 2rem;
       display: -ms-grid;
       display: grid;
       margin: 0rem 1rem;
-      -ms-grid-rows: 53rem 20px 59rem;
-      grid-template-rows: 53rem 59rem;
+      -ms-grid-rows: 69rem 20px 76rem;
+      grid-template-rows: 69rem 76rem;
   }
   
   .grid > *:nth-child(1) {
@@ -1264,12 +3266,40 @@ margin-left: 2rem;
       -ms-grid-column: 3;
   }
 
+  .case-study-sections {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+    display: -ms-grid;
+    display: grid;
+    margin: 0rem 1rem;
+    -ms-grid-rows: 69rem 20px 76rem;
+    grid-template-rows: 69rem 76rem;
+  }
+
+  .case-study-sections > *:nth-child(1) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+  }
+
+  .case-study-sections > *:nth-child(2) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+  }
+
+  .case-study-sections > *:nth-child(3) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+  }
+
+  .case-study-sections > *:nth-child(4) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 3;
+  }
 
   .contact__grid {
       -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-      display: -ms-grid;
-      display: grid;
+      display: contents;
       margin-left: 10rem;
       -ms-grid-columns: 440px 20px 0px;
       grid-template-columns: 440px 0px;
@@ -1282,60 +3312,50 @@ margin-left: 2rem;
               justify-content: center;
   }
 
-
   .contact__grid > *:nth-child(1) {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
   }
 
-
   .contact__grid > *:nth-child(2) {
       -ms-grid-row: 1;
       -ms-grid-column: 3;
   }
-
 
   .contact__grid > *:nth-child(3) {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
   }
 
-
   .contact__grid > *:nth-child(4) {
       -ms-grid-row: 3;
       -ms-grid-column: 3;
   }
-
 
   .contact__grid > *:nth-child(1) {
       -ms-grid-row: 1;
       -ms-grid-column: 1;
   }
 
-
   .contact__grid > *:nth-child(2) {
       -ms-grid-row: 1;
       -ms-grid-column: 3;
   }
-
 
   .contact__grid > *:nth-child(3) {
       -ms-grid-row: 1;
       -ms-grid-column: 5;
   }
 
-
   .contact__grid > *:nth-child(4) {
       -ms-grid-row: 3;
       -ms-grid-column: 1;
   }
 
-
   .contact__grid > *:nth-child(5) {
       -ms-grid-row: 3;
       -ms-grid-column: 3;
   }
-
 
   .contact__grid > *:nth-child(6) {
       -ms-grid-row: 3;
@@ -1348,32 +3368,45 @@ margin-left: 2rem;
   }
 
   #contact__item-two {
-      height: 460px;
-      margin-top: 325px;
-      width: 925px;
+      height: 28rem;
+      margin-top: 3rem;
+      width: 55rem;
+      margin-left: 4rem;
 
+  }
+
+  #contact__item-one {
+      height: 150px;
+      margin-top: 0rem;
+      width: 55rem;
+      -ms-grid-column-align: center;
+          justify-self: center;
   }
 
   #contact__item-three {
-      height: 150px;
-      margin-top: 0rem;
+      height: 200px;
+      margin-top: 3rem;
       width: 42rem;
       -ms-grid-column-align: center;
           justify-self: center;
   }
 
-  #contact__item-four {
-      height: 200px;
-      margin-top: 8rem;
-      width: 42rem;
-      -ms-grid-column-align: center;
-          justify-self: center;
+  grid__item .buttons {
+    margin: 0.5rem 1rem 1rem 1.25rem;
+}
+
+  #project-one .buttons .github__button {
+    margin-bottom: 0rem;
   }
+
+  .contact-form button {
+    font-size: 95%;
+}
 
   .main-contact h1 {
       font-size: 25px;
       color: #05386B;
-      margin-top: 3rem;
+      margin-top: 10rem;
   }
 
   .navigation-list li {
@@ -1403,7 +3436,7 @@ margin-left: 2rem;
   }
 
   #project-two .buttons {
-    margin-top: 6rem;
+    margin-top: 10.5rem;
   }
 
   #project-three #bulleted-list {
@@ -1411,7 +3444,11 @@ margin-left: 2rem;
   }
 
   #project-three .project {
-    height: 21%;
+    height: 25%;
+  }
+
+  .grid__item p {
+    font-size: 1rem;
   }
 
   #project-three .buttons {
@@ -1423,7 +3460,7 @@ margin-left: 2rem;
   }
 
   #project-four .project {
-    height: 11.5rem;
+    height: 15rem;
   }
 
   #project-four .buttons {
@@ -1454,15 +3491,607 @@ margin-bottom: 5rem;
 
 
 #contact-social {
-margin-top: 20rem;
+margin-top: 5rem;
 }
 
   /*svg {
     margin-top: var(--margin-top-50);
       margin-left: var(--margin-left-15);
   }*/
+
+
+
+.overview, .overview .image img, .purpose, .objectives, .tools, .approach-intro, .approach-item-one, .approach-item-two, .cs-img-container-seventy,
+#cs-img-container-seventy, .logindisplays, .approach-three, .approach-imgs-seven-eight, .approach-img-ten, .approach-img-ten,
+.approach-img-eleven, .img-seven, .approach-items-sixteen, .approach-items-seventeen,
+.approach-items-twentyone, .approach-items-twentyone .image img, .approach-items-twentyfive, .approach-items-twentyfive .image img,
+.approach-items-thirtyone, .approach-items-thirtyone .image img, .approach-items-thirtyseven, .approach-items-thirtyseven img,
+.api-vs-fetchcomp, .approach-items-nine-eleven img, .approach-items-three-five, .approach-img-one, .approach-items-nine-eleven, .approach-item-six,
+.approach-items-fourteen, .logindisplaynumbers, .approach-items-fourteen .image img,
+.approach-img-sixteen, .eightnine, .user-dialogs img, .approach-items-twentyfour, .approach-img-twentyfour, .approach-items-twentynine,
+.approach-items-twentynine .image img, .approach-img-thirtysix, .approach-items-thirtysix, .approach-items-forty,
+.approach-img-forty, .approach-img-fortyone, .approach-items-nine-eleven img {
+width: 100%;
+margin: auto;
 }
 
+.approach-imgs-three-five .image p {
+font-size: 0.80rem;
+margin: 0rem 4rem;
+}
+
+.img-two,  .img-four, .img-five {
+width: 85%;
+-ms-grid-column-align: center;
+    justify-self: center;
+height: 8rem;
+}
+
+.img-three {
+width: 85%;
+height: 6rem;
+}
+
+
+.page-header__item {
+width: 1rem;
+height: 3rem;
+}
+
+.main-navigation {
+width: 48rem;
+}
+
+nav {
+max-width: 75%;
+}
+
+.navigation-list {
+float: right;
+margin-top: 2rem;
+margin-right: 3rem;
+}
+
+.case-study h1 {
+width: 35%;
+margin: 10rem auto 5rem auto;
+}
+
+.case-study-sections, .approach-item-fortyone, .duration, .conclusion {
+margin: auto;
+}
+
+.case-study h1 {
+font-size: 2.5rem;
+width: 50%;
+}
+
+h2 {
+font-size: 1.75rem;
+}
+
+p {
+font-size: 1.15rem;
+}
+
+.approach-img-two p, .approach-item-six .image p 
+{
+font-size: 0.80rem;
+margin: 0rem 7rem;
+}
+
+.approach-imgs-twelve-thirteen .image p {
+margin: 0rem;
+font-size: 0.80rem;
+margin-bottom: 1rem;
+}
+
+.approach-items-twelve-thirteen p {
+margin: 0rem 2rem;
+}
+
+.approach-imgs-nine-eleven p, .approach-imgs-seven-eight .image p {
+margin: 0rem;
+font-size: 0.80rem;
+}
+
+.approach-imgs-three-five .image p {
+margin: 0rem 4.5rem;
+margin-bottom: 1rem;
+}
+
+.approach-img-one p {
+font-size: 0.80rem;
+margin: 0rem;
+}
+
+.approach-items-twelve-thirteen, 
+.wrap-up  {
+margin: 3rem 7rem 0rem 7rem;
+}
+
+.approach-imgs-twelve-thirteen {
+margin: 0rem 7rem 0rem 7rem;
+
+}
+
+.case-study-sections {
+-ms-grid-columns: 1fr;
+grid-template-columns: 1fr;
+-ms-grid-rows: 40rem 20px 28rem;
+grid-template-rows: 40rem 28rem;
+}
+
+.case-study-sections > *:nth-child(1) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+}
+
+.case-study-sections > *:nth-child(2) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+}
+
+
+.overview, .purpose, .objectives, .tools, .approach-intro, .approach-img-one, .approach-item-one, .approach-items-nine-eleven, .approach-item-two,
+.approach-items-three-five, .approach-items-seve, .approach-imgs-seven-eight, .approach-items-fourteen, .approach-items-sixteen, 
+.approach-items-seventeen, .approach-img-sixteen, .approach-items-twentyone, .approach-items-twentyfour, .approach-items-twentyfive,
+.approach-items-twentynine, .approach-items-thirtyone, .approach-img-thirtysix, .approach-items-thirtysix, .approach-items-thirtyseven,
+.approach-img-forty, .approach-items-forty, .approach-item-fortyone, .approach-img-fortyone, .cs-img-container-seventy, #cs-img-container-seventy,
+.approach-three, .approach-item-six, .duration, .conclusion, .approach-imgs-nine-eleven {
+width: 52rem;
+}
+
+.approach-imgs-nine-eleven {
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+img {
+width: 100%;
+}
+
+.img-eight {
+margin-top: 1rem;
+}
+
+.logindisplaynumbers p {
+margin-left: 8rem;
+margin-right: 8rem;
+margin-top: 0rem;
+}
+
+.approach-items-nine-eleven p {
+margin-bottom: 0rem;
+}
+
+.api-vs-fetchcomp {
+height: 35rem;
+}
+
+.approach-imgs-nine-eleven p {
+margin-bottom: 1rem;
+}
+
+.approach-imgs-seven-eight p, .approach-items-fourteen .image p, .approach-items-sixteen .image p,
+.approach-items-twentyone .image p, .approach-items-twentyfour p, .approach-items-twentyfive p, .approach-items-twentynine .image p,
+.approach-items-thirtyone .image p, .approach-items-thirtysix .image p, .approach-items-thirtyseven .image p, .approach-img-fortyone p,
+.approach-items-forty .image p {
+margin-top: 0rem;
+}
+
+.approach-items-nine-eleven p {
+margin-top: 3rem;
+}
+
+
+
+.approach-imgs-seven-eight p, .approach-items-fourteen p, .approach-img-sixteen p, .approach-items-twentyone p,
+.approach-items-twentyfour p, .approach-items-twentyfive p, .approach-items-twentynine p, .approach-items-thirtyone p,
+.approach-items-thirtysix p, .approach-items-thirtyseven .image p, .approach-items-thirtyseven p, .approach-items-forty p,
+.approach-img-fortyone p {
+font-size: 1.25rem;
+}
+
+.social-media a img {
+width: 3%;
+}
+
+ul {
+font-size: 1rem;
+}
+
+#project-one, #project-two {
+height: 68rem;
+}
+
+#project-one .buttons {
+display: -ms-grid;
+display: grid;
+margin-top: 8.5rem;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.trello__board, .case__study {
+width: 13rem;
+margin-top: 1rem;
+}
+
+.grid__item .github__button {
+margin-top: 0.25rem;
+}
+
+#project-three, #project-four {
+margin-top: 6rem;
+}
+
+#project-two #bulleted-list {
+margin-bottom: 3rem;
+}
+
+#project-four #bulleted-list {
+margin-bottom: 1.5rem;
+}
+
+#project-three #bulleted-list {
+margin-bottom: 4rem;
+}
+
+#project-five {
+margin-top: 15rem;
+}
+
+#project-six {
+margin-top: 15rem;
+}
+
+#project-three, #project-four {
+height: 67rem;
+}
+
+#project-three .buttons {
+margin-top: 3.5rem;
+}
+
+#project-four .buttons {
+margin-top: 5.5rem;
+}
+
+#project-five #bulleted-list {
+margin-bottom: 7.5rem;
+}
+
+#project-five, #project-six {
+height: 66rem;
+}
+
+#project-six .project {
+margin-bottom: 7.5rem;
+}
+
+#project-one .github__button, .trello__board, .case__study {
+width: 16rem;
+font-size: 1rem;
+}
+
+#project-two .github__button, .trello__board, .case__study {
+font-size: 1rem;
+margin-top: 2rem;
+}
+
+.github__button {
+margin: 0.25rem;
+}
+
+#project-two .github__button {
+margin-top: 0.5rem;
+}
+
+#project-three .github__button, .trello__board, .case__study {
+font-size: 1rem;
+margin-top: 2rem;
+}
+
+#project-three .github__button {
+margin-bottom: 0.5rem;
+}
+
+.portrait .profile__portrait {
+width: 14rem;
+margin-left: 0rem;
+}
+
+.profile {
+-moz-text-align-last: center;
+     text-align-last: center;
+}
+
+.portrait {
+margin-top: 12rem;
+}
+
+.profile__welcome h3, .profile_about .skills {
+font-size: 1.1rem;
+}
+
+.profile__welcome h3 {
+width: 85%;
+margin: auto;
+font-size: 1.25rem;
+}
+
+.profile_about h3 {
+font-size: 1.3rem;
+}
+
+.profile_about ul {
+font-size: 1rem;
+margin-right: 2rem;
+}
+
+.resume {
+margin-left: 0rem;
+}
+
+.resume .button, .work__link a {
+font-size: 1rem;
+}
+
+.main-contact h1 {
+font-size: 2rem;
+}
+
+#contact__item-two, #contact__item-three {
+width: 55rem;
+padding-left: 1rem;
+margin-left: 4rem;
+}
+
+input, textarea {
+font-size: 0.9rem;
+}
+
+textarea {
+width: 100%;
+}
+
+.contact__item {
+width: 55rem;
+padding-left: 1rem;
+margin-left: 4rem;
+}
+
+input {
+width: 15rem;
+height: 2rem;
+}
+
+textarea {
+padding-top: 1rem;
+height: 10rem;
+}
+
+.contact-form {
+display: -ms-grid;
+display: grid;
+margin-right: 1.5rem;
+}
+
+#contact__item-two .contact-form {
+margin-left: 0.5rem;
+}
+
+.form-control {
+margin-bottom: 0.25rem;
+}
+
+.contact-form button {
+width: 5rem;
+background-color: #EDF5E1;
+color: #05386B;
+margin-top: 1rem;
+margin-left: 5rem;
+}
+
+.contact__item h2 {
+font-size: 1.5rem;
+margin-top: 2.5rem;
+}
+
+.contact__grid {
+margin-left: 12rem;
+}
+
+#contact__item-three p {
+font-size: 1.05rem;
+}
+
+#bulleted-list, #bulleted-list li {
+font-size: 1.15rem;
+}
+
+#project-one p {
+margin-bottom: 2rem;
+}
+
+#project-one .project {
+height: 13rem;
+margin-bottom: 5rem;
+}
+
+#project-one #bulleted-list {
+margin-bottom: 5rem;
+text-align: -webkit-center;
+}
+
+#project-two p {
+margin-bottom: 5rem;
+}
+
+#project-three p, #project-three #bulleted-list {
+margin-bottom: 2rem;
+}
+
+#project-three, #project-four {
+margin-top: 2rem;
+}
+
+#project-three .buttons {
+margin-top: 3rem;
+}
+
+#project-four p {
+margin-bottom: 2rem;
+}
+
+#project-three #bulleted-list {
+margin-bottom: 6.5rem;
+}
+
+#project-three .buttons .github__button, #project-four .buttons .github__button, .trello__board, .case__study {
+width: 16rem;
+}
+
+#project-three .github__button {
+margin-top: 0rem;
+}
+
+.trello__board, .case__study {
+margin-top: 1rem;
+}
+
+#project-four .buttons .github__button, .trello__board, .case__study {
+font-size: 1rem;
+}
+
+#project-three, #project-four {
+height: 74rem;
+}
+
+#project-five, #project-six {
+margin-top: 2rem;
+}
+
+#project-six h2 {
+font-size: 1.75rem;
+}
+
+#project-five p {
+margin-bottom: 7rem;
+}
+
+#project-six p {
+margin-bottom: 2rem;
+}
+
+#project-five #bulleted-list {
+margin-bottom: 3.5rem;
+}
+
+#project-six #bulleted-list {
+margin-bottom: 2.5rem;
+}
+
+#project-five .buttons .github__button, .trello__board, .case__study {
+width: 16rem;
+font-size: 1rem;
+}
+
+#project-six .buttons .github__button, .trello__board, .case__study {
+width: 16rem;
+font-size: 1rem;
+margin: 0.25rem;
+}
+
+#project-one .buttons .github__button, #project-two .buttons .github__button, 
+#project-three .buttons .github__button, #project-four .buttons .github__button,
+#project-five .buttons .github__button, #project-six .buttons .github__button,
+.trello__board, .case__study {
+font-size: 1.15rem;
+}
+
+#project-five .buttons .github__button_2 {
+padding: 0.5rem;
+margin-left: 0.2rem;
+font-size: 1.15rem;
+background-color: #EDF5E1;
+}
+
+.github__button_2 {
+margin: 0.5rem 0rem;
+}
+
+#project-six .buttons .trello__board, #project-six .buttons .case__study {
+padding: 0.5rem;
+width: 16rem;
+}
+
+
+
+#project-one, #project-two {
+height: 70rem;
+}
+
+.grid__item {
+margin: 0rem 0rem;
+}
+
+.trello__board, .case__study {
+margin-top: 0.25rem;
+}
+
+#project-one .buttons .github__button {
+margin-top: 0.5rem;
+}
+
+#project-two .buttons .github__button, .trello__board, .case__study {
+width: 14rem;
+}
+
+#project-three, #project-four {
+height: 76rem;
+}
+
+#project-five, #project-six {
+height: 73rem;
+}
+
+#project-five .project {
+height: 12rem;
+}
+
+.purpose, .approach-item-two, .approach-items-three-five, .approach-item-six {
+margin-top: 3rem;
+}
+
+.approach-item-one p, .approach-item-two p, .approach-items-three-five p, .approach-items-seven-eight p {
+margin-bottom: 0rem;
+}
+
+
+.approach-items-nine-eleven {
+margin: auto;
+}
+
+.approach-items-seven-eight {
+margin-top: 6rem;
+}
+
+.approach-three .image p {
+margin-top: 0rem;
+}
+
+.approach-item-six {
+margin-top: 3rem;
+}
+
+.grid__item .buttons {
+margin: 0.5rem 0.25rem 1rem 0.25rem;
+}
+
+}
 
 @media all and (min-width: 1025px) {
   body {
@@ -1472,6 +4101,7 @@ margin-top: 20rem;
 
   .profile__welcome h3 {
     margin: 1rem 11rem;
+    font-size: 1.3rem;
   }
 
   .profile_welcome h3, .profile_about p, .work__link {
@@ -1492,8 +4122,8 @@ margin-top: 20rem;
       grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .grid {
-    margin: 1rem 1rem 10rem 1rem;
+  .grid, .case-study-sections {
+    margin: 1rem 0rem 10rem 0rem;
     -ms-grid-rows: 63rem 20px 65rem;
     grid-template-rows: 63rem 65rem;
   }
@@ -1503,12 +4133,12 @@ margin-top: 20rem;
   }
 
   #project-one .project {
-    height: 17rem;
-    margin-bottom: 2.5rem;
+    height: 12rem;
+    margin-bottom: 10rem;
 }
 
 #project-two #bulleted-list {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 #project-two .project {
@@ -1520,7 +4150,7 @@ margin-top: 20rem;
 }
 
 #project-three .project {
-  height: 16rem;
+  height: 15rem;
   margin-bottom: 3rem;
 }
 
@@ -1533,7 +4163,7 @@ margin-top: 20rem;
 }
 
 #project-five #bulleted-list {
-  margin-bottom: 12.5rem;
+  margin-bottom: 14rem;
 }
 
 #project-five .project a {
@@ -1572,13 +4202,13 @@ margin-top: 20rem;
       width: 80%;
   }
 
-  #contact__item-three {
+  #contact__item-one {
       height: 170px;
       width: 80%;
       margin-bottom: 15px;
   }
 
-  #contact__item-four {
+  #contact__item-three {
       width: 80%;
       height: 250px;
       margin-top: 0px;
@@ -1593,6 +4223,607 @@ margin-top: 20rem;
   #project-six #bulleted-list {
     margin-bottom: 11rem;
 }
+
+.overview .image img, .api-vs-fetchcomp, .approach-items-nine-eleven img, .cs-img-container-seventy, .apparoach-img-three img,
+.approach-items-nine-eleven img,  .approach-img-eigh, .approach-img-fourteen, .approach-img-fifteen,
+.approach-imgs-three-five, .img-three, .approach-img-ten, .approach-img-ten, .img-seven, .img-eight,
+.approach-items-seventeen, .eightnine, .approach-img-seventeen, .approach-img-twenty, .approach-img-twentyfour, .approach-img-twentyone,
+.approach-img-twentytwo, .approach-items-twentyfour, .approach-img-twentythree, .img-twelve,
+.img-thirteen, .approach-items-twentynine, .approach-img-twentyseven, .approach-img-twentyeight,
+.approach-img-thirtyone, .approach-img-thirtysix, .approach-img-thirtytwo, .approach-img-six, .approach-img-thirtyfour,
+.approach-img-thirtyfive, .approach-img-thirtyseven, .approach-img-forty, .approach-img-thirtyeight, .approach-img-thirtynine,
+.approach-img-fortyone {
+  width: 44rem;
+}
+
+.img-two {
+  height: 12rem;
+}
+
+nav {
+  max-width: 70%;
+}
+
+.contact__item h2 {
+  font-size: 2rem;
+}
+
+#contact__item-two form input, #contact__item-two form textarea {
+  font-size: 95%;
+}
+
+#contact__item-two form textarea {
+  padding-left: 0.5rem;
+  height: 10rem;
+  width: 85rem;
+}
+
+.approach-img-eleven {
+  width: 65rem;
+}
+
+.main-navigation {
+  width: 77%;
+  text-align: right;
+  margin-right: 6rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center
+}
+
+.case-study h1 {
+  margin: 13rem auto 6rem auto;
+  width: 28%;
+  font-size: 2.5rem;
+}
+
+.case-study-sections {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.case-study-sections {
+  grid-gap: 0rem;
+}
+
+.github__button, .trello__board, .case__study {
+  width: 17rem;
+  margin: 0rem;
+}
+
+.purpose {
+  margin-top: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#project-six h2 {
+  font-size: 2rem;
+}
+
+.contact-form input {
+  background-color: #EDF5E1;
+  color: #05386B;
+}
+
+.contact-form textarea {
+  background-color: #EDF5E1;
+  color: #05386B;
+}
+
+.contact-form button {
+  background-color: #EDF5E1;
+  color: #05386B;
+}
+
+#contact__item-two form input {
+  width: 32rem;
+  margin-bottom: 0.25rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+
+
+
+p {
+  font-size: 1.25rem;
+}
+
+.case-study-sections {
+  -ms-grid-rows: 41rem 0rem 50rem;
+  grid-template-rows: 41rem 50rem;
+}
+
+
+
+.approach-intro h2 {
+  margin-top: 0rem;
+}
+
+.approach-intro {
+  width: 60%;
+}
+
+.objectives {
+  margin-top: 7rem;
+}
+
+.api-vs-fetchcomp, .img-two {
+  width: 80rem;
+}
+
+
+
+.approach-img-one p {
+  margin-top: 0rem;
+}
+
+.approach-item-one, .approach-item-two {
+  width: 50%;
+}
+
+.cs-img-container-seventy {
+  margin-left: -19rem;
+}
+
+.approach-items-nine-eleven img {
+  width: 72rem;
+}
+
+.approach-items-nine-eleven img {
+  width: 78rem;
+}
+
+
+.approach-item-six .image p, .approach-imgs-seven-eight p, .approach-items-fourteen .image p, .approach-items-sixteen .image p,
+.approach-items-twentyone .image p, .approach-items-twentyfour p, .approach-items-twentyfive p, .approach-items-twentynine .image p,
+.approach-items-thirtyone .image p, .approach-items-thirtysix .image p, .approach-items-thirtyseven .image p, .approach-img-fortyone p,
+.approach-items-forty .image p, .approach-img-one p, .approach-items-nine-eleven p, .centered-image-eighty p, 
+.logindisplaynumbers p, .image p, .approach-items-fortyone p, .approach-img-one p {
+margin-top: 0.5rem;
+font-size: 1rem;
+}
+
+.approach-items-three-five {
+width: 90%;
+}
+
+.logindisplays {
+width: 75rem;
+}
+
+.approach-item-six {
+margin-top: 3rem;
+}
+
+.approach-items-three-five p {
+margin-top: 3rem;
+}
+
+.approach-item-six .image img, .approach-imgs-seven-eight .image img {
+width: 40rem;
+}
+
+.approach-items-fourteen {
+margin-top: 90rem;
+}
+
+.approach-img-fourteen {
+width: 69rem;
+}
+
+.approach-imgs-seven-eight {
+width: 47rem;
+height: 44rem;
+}
+
+.approach-items-fourteen {
+margin-top: 120rem;
+margin-left: -41rem;
+}
+
+.approach-img-fifteen {
+width: 56rem;
+}
+
+.approach-items-sixteen {
+margin-top: 5rem;
+width: 45rem;
+}
+
+.approach-img-sixteen {
+margin-top: 60rem;
+width: 53rem;
+}
+
+.approach-items-seventeen {
+width: 50rem;
+}
+
+.approach-items-sixteen p {
+margin-top: 5rem;
+}
+
+.approach-img-sixteen p {
+width: 85%;
+margin-left: -48rem;
+}
+
+.approach-img-sixteen .logindisplaynumbers p {
+margin-left: 0rem;
+}
+
+.approach-items-twentyfour {
+margin-top: 66rem;
+}
+
+.approach-img-twentyone, .approach-img-twentytwo {
+width: 61rem;
+margin-left: 10rem;
+}
+
+.approach-img-twentythree {
+width: 71rem;
+}
+
+.approach-items-twentyone .image {
+margin-left: 27rem;
+}
+
+.approach-items-twentyone {
+width: 55%;
+margin-top: 20rem;
+}
+
+.approach-items-twentyone .image p {
+margin-left: 13rem;
+}
+
+.approach-items-twentyone .image {
+margin-top: -30rem;
+}
+
+.approach-img-twentyfour {
+width: 48rem;
+margin-left: -47rem;
+}
+
+.grid {
+-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+margin: 0rem 0.5rem;
+-ms-grid-rows: 66rem 20px 88rem;
+grid-template-rows: 66rem 88rem;
+display: -ms-grid;
+display: grid;
+max-width: 100%;
+}
+
+.grid > *:nth-child(1) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(3) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(4) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(5) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(6) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 5;
+}
+
+.case-study-sections {
+-ms-grid-columns: 1fr;
+grid-template-columns: 1fr;
+margin: 0rem 0.5rem;
+-ms-grid-rows: 40rem 0rem 20rem;
+grid-template-rows: 40rem 20rem;
+display: -ms-grid;
+display: grid;
+max-width: 100%;
+}
+
+.case-study-sections > *:nth-child(1) {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+}
+
+.case-study-sections > *:nth-child(2) {
+      -ms-grid-row: 3;
+      -ms-grid-column: 1;
+}
+
+#project-one #bulleted-list {
+margin-bottom: 2.5rem;
+}
+
+#project-one .buttons, #project-three .buttons, #project-four .buttons 
+{
+display: -ms-grid;
+display: grid;
+width: 16rem;
+margin: 7rem auto;
+}
+
+#project-six .buttons {
+display: -ms-grid;
+display: grid;
+width: 16rem;
+margin: 5.5rem auto;
+}
+
+#project-five .buttons {
+display: -ms-grid;
+display: grid;
+width: 15rem;
+margin: 8rem auto;
+}
+
+#project-one, #project-two, #project-three {
+height: 71rem;
+}
+
+#project-four, #project-five, #project-six {
+margin-top: 7rem;
+}
+
+#project-one .buttons .github__button
+{
+margin-top: 1.5rem;
+}
+
+.trello__board, .case-study {
+margin-top: 0rem;
+}
+
+#project-six .buttons a {
+padding: 0.5rem;
+}
+
+.grid__item .github__button {
+padding: 1.5rem;
+}
+
+.github__button, .trello__board, .case-study {
+margin-bottom: 0.5rem;
+}
+
+#project-four .buttons .github__button,  #project-five .buttons .github__button {
+margin-top: 0rem;
+}
+
+.buttons .github__button_2 {
+width: 17rem;
+margin-bottom: 1rem;
+padding: 1.5rem;
+}
+
+#project-six p {
+margin-top: 2.5rem;
+}
+
+
+
+.grid__item p {
+font-size: 1.1rem;
+}
+
+#project-three .buttons .github__button {
+margin-top: 0rem;
+}
+
+#project-three .buttons {
+margin: 6.75rem auto;
+}
+
+#project-two .buttons {
+margin-top: 7rem;
+}
+
+#project-four, #project-five, #project-six {
+height: 80rem;
+}
+
+#project-six p {
+margin-bottom: 2.5rem;
+}
+
+#project-six .project {
+width: 33rem;
+}
+
+#project-four .buttons {
+margin: 8rem auto;
+}
+
+#project-five .buttons {
+margin: 5rem auto;
+}
+
+#project-six .button {
+margin: 5rem auto;
+}
+
+.portrait {
+text-align: center;
+}
+
+.profile__portrait {
+margin-left: 0rem;
+}
+
+.profile {
+margin-top: 10rem;
+}
+
+.github__button_2 {
+background-color: #EDF5E1;
+}
+
+
+.profile_about p, .profile_about .skills {
+font-size: 1.17rem;
+}
+
+.profile_about p {
+margin: 0;
+}
+
+.profile_about h3 {
+font-size: 1.4rem;
+}
+
+.resume {
+margin-left: 0rem;
+}
+
+.profile_about ul {
+margin-right: 2rem;
+}
+
+.profile_about ul li {
+font-size: 1.1rem;
+}
+
+.portrait img {
+height: 24rem;
+}
+
+#contact__item-one, #contact__item-three, #contact__item-two {
+width: 85%;
+margin-bottom: 15px;
+padding-top: 1rem;
+padding-left: 2rem;
+}
+
+#contact__item-two {
+height: 30rem;
+}
+
+.contact-form {
+display: -ms-grid;
+display: grid;
+}
+
+.profile {
+margin-top: 3rem;
+}
+
+.main-contact h1 {
+margin-top: 9rem;
+}
+
+.approach-intro {
+width: 100%;
+}
+
+.contact-form button {
+margin: 0.7rem auto;
+width: 8%;
+}
+
+.approach-item-one {
+width: 90%;
+margin-left: 10rem;
+}
+
+.approach-item-two {
+width: 70%;
+margin-top: 5rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+#project-one .buttons .github__button {
+margin-top: 0rem;
+}
+
+#bulleted-list {
+text-align: -webkit-center;
+}
+
+.tools {
+margin-top: 10rem;
+}
+
+.approach-img-one p, approach-items-nine-eleven p, .approach-three p, .approach-item-six .image p, .approach-imgs-seven-eight .image p,
+.approach-items-sixteen .image p, .approach-img-two p, approach-imgs-three-five .image p {
+font-size: 1rem;
+margin-top: 0.5rem;
+}
+
+approach-items-nine-eleven, .approach-imgs-seven-eight {
+margin-top: 3rem;
+}
+
+.approach-item-seven {
+margin-left: 8rem;
+}
+
+.approach-items-nine-eleven img {
+width: 40rem;
+}
+
+.overview .image img {
+width: 50rem;
+}
+
+.overview p, .purpose p, .objectives p, .tools p, .approach-intro p, .approach-items-three-five p,
+.approach-items-seven-eight p, .conclusion p, .approach-item-six p, .approach-item-two p {
+margin: auto 7rem;
+}
+
+
+
+.approach-items-nine-eleven p {
+margin: auto 10rem;
+}
+
+.purpose p, .objectives p, .tools p, .conclusion p {
+margin-bottom: 1rem;
+}
+
+.overview .image, .tools {
+margin-top: 2rem;
+}
+
+.approach-intro {
+margin-top: 5rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+.approach-imgs-seven-eight {
+width: 0rem;
+margin-top: 36rem;
+margin-bottom: 18rem;
+}
+
+
+
 
 @-webkit-keyframes sky-color-change {
   0% {
@@ -1616,6 +4847,9 @@ margin-top: 20rem;
   }
 }
 
+
+
+
 @keyframes sky-color-change {
   0% {
       fill: #88C5CC;
@@ -1638,6 +4872,175 @@ margin-top: 20rem;
   }
 }
 
+.approach-imgs-three-five,
+.approach-img-ten, .approach-items-sixteen { 
+width: 100%;
+height: 5rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+.approach-items-nine-eleven img {
+width: 65rem;
+height: 8rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+.approach-items-nine-eleven .approach-img-nine {
+width: 65rem;
+height: 37rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+.img-three {
+width: 80rem;
+height: 10rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+.approach-item-six .image img {
+width: 55rem;
+height: 25rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+.img-five {
+height: 15rem;
+width: 80rem;
+}
+
+.img-four {
+width: 80rem;
+height: 18rem;
+-ms-grid-column-align: center;
+    justify-self: center;
+}
+
+.img-twelve {
+width: 70rem;
+margin-top: 0rem;
+}
+
+.approach-imgs-seven-eight .image img {
+margin-top: 1rem;
+width: 65rem;
+}
+
+.approach-three .image img, .approach-items-nine-eleven {
+margin-top: 1rem;
+}
+
+.approach-img-ten {
+width: 60%;
+}
+
+.img-seven {
+margin-top: 25rem;
+}
+
+.approach-item-six {
+margin-top: 20rem;
+}
+
+.approach-items-nine-eleven {
+margin-top: 2rem;
+}
+
+approach-items-seven-eight p, .approach-item-six p {
+margin-top: 25rem;
+}
+
+.approach-items-three-five {
+margin: 5rem 5rem 2rem 5rem;
+}
+
+#localStorage {
+margin-top: 50rem;
+height: 10rem;
+}
+
+.approach-items-nine-eleven p {
+margin-top: 1rem;
+font-size: 1.25rem;
+margin-bottom: 1rem;
+}
+
+.approach-imgs-nine-eleven p {
+margin: 1rem 21rem;
+font-size: 1rem;
+}
+
+.approach-img-nine {
+height: 34rem;
+width: 66rem;
+}
+
+.img-seven {
+margin-left: 22rem;
+}
+
+.approach-imgs-seven-eight .image p {
+width: 55rem;
+margin-left: 27rem;
+}
+
+.duration p, .conclusion p {
+margin: 0rem 13rem;
+}
+
+
+.img-eight {
+margin-left: 22rem;
+}
+
+
+
+.img-twelve {
+width: 55rem;
+}
+
+#final-approach p, #localStorage p {
+margin-top: 5rem;
+}
+
+#wrap p {
+margin-top: 3rem;
+}
+
+#localStorage .image p {
+margin-top: 0.5rem;
+}
+
+
+
+
+
+.approach-items-sixteen {
+margin-top: 1rem;
+}
+
+.approach-items-sixteen {
+width: 100%;
+}
+
+.approach-item-six {
+margin-top: 0rem;
+}
+
+.approach-item-six .image img {
+margin-top: 1rem;
+}
+
+.approach-item-six p {
+margin-top: 22rem;
+}
+
+
+
 @-webkit-keyframes light-color-change {
   0% {
       fill: #F5F5F5;
@@ -1659,6 +5062,8 @@ margin-top: 20rem;
       fill: #F5F5F55E;
   }
 }
+
+
 
 @keyframes light-color-change {
   0% {
