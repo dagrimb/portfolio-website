@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Angular Case Study</title>
+    <link rel="shortcut icon" href="img/mylogo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!-- Header including the log and the main navigation -->
+  <header class="page-header">
+    <img src="img/mylogo.png" class="page-header__item" alt="David Grimberg's logo">
+    <nav class="main-navigation">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list_item">About Me</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <!-- Main content -->
+    <section>
+      <div class="case-study">
+        <h1>Case Study for the myfavfilmz Angular client</h1>
+        <div class="case-study-sections">
+          <div class="overview">
+            <h2>Overview</h2>
+            <p>
+              Myfavfilmz is a Full-Stack web application that <a href="https://github.com/dagrimb/myfavfilmz-Angular-client" target="_blank" rel="noopener noreferrer">
+              I developed</a> using the MEAN (Mongo, Express, Angular, Node) stack. It provides users (i.e., movie fans) with the ability 
+              to register to create an account, find out info about movies, and create a list of their favorite movies.
+            </p>
+            <div class="image">
+              <img src="img/myfavfilmz_Angular_bigimg.png" alt="Image of myfavfilmz Angular in action" />
+            </div>
+          </div>
+          <div class="purpose">
+            <h2>Purpose & Context</h2>
+            <p>
+              This was the final project for my CareerFoundry Full-Stack Web Development program. I had previously 
+              <a href="https://github.com/dagrimb/myfavfilmz-api" target="_blank" rel="noopener noreferrer">built the server-side using 
+              Node.js and Express.js for the API and Mongo for the database</a>. I had followed that up with 
+              <a href="https://github.com/dagrimb/myfavfilmz-React-client" target="_blank" rel="noopener noreferrer">creating the 
+              client-side using React.</a>
+            </p>
+            <p>
+              MyfavfilmzAngularClient was born out of the necessity to obtain some hands-on exposure to the Angular framework which, like 
+              React, is a very popular JavaScript technology in today’s tech industry. I applied my knowledge of the topics that I learned the 
+              course—such as data binding, interpolation, and templates—while developing this project. Another purpose of this project 
+              was to give students like myself the opportunity to create detailed documentation that other developers working with the 
+              project in the future could reference in order to know what my code does and how to work with it.
+            </p>
+          </div>
+          <div class="objectives">
+            <h2>Objectives</h2>
+            <p>
+              The main objective of this project was for me to use my knowledge of how I had already developed a client-side for my REST API 
+              and database with React and do the same thing with my new knowledge of the Angular framework. The problem that I was 
+              trying to solve was two-fold: to enable movie enthusiasts to be able to access information about different movies, 
+              directors, and genres whenever they want, and to show those viewing my portfolio that I could do so with multiple popular 
+              frontend technologies.
+            </p>
+            <p>
+              This project was also heavily influenced by both of its ancillary, Agile project management and documentation elements. On the 
+              project management side, I was to use user stories to <a href="https://trello.com/b/Hbz3fmvq/myfavfilmz" target="_blank" rel="noopener noreferrer">create a Kanban board</a> where I would not only manage the status (e.g., 
+              “To-Do”, “In Progress,” or “Completed”) of implementing a solution to satisfy each user story, but also estimate how much time it 
+              would take me to create each solution. The purpose of this was to gain exposure to this real-world, Agile method of teams using 
+              this tool to plan their project sprint goals and timelines appropriately. This practice was paired well with the objective of 
+              ensuring that my code was well-commented and well-documented so that my intent would be well-understood by not only my 
+              hypothetical teammates, but anyone who wished to engage with my application in the future.
+            </p>
+          </div>
+          <div class="tools">
+            <h2>Tools, Skills & Methods</h2>
+            <p>
+              The Angular framework is the main technology focused on in this project—installing it and Angular Material and building the 
+              components with the Angular CLI, using its router to allow users to shift between views, and making it responsive and creating 
+              the dialogs with Angular Material. Angular is the main technological skill that this project demonstrates.
+            </p>
+            <p>
+              Two softer skills are also focused on in this project—agile, project management methodology skills and collaborative skills. The 
+              former consists of developing and applying user stories to create user flows and story points that inform the creation of a 
+              Kanban board (which I used Trello for) and the latter consists of commenting on the codebase for the app and using TypeDoc to 
+              generate documentation that is useful for anyone trying to understand the app. 
+            </p>
+          </div>
+          <div class="approach-intro">
+            <h2>Approach</h2>
+            <p>
+              I first took some time to familiarize myself with the project brief. I already had a pretty good idea what I wanted this project 
+              to look like as I had recently created the client-side for the application using React. Next, I 
+              <a href="files/myfavfilmz User Flows.pdf" download="download" target="_blank" rel="noopener noreferrer">created a user flow with 
+              Google Drawings</a>, trying to think of all the different behaviors and routes that users would experience and take while using my application. I looked at 
+              both the user stories in the project brief and my user flow and assigned story points to different tasks which allowed me to 
+              determine how much time each functionality would take to create. I then put my Trello Kanban board together, making note of these 
+              estimations.
+            </p>
+          </div>
+          <div class="approach-item-one"> 
+            <p>
+              One of the first files that I created was one to house the services logic for making API calls to the endpoints created 
+              in my API (*1). 
+            </p>
+          </div>
+          <div class="approach-img-one">
+            <img src="img/apivsfetchcomp.png" class="api-vs-fetchcomp" alt="The code in the Movie API compared with Client Fetch Services">
+            <p>(*1) The endpoints in my server-side API (left) and the fetch-api-data.service.ts file (right) where calls are made to those endpoints</p>
+          </div>
+          <div class="approach-item-two"> 
+            <p>
+              I then created component files for each view necessary to the user  and (in those components) functions that would use 
+              each of those services to fetch or modify movie or user data (*2). 
+            </p>
+          </div>
+          <div class="approach-img-two"> 
+            <img src="img/getmoviesfunc.png" class="img-two" alt="The code for the getMovies function"> 
+            <p>(*2) The getMovies fuction in my movie-card.component.ts file that is responsible for fetching movies in the movie collection</p>  
+          </div>
+          <div class="approach-items-three-five"> 
+            <p>
+              In these components I also used the ngOnInit method (*3) to call these functions whenever the component loaded and 
+              created dialogs and other methods that implemented Angular’s router to allow users to navigate between views 
+              (*4-*5). 
+            </p>
+          </div>
+          <div class="approach-imgs-three-five"> 
+            <div class="image">
+              <img src="img/ngonitgetmovies.png" class="img-three" alt="The code for the ngOnInit method"> 
+              <p>
+                (*3) The ngOnInit method in the movie-card.component.ts file calls both the getMovies and getUserFavorites functions whenever
+                the movie-card component loads
+              </p>
+              <img src="img/backtohomepage.png" class="img-four" alt="The code for creating and calling the backHome function"> 
+              <p>
+                (*4) The backHome method, for example, uses the Angular router to navigate the user from their profile back to the 
+                homepage when called in a click event
+              </p>
+              <img src="img/backtohome.png" class="img-five" alt="The UI for the Back to Home button"> 
+              <p>
+                (*5) Clicking the "Back to Home" button will trigger the click event and navigate the user from their profile back to 
+                the homepage
+              </p>
+            </div>
+          </div>
+          <div class="approach-item-six" id="localStorage"> 
+            <p>
+              I also made sure that the localStorage was cleared of the user info when the logoutUser and deleteAccountHolder functions 
+              were executed (*6).
+            </p>
+            <div class="image">
+              <img src="img/usercomponents.png" class="approach-img-six" alt="The code for clearing the localStorage upon logout">
+              <p>(*6) localStorage.clear on line 43 clears the session storage of the user credentials</p>
+            </div>
+          <div class="approach-items-seven-eight">            
+            <p>
+              I then created the HTML templates for each of these components, using the latter to pass data to the former. I gave the 
+              registration, login, movie, and user dialog methods created in different  components the ability to be opened in a 
+              corresponding template by adding click events to buttons and passed data to those dialogs when appropriate (*7-*8). 
+            </p>
+          </div>
+          </div>
+          <div class="approach-imgs-seven-eight">
+            <div class="image">
+              <img src="img/templatemoviedialogs.png" class="img-seven" alt="The code for creating the movie card buttons">
+              <p>
+                (*7) Created in the movie-card.component.html file are the buttons that open up different informational movie dialogs by triggering
+                click events
+              </p>
+              <img src="img/moviedialogbuttons.png" class="img-eight" alt="The UI displaying the movie card buttons"> 
+              <p>
+                (*8) The User Interface created with the code in image *7
+              </p>   
+            </div>
+          </div>
+          <div class="approach-items-nine-eleven"> 
+            <p>
+              The templates were where I implemented a few different Angular directives. I used the ngModel to bind the 
+              values inputted from the template for the user’s personal information (*9), the ngFor directive for displaying the user 
+              and all of the movies (*10) in the general and user’s favorites collections, and the ngIf directive in icons to 
+              display and determine whether a movie was a user’s favorites or not (*11). 
+            </p>
+          </div>
+          <div class="approach-imgs-nine-eleven"> 
+            <img src="img/regcomponentvstemplate.png" class="approach-img-nine" alt="The code for binding user data between registration template and component">
+            <p>
+              (*9) Lines 26, 36, 46 and 56 of the image on the right (in the HTML template file) show the ngModel directive being used to 
+              bind text entered in that input with the userData object in the image on the left (line 18 the TypeScript component file)
+            </p>
+            <img src="img/ngfordirective.png" class="approach-img-ten" alt="The code for the ngFor repeater"> 
+            <p>(*10) The ngFor repeater loops across all of the movies in the movies array</p>  
+            <img src="img/callfavoritesfunctions.png" class="approach-img-eleven" alt="The code for the ngIf directive">
+            <p>
+              (*11) The ngIf directive in these icons is to check if the movie’s id was among the favorites in the list or not and whichever 
+              condition was true, that icon would be active. So, if the movie was not in the list the icon would be uncolored and the 
+              click event would activate the addUserFavorite function turning it blue; if the movie was in the list of favorites the icon 
+              would be blue and the click event would activate the removeUserFavorite function turning it uncolored.
+            </p>  
+          </div>
+          <div class="approach-items-twelve-thirteen" id="final-approach"> 
+            <p>
+              Finally, I used interpolation to display movie, user and user favorite movie (*12-*13) properties in the appropriate 
+              templates.
+            </p>
+          </div>
+          <div class="approach-imgs-twelve-thirteen"> 
+            <div class="image">
+              <img src="img/displayingfavorites.png" class="img-twelve" alt="The code for the using interpolation to display the properties of favorites">
+              <p>
+                (*12) Interpolation is used in the above code to display the movie's title (line 124), director (line 127) and movie
+                poster (line 130).
+              </p>  
+              <img src="img/favoritesdisplayed.png" class="approach-img-twentysix" alt="The UI displayed by using interpolation to display the properties of favorites">
+              <p>(*13) The User Interface created with the code in image *12.</p>              
+            </div>
+          </div>
+          <div class="wrap-up" id="wrap"> 
+            <p>
+              I wrapped the project up by ensuring that my app was responsive and prepared it for handoff, creating code 
+              documentation using TypeDoc. 
+            </p>
+          </div>
+          <div class="duration">
+            <h2>Duration</h2>
+            <p>
+              All-in-all it took me a little more than two months to get the application how I wanted it. This was with taking little breaks 
+              here and there at times to work on other pressing projects.
+            </p>
+          </div>
+          <div class="conclusion">
+            <h2>Conclusion</h2>
+            <p>
+              It was—for the most part—a fun challenge to complete this project. I really liked learning how Angular components worked with 
+              templates to access and display information. 
+            </p>
+            <p>
+              There were only a few minor hiccups along the way. The first was initially getting my registration and login API calls to work. 
+              My user registration and login API calls would initially return the following errors, respectively: “Error Status code 0, Error 
+              body is: [object ProgressEvent]” and “Error Status code 400, Error body is: [object Object].” I figured out the login issue 
+              first: I had forgotten to add the = sign to the apiUrl path for the user login API call in my FetchAPIData service file. The 
+              registration issue turned out to be the result of my MongoDB being inactive since I had not made new HTTP requests to it in a 
+              while (this was resolved by logging into a Mongo instance through my terminal).
+            </p>
+            <p>
+              The only other problem was that, for a while, I would get the following error for the getUser method in the FetchAPIData service: 
+              “Error Status code 500, Error body is: Error: CastError: Cast to ObjectId failed for value (type string) at paid "_id" for model 
+              "User"”. I resolved this by refactoring my project API params to take the username (and not the userID). This, in turn, lead to 
+              me needing to refactor all API calls in my FetchAPIData service that referenced the userID, but this was a relatively easy fix 
+              and resolved my issues.
+            </p>
+            <p>
+              I’m very happy with the product that I created. I don’t know if I would do anything differently in the future to get it where it 
+              is at today, but I do hope to add some features (and maybe some more movies) in the near future.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="social-media">
+          <p>Find me on</p>
+            <a href="https://github.com/dagrimb" target="_blank" rel="noopener noreferrer">
+              <img src="img/github_icon.svg" class="social-media__icon" alt="Github">
+            </a>
+            <a href="https://twitter.com/DavidGrimberg1" target="_blank" rel="noopener noreferrer">
+              <img src="img/twitter_icon.svg" class="social-media__icon" alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com/in/david-grimberg/" target="_blank" rel="noopener noreferrer">
+              <img src="img/linkedin_icon.svg" class="social-media__icon" alt="LinkedIn">
+            </a>
+      </div>
+  </footer>
+  </body>
+</html>
