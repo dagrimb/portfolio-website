@@ -2,66 +2,67 @@
 <html lang="en">
   <link type="text/css" rel="stylesheet" href="magicthumb/magicthumb.css"/>
   <script type="text/javascript" src="magicthumb/magicthumb.js"></script>
-<head>
+
+  <head>
     <meta charset="utf-8">
     <title>David Grimberg's work</title>
     <link rel="shortcut icon" href="img/mylogo.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+  </head>
 
-
-<body>
+  <body>
     <!-- Header including the log and the main navigation -->
     <header class="page-header">
       <img src="img/mylogo.png" class="page-header__item" alt="David Grimberg's logo">
-      <nav class="main-navigation page-header__item">
-          <ul role="menubar" class="navigation-list">
-              <li role="presentation">
-                  <a href="index.html" role="menuitem" class="navigation-list_item">About Me</a>
-              </li>
-              <li role="presentation">
-                  <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-              </li>
-              <li role="presentation">
-                  <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
-              </li>
-          </ul>
+      <nav class="main-navigation">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a href="index.html" role="menuitem" class="navigation-list_item">About Me</a>
+          </li>
+          <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
+          </li>
+        </ul>
       </nav>
-  </header>
+    </header>
+
     <!-- Main content -->
-    <section>
-        <div class="main-work">
-            <h1>My Work</h1><br>
-                  <div class="grid">
-                    <!-- Grid items will live here -->
-                    <div class="grid__item" id="project-one">
-                      <h2>Pokédex</h2>
-                      <p> 
-                        A small, responsive application that loads data from an external (Pokemon) API, allowing users to retrieve specific 
-                        information pertaining to each Pokemon, including their height and image. All users have to do is click the button with 
-                        the name of the pokemon they wish to research and a modal will be opened that reveals these details.
-                      </p>
-                      <ul id="bulleted-list">
-                        Technologies Used:
-                          <li>HTML</li>
-                          <li>CSS</li>
-                          <li>vanilla JavaScript</li>
-                          <li>jQuery</li>
-                          <li>Bootstrap</li>
-                          <li><a href="https://pokeapi.co/api/v2/pokemon/" class="grid__item"  id="api-link"  target="_blank" rel="noopener noreferrer">The Pokemon API</a></li>
-                      </ul>
-                      <div class="project">
-                        <a href="img/pokedex_bigimg.png" class="MagicThumb"><img src="img/pokedex_smallimg.png" style="height: 100%; width: 100%; object-fit: contain" class="thumbnail" alt="Pokedex Project Image" /></a>
-                      </div>
-                <div class="buttons">
-                      <a type="button" class="github__button" href="https://dagrimb.github.io/Pokedex/" target="_blank" rel="noopener noreferrer">See Hosted Site</a>
-                      <a type="button" class="github__button" href="https://github.com/dagrimb/Pokedex" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
-                    </div>
-                    </div>
+    <main>
+      <div class="main-work">
+        <h1>My Work</h1><br>
+        <div class="grid">
+          <!-- Grid items will live here -->
+          <div class="grid__item" id="project-one">
+            <h2>Pokédex</h2>
+            <p> 
+              A small, responsive application that loads data from an external (Pokemon) API, allowing users to retrieve specific 
+              information pertaining to each Pokemon, including their height and image. All users have to do is click the button with 
+              the name of the pokemon they wish to research and a modal will be opened that reveals these details.
+            </p>
+            <ul id="bulleted-list">
+              Technologies Used:
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>vanilla JavaScript</li>
+              <li>jQuery</li>
+              <li>Bootstrap</li>
+              <li><a href="https://pokeapi.co/api/v2/pokemon/" class="grid__item"  id="api-link"  target="_blank" rel="noopener noreferrer">The Pokemon API</a></li>
+            </ul>
+            <div class="project">
+              <a href="img/pokedex_bigimg.png" class="MagicThumb"><img src="img/pokedex_smallimg.png" style="height: 100%; width: 100%; object-fit: contain" class="thumbnail" alt="Pokedex Project Image" /></a>
+            </div>
+            <div class="buttons">
+              <a type="button" class="github__button" href="https://dagrimb.github.io/Pokedex/" target="_blank" rel="noopener noreferrer">See Hosted Site</a>
+              <a type="button" class="github__button" href="https://github.com/dagrimb/Pokedex" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
+            </div>
+          </div>
           <div class="grid__item" id="project-two">
             <h2>myfavfilmz-API</h2>
             <p>
@@ -69,20 +70,20 @@
               fans to, among other things, create accounts, log in, view movie information and create a list of their favorites.
             </p>
             <ul id="bulleted-list">
-            Technologies Used:
+              Technologies Used:
               <li>Node.js</li>
               <li>Express.js</li>
               <li>Mongoose</li>
               <li>Heroku</li>
               <li>Postman</li>
-              <li>Mongo & MongDB Atlas</li>
+              <li>Mongo & MongoDB Atlas</li>
             </ul>
             <div class="project">
               <a href="img/myfavfilmz_API_bigimg.png" class="MagicThumb"><img src="img/myfavfilmz_API_smallimg.png" style="height: 100%; width: 100%; object-fit: contain" class="thumbnail" alt="Pokedex Project Image" /></a>
             </div>
             <div class="buttons">
               <a type="button" class="github__button" href="https://github.com/dagrimb/myfavfilmz-api" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
-          </div>
+            </div>
           </div>
           <div class="grid__item" id="project-three">
             <h2>myfavfilmz-React-client</h2>
@@ -104,11 +105,11 @@
             </ul>
             <div class="project">
               <a href="img/myfavfilmz_React_bigimg.png" class="MagicThumb"><img  src="img/myfavfilmz_React_img.png" style="height: 100%; width: 100%; object-fit: contain" class="thumbnail" alt="myfavfilmz Project Image" /></a>
-            </div>
+            </div> 
             <div class="buttons">
               <a type="button" class="github__button" href="https://myfavfilmz.netlify.app/" target="_blank" rel="noopener noreferrer">See Hosted Site</a>
-            <a type="button" class="github__button" href="https://github.com/dagrimb/myfavfilmz-React-client" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
-         </div>
+              <a type="button" class="github__button" href="https://github.com/dagrimb/myfavfilmz-React-client" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
+            </div>
           </div>
           <div class="grid__item" id="project-four">
             <h2>Meet App</h2>
@@ -136,8 +137,8 @@
             </div>
             <div class="buttons">
               <a type="button" class="github__button" href="https://dagrimb.github.io/meet/" target="_blank" rel="noopener noreferrer">See Hosted Site</a>
-            <a type="button" class="github__button" href="https://github.com/dagrimb/meet" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
-          </div>
+              <a type="button" class="github__button" href="https://github.com/dagrimb/meet" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
+            </div>
           </div>
           <div class="grid__item" id="project-five">
             <h2>WeChat</h2>
@@ -156,51 +157,53 @@
               <a href="img/wechat_bigimg.png" class="MagicThumb"><img src="img/wechat_img.png" style="height: 100%; width: 100%; object-fit: contain;" class="thumbnail" alt="WeChat Project Image" /></a>
             </div>
             <div class="buttons">
-            <a type="button" class="github__button" href="https://vimeo.com/656415117" target="_blank" rel="noopener noreferrer">See conversation between my phone and the Android Emulator</a>
-            <a type="button" class="github__button" href="https://github.com/dagrimb/WeChat" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
-          </div>
+              <a type="button" class="github__button_2" href="https://vimeo.com/656415117" target="_blank" rel="noopener noreferrer">See conversation between my phone and the Android Emulator</a>
+              <a type="button" class="github__button" href="https://github.com/dagrimb/WeChat" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
+            </div>
           </div>
           <div class="grid__item" id="project-six">
             <h2>myfavfilmz-Angular-client</h2>
-              <p>
-                The Angular version of my Single Page Application’s client that exists to allow movie fans the ability to register for an 
-                account and create a list of their favorite movies. Users are also able to find out more about these favorite movies, 
-                such as details about a movie's genre, director and score on Rotten Tomatoes.
-              </p>
-              <ul id="bulleted-list">
-                Technologies Used:
-                <li>Angular.js</li>
-                <li>Angular Material</li>
-                <li>TypeScript</li>
-                <li>RxJs</li>
-                <li>Webpack</li>
-              </ul>
-              <div class="project">
-                <a href="img/myfavfilmz_Angular_bigimg.png" class="MagicThumb"><img src="img/myfavfilmz_Angular_bigimg.png" style="height: 100%; width: 100%; object-fit: contain;" class="thumbnail" alt="WeChat Project Image" /></a>
-              </div>
-              <div class="buttons">
+            <p>
+              The Angular version of my Single Page Application’s client that exists to allow movie fans the ability to register for an 
+              account and create a list of their favorite movies. Users are also able to find out more about these favorite movies, 
+              such as details about a movie's genre, director and score on Rotten Tomatoes.
+            </p>
+            <ul id="bulleted-list">
+              Technologies Used:
+              <li>Angular.js</li>
+              <li>Angular Material</li>
+              <li>TypeScript</li>
+              <li>RxJs</li>
+              <li>Webpack</li>
+            </ul>
+            <div class="project">
+              <a href="img/myfavfilmz_Angular_bigimg.png" class="MagicThumb"><img src="img/myfavfilmz_Angular_bigimg.png" style="height: 100%; width: 100%; object-fit: contain;" class="thumbnail" alt="WeChat Project Image" /></a>
+            </div>
+            <div class="buttons">
               <a type="button" class="github__button" href="https://dagrimb.github.io/myfavfilmz-Angular-client/welcome" target="_blank" rel="noopener noreferrer">See Hosted Site</a>
               <a type="button" class="github__button" href="https://github.com/dagrimb/myfavfilmz-Angular-client" target="_blank" rel="noopener noreferrer">See Project Repository on Github</a>
-              <a type="button" class="github__button" href="https://trello.com/b/Hbz3fmvq/myfavfilmz" target="_blank" rel="noopener noreferrer">See Trello Board</a>
+              <a type="button" class="trello__board" href="https://trello.com/b/Hbz3fmvq/myfavfilmz" target="_blank" rel="noopener noreferrer">See Trello Board</a>
+              <a type="button" class="case__study" href="myfavfilmz-Angular-case-study.html" target="_blank" rel="noopener noreferrer">See Case Study</a>
             </div>
-            </div>
+          </div>
         </div>  
       </div>    
-    </section>
+    </main>
+
     <!-- Footer with links to social media profiles -->
     <footer class="page-footer">
-        <div class="social-media">
-            <p>Find me on</p>
-                <a href="https://github.com/dagrimb" target="_blank" rel="noopener noreferrer">
-                  <img src="img/github_icon.svg" class="social-media__icon" alt="Github">
-                </a>
-                <a href="https://twitter.com/DavidGrimberg1" target="_blank" rel="noopener noreferrer">
-                  <img src="img/twitter_icon.svg" class="social-media__icon" alt="Twitter">
-                </a>
-                <a href="https://www.linkedin.com/in/david-grimberg/" target="_blank" rel="noopener noreferrer">
-                  <img src="img/linkedin_icon.svg" class="social-media__icon" alt="LinkedIn">
-                </a>
-        </div>
+      <div class="social-media">
+        <p>Find me on</p>
+        <a href="https://github.com/dagrimb" target="_blank" rel="noopener noreferrer">
+          <img src="img/github_icon.svg" class="social-media__icon" alt="Github">
+        </a>
+        <a href="https://twitter.com/DavidGrimberg1" target="_blank" rel="noopener noreferrer">
+          <img src="img/twitter_icon.svg" class="social-media__icon" alt="Twitter">
+        </a>
+        <a href="https://www.linkedin.com/in/david-grimberg/" target="_blank" rel="noopener noreferrer">
+          <img src="img/linkedin_icon.svg" class="social-media__icon" alt="LinkedIn">
+        </a>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
