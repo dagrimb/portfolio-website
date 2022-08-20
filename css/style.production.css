@@ -936,7 +936,7 @@ svg {
 }
 
 .navigation-list {
-  width: 14rem;
+  width: 13rem;
   margin-top: 0.5rem;
 }
 
@@ -1220,7 +1220,7 @@ width: 14rem;
 width: 15rem;
 }
 
-.approach-items-seven-eight, .img-eight {
+.approach-items-seven-eight, #img-eight {
 margin-top: 4rem;
 }
 
@@ -1235,9 +1235,13 @@ width: 16rem;
 height: 2rem;
 }
 
-.approach-img-twentythree, .img-four  {
+.approach-img-twentythree  {
 width: 80%;
 height: 3rem;
+}
+
+#img-four {
+width: 16rem;
 }
 
 .approach-img-twenty, .approach-img-twentytwo {
@@ -1245,7 +1249,7 @@ width: 80%;
 height: 4.5rem;
 }
 
-.img-eight {
+#img-eight {
 width: 90%;
 height: 4.5rem;
 }
@@ -1254,16 +1258,16 @@ height: 4.5rem;
 margin-top: 5rem;
 }
 
-.approach-img-eleven, .approach-img-fourteen, .approach-img-thirtyone, .approach-img-thirtytwo,  .approach-img-thirtynine {
+#approach-img-eleven, .approach-img-fourteen, .approach-img-thirtyone, .approach-img-thirtytwo,  .approach-img-thirtynine {
 width: 80%;
 height: 5.5rem;
 }
 
-.approach-img-eleven {
+#approach-img-eleven {
 height: 2.5rem;
 }
 
-.img-seven {
+#img-seven {
 width: 90%;
 height: 10.5rem;
 }
@@ -1279,13 +1283,17 @@ width: 15rem;
 margin-bottom: 3.5rem;
 }
 
+.approach-imgs-seven-eight .image p, .approach-imgs-twelve-thirteen .image p {
+margin-bottom: 3rem;
+}
+
 .approach-imgs-twelve-thirteen .image img {
 width: 14rem;
 margin-top: 1.75rem;
 }
 
 .approach-img-twentyseven, .approach-img-twentyeight, .cs-img-container-fifty, .approach-img-twentyone, .approach-img-twentyfour,
-.img-twelve {
+#img-twelve {
 width: 80%;
 }
 
@@ -1294,7 +1302,7 @@ font-size: 0.70rem;
 }
 
 
-.img-five {
+#img-five {
 width: 80%;
 height: 4rem;
 }
@@ -1309,7 +1317,7 @@ width: 80%;
 height: 10rem;
 }
 
-.approach-img-one img,  .overview .image img, .approach-img-six, .img-seven, .img-eight  {
+.approach-img-one img,  .overview .image img, #approach-img-six, #img-seven, #img-eight  {
   width: 16rem;
 }
 
@@ -1367,7 +1375,7 @@ body {
 .navigation-list {
   margin: 2rem;
   padding: 0rem;
-  width: 14rem;
+  width: 13rem;
   margin-left: 3rem;
   margin-top: 1.5rem;
 }
@@ -1538,7 +1546,7 @@ svg {
   height: 5%;
 }
 
-.img-four {
+#img-four {
   height: 8rem;
 }
 
@@ -1614,7 +1622,7 @@ margin-top: 1rem;
 margin: 2rem 2rem 0.5rem 2rem;
 } 
 
-.img-five {
+#img-five {
 margin: 0rem 2rem;
 font-size: 0.85rem;
 }
@@ -1769,7 +1777,7 @@ margin-top: 0rem;
 width: 12rem;
 }
 
-.project-six .project .MagicThumb img {
+.project-six .project .MagicThumb img, .overview .image .MagicThumb {
 width: 80%;
 }
 
@@ -1816,19 +1824,30 @@ margin: 0rem 2rem;
 font-size: 1rem;
 }
 
-.img-twelve, .approach-img-eleven, .approach-img-ten, .approach-img-nine, .img-eight, .img-seven, .approach-img-six, 
-.img-five, .img-three, .api-vs-fetchcomp, .approach-img-twentysix, .img-four, .img-two {
+#img-twelve, #approach-img-eleven, #approach-img-ten, #approach-img-nine, #img-eight, #img-seven, #approach-img-six, 
+#img-five, #img-three, #api-vs-fetchcomp, #approach-img-twentysix, #img-four, #img-two {
 width: 20rem;
 }
 
-.approach-img-one p, .approach-item-six .image p, .approach-imgs-three-five .image p, 
+.approach-item-six .image p, .approach-imgs-three-five .image p, 
 .approach-imgs-seven-eight .image p, .approach-imgs-nine-eleven p, .approach-imgs-tweleve-thirteen .image p {
 margin: 0rem 2rem;
 font-size: 0.85rem;
 }
 
+
+
+.approach-imgs-three-five .image p {
+margin-bottom: 1rem;
+}
+
+.approach-img-one p {
+margin: 0rem 2.5rem;
+font-size: 0.85rem;
+}
+
 .approach-img-two p {
-margin: 0rem 1rem;
+margin: 0rem 2.25rem;
 font-size: 0.85rem;
 }
 
@@ -1843,17 +1862,29 @@ margin-bottom: 1rem;
 margin: auto;
 }
 
-.approach-item-two p, .approach-items-three-five p, .approach-item-six p, .approach-items-nine-eleven p,
-.approach-img-two p, .approach-items-twelve-thirteen p, .wrap-up p {
+.approach-item-two p, .approach-item-six p, .approach-items-nine-eleven p,
+.approach-items-twelve-thirteen p, .wrap-up p {
 margin: 4rem 2rem 0rem 2rem;
+}
+
+.approach-imgs-seven-eight .image p, .approach-items-nine-eleven p, .approach-imgs-nine-eleven p {
+margin-bottom: 1rem;
+}
+
+.approach-items-three-five p {
+margin-bottom: 1rem;
+}
+
+.approach-imgs-twelve-thirteen .image p {
+margin: 0rem 1rem 1rem 1rem;
 }
 
 .approach-items-twelve-thirteen p,  .wrap-up p {
 font-size: 1rem;
 }
 
-.img-five {
-width: 19rem;
+#img-five {
+width: 20rem;
 }
 
 .tools, .approach-intro, .approach-item-one, .approach-img-one, .approach-item-two, .approach-img-two, .approach-items-three-five, 
@@ -1864,7 +1895,11 @@ margin-left: 0rem;
 margin-right: 0rem;
 }
 
-.approach-img-six, .img-seven, .img-eight, .approach-img-nine, .approach-img-ten, .approach-img-eleven, .img-twelve,
+.approach-imgs-seven-eight {
+margin-top: 1rem;
+}
+
+#approach-img-six, #img-seven, #img-eight, #approach-img-nine, #approach-img-ten, #approach-img-eleven, #img-twelve,
 .approach-img-twelvesix {
 margin-top: 0.5rem;
 }
@@ -2069,7 +2104,7 @@ svg {
 }
 
 .approach-imgs-three-five {
-  margin-left: 0rem;
+  margin-left: 2rem;
 }
 
 #project-five .buttons {
@@ -2128,15 +2163,24 @@ main {
   font-size: 0.7rem;
 }
 
+
 .approach-imgs-three-five .image p  {
-  margin: 0rem 0rem;
+  margin: 0rem 0.5rem;
   font-size: 0.7rem;
-  margin-left: 4rem;
+  margin-bottom: 1rem;
+}
+
+#img-four, #img-five {
+  width: 21.5rem;
 }
 
 #localStorage .image p, .approach-imgs-seven-eight .image p {
   font-size: 0.7rem;
   margin: 0rem 2rem;
+}
+
+.approach-imgs-seven-eight .image p {
+  margin-bottom: 1rem;
 }
 
 .approach-imgs-nine-eleven p, .approach-imgs-twelve-thirteen .image p {
@@ -2149,11 +2193,11 @@ main {
   font-size: 1.75rem;
 }
 
-.approach-img-nine, .approach-imgs-twelve-thirteen .image img {
+#approach-img-nine, .approach-imgs-twelve-thirteen .image img {
   width: 20rem;
 }
 
-.img-eight {
+#img-eight {
   margin-top: 1rem;
 }
 
@@ -2175,13 +2219,10 @@ main {
 
 
 
-.approach-img-twentythree, .img-four  {
+.approach-img-twentythree  {
   width: 80%;
   height: 3rem;
 }
-
-
-
 
 
 .approach-img-fifteen {
@@ -2189,17 +2230,6 @@ main {
   height: 7.5rem;
 }
 
- 
-
-
-
-
-
-
-.img-five {
-  width: 80%;
-  height: 4rem;
-}
 
 .user-display, .sixnine {
   width: 80%;
@@ -2258,18 +2288,22 @@ main {
   height: 10rem;
 }
 
-.approach-img-one img, .approach-items-nine-eleven img, .img-two, .approach-imgs-three-five, .approach-img-ten,
-.approach-img-ten, .approach-img-eleven, .img-seven, .img-eight, .approach-img-fourteen, .approach-img-fifteen,
+.approach-img-one img, .approach-items-nine-eleven img, #img-two, #img-three, .approach-imgs-three-five, #approach-img-ten,
+#approach-img-eleven, #img-seven, #img-eight, .approach-img-fourteen, .approach-img-fifteen,
 .approach-items-seventeen, .eightnine, .approach-img-twenty, .approach-img-twentyone, .approach-img-twentytwo, .approach-img-twentythree, 
-.approach-img-twentyfour, .img-twelve, .img-thirteen, .approach-img-twentyseven, .approach-img-twentyeight,
-.img-four, .img-five, .approach-img-thirtyone, .approach-img-thirtytwo, .approach-img-six,
+.approach-img-twentyfour, #img-twelve, .img-thirteen, .approach-img-twentyseven, .approach-img-twentyeight,
+.approach-img-thirtyone, .approach-img-thirtytwo, #approach-img-six,
 .approach-img-thirtyfour, .approach-img-thirtyfive, .approach-img-thirtysix, .approach-img-thirtyseven, .approach-img-thirtyeight,
 .approach-img-thirtynine, .approach-img-forty, .approach-img-fortyone {
   width: 85%;
 }
 
-.img-three, .img-four, .img-five {
-  width: 100%;
+
+
+
+
+ #img-three {
+  width: 95%;
   margin-left: 2rem;
 }
 
@@ -2546,7 +2580,7 @@ svg {
   width: 11rem;
 }
 
-.img-four, .img-five {
+#img-four, #img-five {
   margin-top: 1rem;
 }
 
@@ -2754,11 +2788,11 @@ width: 90%;
 
 
 .overview .image img, .approach-img-one img, .approach-items-nine-eleven img, .cs-img-container-seventy, #cs-img-container-seventy,
-.approach-three, .img-two, .approach-imgs-three-five, .img-three, .approach-imgs-seven-eight, .approach-img-fourteen, .approach-img-fifteen,
+.approach-three, #img-two, .approach-imgs-three-five, #img-three, .approach-imgs-seven-eight, .approach-img-fourteen, .approach-img-fifteen,
 .eightnine, .approach-img-seventeen, .approach-img-twenty, .approach-items-twentyone, .approach-img-twentyone, .approach-img-twentytwo,
-.approach-img-twentythree, .approach-items-twentyfour, .approach-img-twentyfour, .approach-items-twentyfive, .img-twelve,
-.img-thirteen, .approach-img-twentyseven, .approach-img-twentyeight, .approach-items-twentynine, .img-four,
-.img-five, .approach-items-thirtyone, .approach-img-thirtyone, .approach-img-thirtytwo, .approach-img-six,
+.approach-img-twentythree, .approach-items-twentyfour, .approach-img-twentyfour, .approach-items-twentyfive, #img-twelve,
+.img-thirteen, .approach-img-twentyseven, .approach-img-twentyeight, .approach-items-twentynine, #img-four,
+#img-five, .approach-items-thirtyone, .approach-img-thirtyone, .approach-img-thirtytwo, #approach-img-six,
 .approach-img-thirtyfour, .approach-img-thirtyfive, .approach-img-thirtysix, .approach-items-thirtysix, .approach-items-thirtyseven,
 .approach-img-thirtyseven, .approach-img-thirtyeight, .approach-img-thirtynine, .approach-items-forty, .approach-img-forty, 
 .approach-item-fortyone, .approach-img-fortyone {
@@ -2777,20 +2811,16 @@ margin-right: 8rem;
 margin-top: 0rem;
 }
 
-.approach-item-six, .approach-img-eleven,
-.approach-items-fourteen, .approach-items-sixteen, .approach-items-seventeen, .approach-img-sixteen {
+.approach-item-six, #approach-img-eleven,
+.approach-items-fourteen, .approach-items-sixteen, .approach-items-seventeen, approach-img-sixteen {
 width: 42rem;
 }
 
-
-
-
-
-.img-eight {
+#img-eight {
 width: 37rem;
 }
 
-.img-seven {
+#img-seven {
 width: 37rem;
 margin-left: 0rem;
 }
@@ -2813,7 +2843,7 @@ margin: 10rem auto;
 width: 50%;
 }
 
-.img-two {
+#img-two {
 height: 6rem;
 }
 
@@ -2824,7 +2854,7 @@ height: 6rem;
 margin-top: 0rem;
 }
 
-.approach-imgs-three-five, .img-three, .approach-img-forty {
+.approach-imgs-three-five, #img-three, .approach-img-forty {
 height: 4rem;
 }
 
@@ -2833,11 +2863,11 @@ margin-left: 1rem;
 margin-bottom: 32rem;
 }
 
-.approach-img-twentysix {
+#approach-img-twentysix {
 width: 90%;
 }
 
-.approach-img-nine, .approach-img-ten, .approach-img-eleven {
+#approach-img-nine, #approach-img-ten, #approach-img-eleven {
 width: 95%;
 }
 
@@ -2857,7 +2887,7 @@ margin: 4rem 1rem 2rem 1rem;
 height: 13rem;
 }
 
-.approach-img-eleven {
+#approach-img-eleven {
 height: 6rem;
 }
 
@@ -2872,7 +2902,7 @@ font-size: 1.25rem;
 margin: 4rem 0rem;
 }
 
-.approach-img-fourteen, .img-twelve, .approach-img-thirtyfour {
+.approach-img-fourteen, #img-twelve, .approach-img-thirtyfour {
 height: 21rem;
 }
 
@@ -2892,22 +2922,22 @@ height: 11rem;
 height: 16rem;
 }
 
-.approach-items-twentyone, .approach-items-twentyfive, img-four, .img-five,
+.approach-items-twentyone, .approach-items-twentyfive, #img-four, #img-five,
 .approach-items-twentynine, .approach-items-thirtyone, .approach-items-thirtysix, .approach-items-thirtyseven, .approach-items-forty,
 .approach-item-fortyone, .approach-img-fortyone {
 margin: auto;
 }
 
-.img-four {
+#img-four {
 height: 9rem;
 }
 
-.approach-img-six .image img {
+#approach-img-six .image img {
 height: 23rem;
 margin-top: 3rem;
 }
 
-.img-twelve {
+#img-twelve {
 height: 26rem;
 width: 33rem;
 }
@@ -3113,7 +3143,7 @@ margin: 4rem 1rem 1rem 1rem;
 margin: auto;
 }
 
-.approach-img-ten, .approach-img-eleven {
+#approach-img-ten, #approach-img-eleven {
 margin-top: 1rem;
 }
 
@@ -3502,11 +3532,11 @@ margin-top: 5rem;
 
 
 .overview, .overview .image img, .purpose, .objectives, .tools, .approach-intro, .approach-item-one, .approach-item-two, .cs-img-container-seventy,
-#cs-img-container-seventy, .logindisplays, .approach-three, .approach-imgs-seven-eight, .approach-img-ten, .approach-img-ten,
-.approach-img-eleven, .img-seven, .approach-items-sixteen, .approach-items-seventeen,
+#cs-img-container-seventy, .logindisplays, .approach-three, .approach-imgs-seven-eight, #approach-img-ten,
+#approach-img-eleven, #img-seven, .approach-items-sixteen, .approach-items-seventeen,
 .approach-items-twentyone, .approach-items-twentyone .image img, .approach-items-twentyfive, .approach-items-twentyfive .image img,
 .approach-items-thirtyone, .approach-items-thirtyone .image img, .approach-items-thirtyseven, .approach-items-thirtyseven img,
-.api-vs-fetchcomp, .approach-items-nine-eleven img, .approach-items-three-five, .approach-img-one, .approach-items-nine-eleven, .approach-item-six,
+#api-vs-fetchcomp, .approach-items-nine-eleven img, .approach-items-three-five, .approach-img-one, .approach-items-nine-eleven, .approach-item-six,
 .approach-items-fourteen, .logindisplaynumbers, .approach-items-fourteen .image img,
 .approach-img-sixteen, .eightnine, .user-dialogs img, .approach-items-twentyfour, .approach-img-twentyfour, .approach-items-twentynine,
 .approach-items-twentynine .image img, .approach-img-thirtysix, .approach-items-thirtysix, .approach-items-forty,
@@ -3520,14 +3550,18 @@ font-size: 0.80rem;
 margin: 0rem 4rem;
 }
 
-.img-two,  .img-four, .img-five {
+#img-two {
 width: 85%;
 -ms-grid-column-align: center;
     justify-self: center;
 height: 8rem;
 }
 
-.img-three {
+#img-four, #img-five {
+width: 54rem;
+}
+
+#img-three {
 width: 85%;
 height: 6rem;
 }
@@ -3651,7 +3685,7 @@ img {
 width: 100%;
 }
 
-.img-eight {
+#img-eight {
 margin-top: 1rem;
 }
 
@@ -3665,7 +3699,7 @@ margin-top: 0rem;
 margin-bottom: 0rem;
 }
 
-.api-vs-fetchcomp {
+#api-vs-fetchcomp {
 height: 35rem;
 }
 
@@ -4224,19 +4258,19 @@ margin: 0.5rem 0.25rem 1rem 0.25rem;
     margin-bottom: 11rem;
 }
 
-.overview .image img, .api-vs-fetchcomp, .approach-items-nine-eleven img, .cs-img-container-seventy, .apparoach-img-three img,
+.overview .image img, #api-vs-fetchcomp, .approach-items-nine-eleven img, .cs-img-container-seventy, .apparoach-img-three img,
 .approach-items-nine-eleven img,  .approach-img-eigh, .approach-img-fourteen, .approach-img-fifteen,
-.approach-imgs-three-five, .img-three, .approach-img-ten, .approach-img-ten, .img-seven, .img-eight,
+.approach-imgs-three-five, #img-three, #approach-img-ten, #img-seven, #img-eight,
 .approach-items-seventeen, .eightnine, .approach-img-seventeen, .approach-img-twenty, .approach-img-twentyfour, .approach-img-twentyone,
-.approach-img-twentytwo, .approach-items-twentyfour, .approach-img-twentythree, .img-twelve,
+.approach-img-twentytwo, .approach-items-twentyfour, .approach-img-twentythree, #img-twelve,
 .img-thirteen, .approach-items-twentynine, .approach-img-twentyseven, .approach-img-twentyeight,
-.approach-img-thirtyone, .approach-img-thirtysix, .approach-img-thirtytwo, .approach-img-six, .approach-img-thirtyfour,
+.approach-img-thirtyone, .approach-img-thirtysix, .approach-img-thirtytwo, #approach-img-six, .approach-img-thirtyfour,
 .approach-img-thirtyfive, .approach-img-thirtyseven, .approach-img-forty, .approach-img-thirtyeight, .approach-img-thirtynine,
 .approach-img-fortyone {
   width: 44rem;
 }
 
-.img-two {
+#img-two {
   height: 12rem;
 }
 
@@ -4258,7 +4292,7 @@ nav {
   width: 85rem;
 }
 
-.approach-img-eleven {
+#approach-img-eleven {
   width: 65rem;
 }
 
@@ -4354,7 +4388,7 @@ p {
   margin-top: 7rem;
 }
 
-.api-vs-fetchcomp, .img-two {
+#api-vs-fetchcomp, #img-two {
   width: 80rem;
 }
 
@@ -4820,10 +4854,16 @@ margin-top: 5rem;
 width: 0rem;
 margin-top: 36rem;
 margin-bottom: 18rem;
+margin-left: 26rem;
 }
 
+.approach-imgs-seven-eight .image #img-seven {
+width: 60rem;
+}
 
-
+.approach-items-seven-eight p {
+margin: auto 8rem;
+}
 
 @-webkit-keyframes sky-color-change {
   0% {
@@ -4846,9 +4886,6 @@ margin-bottom: 18rem;
       fill: #AAF6FF;
   }
 }
-
-
-
 
 @keyframes sky-color-change {
   0% {
@@ -4873,7 +4910,7 @@ margin-bottom: 18rem;
 }
 
 .approach-imgs-three-five,
-.approach-img-ten, .approach-items-sixteen { 
+#approach-img-ten, .approach-items-sixteen { 
 width: 100%;
 height: 5rem;
 -ms-grid-column-align: center;
@@ -4887,14 +4924,14 @@ height: 8rem;
     justify-self: center;
 }
 
-.approach-items-nine-eleven .approach-img-nine {
+.approach-items-nine-eleven #approach-img-nine {
 width: 65rem;
 height: 37rem;
 -ms-grid-column-align: center;
     justify-self: center;
 }
 
-.img-three {
+#img-three {
 width: 80rem;
 height: 10rem;
 -ms-grid-column-align: center;
@@ -4908,19 +4945,19 @@ height: 25rem;
     justify-self: center;
 }
 
-.img-five {
+#img-five {
 height: 15rem;
 width: 80rem;
 }
 
-.img-four {
+#img-four {
 width: 80rem;
 height: 18rem;
 -ms-grid-column-align: center;
     justify-self: center;
 }
 
-.img-twelve {
+#img-twelve {
 width: 70rem;
 margin-top: 0rem;
 }
@@ -4934,11 +4971,15 @@ width: 65rem;
 margin-top: 1rem;
 }
 
-.approach-img-ten {
-width: 60%;
+#approach-img-ten {
+width: 100%;
 }
 
-.img-seven {
+#img-eight {
+width: 60rem;
+}
+
+#img-seven {
 margin-top: 25rem;
 }
 
@@ -4970,22 +5011,21 @@ margin-bottom: 1rem;
 }
 
 .approach-imgs-nine-eleven p {
-margin: 1rem 21rem;
+margin: 0rem 23rem 1rem 23rem;
 font-size: 1rem;
 }
 
-.approach-img-nine {
+#approach-img-nine {
 height: 34rem;
 width: 66rem;
 }
 
-.img-seven {
+#img-seven {
 margin-left: 22rem;
 }
 
 .approach-imgs-seven-eight .image p {
-width: 55rem;
-margin-left: 27rem;
+width: 60rem;
 }
 
 .duration p, .conclusion p {
@@ -4993,18 +5033,19 @@ margin: 0rem 13rem;
 }
 
 
-.img-eight {
+#img-eight {
 margin-left: 22rem;
 }
 
 
 
-.img-twelve {
+#img-twelve {
 width: 55rem;
 }
 
 #final-approach p, #localStorage p {
 margin-top: 5rem;
+margin-bottom: 1rem;
 }
 
 #wrap p {
@@ -5012,7 +5053,7 @@ margin-top: 3rem;
 }
 
 #localStorage .image p {
-margin-top: 0.5rem;
+margin-top: 0rem;
 }
 
 
