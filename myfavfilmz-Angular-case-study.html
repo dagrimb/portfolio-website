@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link type="text/css" rel="stylesheet" href="magicthumb/magicthumb.css"/>
+  <script type="text/javascript" src="magicthumb/magicthumb.js"></script>
 
 <head>
     <meta charset="utf-8">
@@ -9,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -44,7 +46,7 @@
               to register to create an account, find out info about movies, and create a list of their favorite movies.
             </p>
             <div class="image">
-              <img src="img/myfavfilmz_Angular_bigimg.png" alt="Image of myfavfilmz Angular in action" />
+              <a href="img/myfavfilmz_Angular_zoomed.png" class="MagicThumb"><img src="img/myfavfilmz_Angular_bigimg.png"  class="thumbnail" id="myfavfilmz_Angular" alt="MyFavFilmz-Angular in action!" /></a>
             </div>
           </div>
           <div class="purpose">
@@ -116,7 +118,7 @@
             </p>
           </div>
           <div class="approach-img-one">
-            <img src="img/apivsfetchcomp.png" class="api-vs-fetchcomp" alt="The code in the Movie API compared with Client Fetch Services">
+            <a href="img/apivsfetchcomp_zoomed.png" class="MagicThumb"><img src="img/apivsfetchcomp.png" class="thumbnail" id="api-vs-fetchcomp"  alt="The code in the Movie API compared with Client Fetch Services"></a>
             <p>(*1) The endpoints in my server-side API (left) and the fetch-api-data.service.ts file (right) where calls are made to those endpoints</p>
           </div>
           <div class="approach-item-two"> 
@@ -125,8 +127,8 @@
               each of those services to fetch or modify movie or user data (*2). 
             </p>
           </div>
-          <div class="approach-img-two"> 
-            <img src="img/getmoviesfunc.png" class="img-two" alt="The code for the getMovies function"> 
+          <div class="approach-img-two">             
+            <a href="img/getmoviesfunc_zoomed.png" class="MagicThumb"><img src="img/getmoviesfunc.png" class="thumbnail" id="img-two" alt="The code for the getMovies function"></a> 
             <p>(*2) The getMovies fuction in my movie-card.component.ts file that is responsible for fetching movies in the movie collection</p>  
           </div>
           <div class="approach-items-three-five"> 
@@ -138,17 +140,17 @@
           </div>
           <div class="approach-imgs-three-five"> 
             <div class="image">
-              <img src="img/ngonitgetmovies.png" class="img-three" alt="The code for the ngOnInit method"> 
+              <a href="img/ngonitgetmovies_zoomed.png" class="MagicThumb"><img src="img/ngonitgetmovies.png"  class="thumbnail" id="img-three"  alt="The code for the ngOnInit method"></a> 
               <p>
                 (*3) The ngOnInit method in the movie-card.component.ts file calls both the getMovies and getUserFavorites functions whenever
                 the movie-card component loads
               </p>
-              <img src="img/backtohomepage.png" class="img-four" alt="The code for creating and calling the backHome function"> 
+              <a href="img/backtohomepage_zoomed.png" class="MagicThumb"><img src="img/backtohomepage.png"  class="thumbnail" id="img-four" alt="The code for creating and calling the backHome function"></a> 
               <p>
                 (*4) The backHome method, for example, uses the Angular router to navigate the user from their profile back to the 
                 homepage when called in a click event
               </p>
-              <img src="img/backtohome.png" class="img-five" alt="The UI for the Back to Home button"> 
+              <a href="img/backtohome_zoomed.png" class="MagicThumb"><img src="img/backtohome.png" class="thumbnail" id="img-five" alt="The UI for the Back to Home button"></a> 
               <p>
                 (*5) Clicking the "Back to Home" button will trigger the click event and navigate the user from their profile back to 
                 the homepage
@@ -161,7 +163,7 @@
               were executed (*6).
             </p>
             <div class="image">
-              <img src="img/usercomponents.png" class="approach-img-six" alt="The code for clearing the localStorage upon logout">
+              <a href="img/usercomponents_zoomed.png" class="MagicThumb"><img src="img/usercomponents.png" class="thumbnail" id="approach-img-six" alt="The code for clearing the localStorage upon logout"></a>
               <p>(*6) localStorage.clear on line 43 clears the session storage of the user credentials</p>
             </div>
           <div class="approach-items-seven-eight">            
@@ -174,12 +176,12 @@
           </div>
           <div class="approach-imgs-seven-eight">
             <div class="image">
-              <img src="img/templatemoviedialogs.png" class="img-seven" alt="The code for creating the movie card buttons">
+              <a href="img/templatemoviedialogs_zoomed.png" class="MagicThumb"><img src="img/templatemoviedialogs.png" class="thumbnail" id="img-seven" alt="The code for creating the movie card buttons"></a>
               <p>
                 (*7) Created in the movie-card.component.html file are the buttons that open up different informational movie dialogs by triggering
                 click events
               </p>
-              <img src="img/moviedialogbuttons.png" class="img-eight" alt="The UI displaying the movie card buttons"> 
+              <a href="img/moviedialogbuttons_zoomed.png" class="MagicThumb"><img src="img/moviedialogbuttons.png"  class="thumbnail" id="img-eight" alt="The UI displaying the movie card buttons"></a> 
               <p>
                 (*8) The User Interface created with the code in image *7
               </p>   
@@ -193,15 +195,15 @@
               display and determine whether a movie was a user’s favorites or not (*11). 
             </p>
           </div>
-          <div class="approach-imgs-nine-eleven"> 
-            <img src="img/regcomponentvstemplate.png" class="approach-img-nine" alt="The code for binding user data between registration template and component">
+          <div class="approach-imgs-nine-eleven">             
+            <a href="img/regcomponentvstemplate_zoomed.png" class="MagicThumb"><img src="img/regcomponentvstemplate.png" class="thumbnail" id="approach-img-nine"  alt="The code for binding user data between registration template and component"></a>
             <p>
               (*9) Lines 26, 36, 46 and 56 of the image on the right (in the HTML template file) show the ngModel directive being used to 
               bind text entered in that input with the userData object in the image on the left (line 18 the TypeScript component file)
             </p>
-            <img src="img/ngfordirective.png" class="approach-img-ten" alt="The code for the ngFor repeater"> 
+            <a href="img/ngfordirective_zoomed.png" class="MagicThumb"><img src="img/ngfordirective.png"  class="thumbnail" id="approach-img-ten" alt="The code for the ngFor repeater"></a> 
             <p>(*10) The ngFor repeater loops across all of the movies in the movies array</p>  
-            <img src="img/callfavoritesfunctions.png" class="approach-img-eleven" alt="The code for the ngIf directive">
+            <a href="img/callfavoritesfunctions_zoomed.png" class="MagicThumb"><img src="img/callfavoritesfunctions.png" class="thumbnail" id="approach-img-eleven"  alt="The code for the ngIf directive"></a>
             <p>
               (*11) The ngIf directive in these icons is to check if the movie’s id was among the favorites in the list or not and whichever 
               condition was true, that icon would be active. So, if the movie was not in the list the icon would be uncolored and the 
@@ -217,12 +219,12 @@
           </div>
           <div class="approach-imgs-twelve-thirteen"> 
             <div class="image">
-              <img src="img/displayingfavorites.png" class="img-twelve" alt="The code for the using interpolation to display the properties of favorites">
+              <a href="img/displayingfavorites_zoomed.png" class="MagicThumb"><img src="img/displayingfavorites.png" class="thumbnail"  id="img-twelve" alt="The code for using interpolation to display the properties of favorites"></a>
               <p>
                 (*12) Interpolation is used in the above code to display the movie's title (line 124), director (line 127) and movie
                 poster (line 130).
               </p>  
-              <img src="img/favoritesdisplayed.png" class="approach-img-twentysix" alt="The UI displayed by using interpolation to display the properties of favorites">
+              <a href="img/favoritesdisplayed_zoomed.png" class="MagicThumb"><img src="img/favoritesdisplayed.png"  class="thumbnail"  id="approach-img-twentysix" alt="The UI displayed by using interpolation to display the properties of favorites"></a>
               <p>(*13) The User Interface created with the code in image *12.</p>              
             </div>
           </div>
