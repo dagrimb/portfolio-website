@@ -54,16 +54,16 @@
             <p>
               This was the final project for my CareerFoundry Full-Stack Web Development program. I had previously 
               <a href="https://github.com/dagrimb/myfavfilmz-api" target="_blank" rel="noopener noreferrer">built the server-side using 
-              Node.js and Express.js for the API and Mongo for the database</a>. I had followed that up with 
+              Node.js and Express.js for the API and Mongo for the database</a>. I followed that up by 
               <a href="https://github.com/dagrimb/myfavfilmz-React-client" target="_blank" rel="noopener noreferrer">creating the 
-              client-side using React.</a>
+              client side using React.</a>
             </p>
             <p>
               MyfavfilmzAngularClient was born out of the necessity to obtain some hands-on exposure to the Angular framework which, like 
-              React, is a very popular JavaScript technology in today’s tech industry. I applied my knowledge of the topics that I learned the 
+              React, is a very popular JavaScript technology in today’s tech industry. I applied my knowledge of the topics that I learned in the 
               course—such as data binding, interpolation, and templates—while developing this project. Another purpose of this project 
-              was to give students like myself the opportunity to create detailed documentation that other developers working with the 
-              project in the future could reference in order to know what my code does and how to work with it.
+              was to allow students like me the opportunity to create detailed documentation that other developers working with the 
+              project in the future could reference to know what my code does and how to work with it.
             </p>
           </div>
           <div class="objectives">
@@ -82,7 +82,7 @@
               would take me to create each solution. The purpose of this was to gain exposure to this real-world, Agile method of teams using 
               this tool to plan their project sprint goals and timelines appropriately. This practice was paired well with the objective of 
               ensuring that my code was well-commented and well-documented so that my intent would be well-understood by not only my 
-              hypothetical teammates, but anyone who wished to engage with my application in the future.
+              hypothetical teammates but anyone who wished to engage with my application in the future.
             </p>
           </div>
           <div class="tools">
@@ -93,7 +93,7 @@
               the dialogs with Angular Material. Angular is the main technological skill that this project demonstrates.
             </p>
             <p>
-              Two softer skills are also focused on in this project—agile, project management methodology skills and collaborative skills. The 
+              Two softer skills are also focused on in this project—agile, project management methodology skills, and collaborative skills. The 
               former consists of developing and applying user stories to create user flows and story points that inform the creation of a 
               Kanban board (which I used Trello for) and the latter consists of commenting on the codebase for the app and using TypeDoc to 
               generate documentation that is useful for anyone trying to understand the app. 
@@ -102,8 +102,8 @@
           <div class="approach-intro">
             <h2>Approach</h2>
             <p>
-              I first took some time to familiarize myself with the project brief. I already had a pretty good idea what I wanted this project 
-              to look like as I had recently created the client-side for the application using React. Next, I 
+              I first took some time to familiarize myself with the project brief. I already had a pretty good idea of what I wanted this project 
+              to look like as I had recently created the client side of the application using React. Next, I 
               <a href="files/myfavfilmz User Flows.pdf" download="download" target="_blank" rel="noopener noreferrer">created a user flow with 
               Google Drawings</a>, trying to think of all the different behaviors and routes that users would experience and take while using my application. I looked at 
               both the user stories in the project brief and my user flow and assigned story points to different tasks which allowed me to 
@@ -129,11 +129,11 @@
           </div>
           <div class="approach-img-two">             
             <a href="img/getmoviesfunc_zoomed.png" class="MagicThumb"><img src="img/getmoviesfunc.png" class="thumbnail" id="img-two" alt="The code for the getMovies function"></a> 
-            <p>(*2) The getMovies fuction in my movie-card.component.ts file that is responsible for fetching movies in the movie collection</p>  
+            <p>(*2) The getMovies function in my movie-card.component.ts file that is responsible for fetching movies in the movie collection</p>  
           </div>
           <div class="approach-items-three-five"> 
             <p>
-              In these components I also used the ngOnInit method (*3) to call these functions whenever the component loaded and 
+              In these components, I also used the ngOnInit method (*3) to call these functions whenever the component loaded and 
               created dialogs and other methods that implemented Angular’s router to allow users to navigate between views 
               (*4-*5). 
             </p>
@@ -183,7 +183,7 @@
               </p>
               <a href="img/moviedialogbuttons_zoomed.png" class="MagicThumb"><img src="img/moviedialogbuttons.png"  class="thumbnail" id="img-eight" alt="The UI displaying the movie card buttons"></a> 
               <p>
-                (*8) The User Interface created with the code in image *7
+                (*8) The User Interface was created with the code in image *7
               </p>   
             </div>
           </div>
@@ -213,7 +213,7 @@
           </div>
           <div class="approach-items-twelve-thirteen" id="final-approach"> 
             <p>
-              Finally, I used interpolation to display movie, user and user favorite movie (*12-*13) properties in the appropriate 
+              Finally, I used interpolation to display movie, user, and user favorite movie (*12-*13) properties in the appropriate 
               templates.
             </p>
           </div>
@@ -244,27 +244,27 @@
           <div class="conclusion">
             <h2>Conclusion</h2>
             <p>
-              It was—for the most part—a fun challenge to complete this project. I really liked learning how Angular components worked with 
+              It was—for the most part—a fun challenge to complete this project. I liked learning how Angular components worked with 
               templates to access and display information. 
             </p>
             <p>
               There were only a few minor hiccups along the way. The first was initially getting my registration and login API calls to work. 
               My user registration and login API calls would initially return the following errors, respectively: “Error Status code 0, Error 
-              body is: [object ProgressEvent]” and “Error Status code 400, Error body is: [object Object].” I figured out the login issue 
+              body is: [object ProgressEvent]” and “Error Status code 400, Error body is: [object Object].” I figured out the log in issue 
               first: I had forgotten to add the = sign to the apiUrl path for the user login API call in my FetchAPIData service file. The 
               registration issue turned out to be the result of my MongoDB being inactive since I had not made new HTTP requests to it in a 
               while (this was resolved by logging into a Mongo instance through my terminal).
             </p>
             <p>
               The only other problem was that, for a while, I would get the following error for the getUser method in the FetchAPIData service: 
-              “Error Status code 500, Error body is: Error: CastError: Cast to ObjectId failed for value (type string) at paid "_id" for model 
-              "User"”. I resolved this by refactoring my project API params to take the username (and not the userID). This, in turn, lead to 
+              “Error Status code 500, Error body is: Error: CastError: Cast to ObjectId failed for value (type string) at paid '_id' for model 
+              'User'”. I resolved this by refactoring my project API params to take the username (and not the userID). This, in turn, lead to 
               me needing to refactor all API calls in my FetchAPIData service that referenced the userID, but this was a relatively easy fix 
               and resolved my issues.
             </p>
             <p>
               I’m very happy with the product that I created. I don’t know if I would do anything differently in the future to get it where it 
-              is at today, but I do hope to add some features (and maybe some more movies) in the near future.
+              is at today, but I do hope to add some features (and maybe some more movies) soon.
             </p>
           </div>
         </div>
