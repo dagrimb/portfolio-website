@@ -2641,6 +2641,14 @@ main {
     height: 12rem;
     padding: 0.5rem;
   }
+
+  .page-header__item {
+    flex: var(--flex);
+    /* width: var(--width-25); */
+    height: 2.5rem;
+    margin: var(--margin-25);
+}
+
 }
 
 
@@ -2660,11 +2668,30 @@ main {
     height: 14rem;
   }
 
+  .page-header__item {
+    flex: var(--flex);
+    /* width: var(--width-25); */
+    height: 2rem;
+    margin: var(--margin-25);
+}
+
+}
+
+
+@media all and (min-width: 581px) and (max-width: 768px) {
+
+  nav {
+    margin-left: 4rem;
 }
 
 
 
-@media all and (min-width: 426px) and (max-width: 768px) {
+
+}
+
+
+
+@media all and (min-width: 581px) and (max-width: 768px) {
 
 
 .navigation-list_item {
@@ -2760,9 +2787,7 @@ main {
   margin-top: 10rem;
 }
 
-nav {
-  margin-left: 6rem;
-}
+
 
 #contact__item-one h2, #contact__item-three h2, #contact__item-three p {
   margin-left: 0.75rem;
