@@ -16172,7 +16172,9 @@ margin-bottom: 1rem;
 
   }
 
-  @media all and (min-width: 1806px) and (max-width: 1935px) {
+
+  
+  @media all and (min-width: 1806px) {
 
     .grid {
       grid-template-columns: 1fr 1fr 1fr;
@@ -16225,13 +16227,6 @@ margin-bottom: 1rem;
     .profile {
       margin-top: 4rem;
     }
-
-
-  } 
-
-
-
-  @media all and (min-width: 1806px) {
 
     .contact__grid {
       margin-left: 8.5rem;
